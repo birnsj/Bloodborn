@@ -57,6 +57,23 @@
   color: #b9a88c;
 }
 
+.hud-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.hp {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: #e8c48a;
+}
+
+.hp.dead {
+  color: #c45a5a;
+}
+
 .status {
   max-width: 28rem;
   text-align: right;
@@ -66,6 +83,43 @@
 
 .status.locked {
   color: #9fd8a8;
+}
+
+.status.dead {
+  color: #f0a0a0;
+}
+
+.hurt-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 40%, rgba(120, 0, 0, 0.55));
+  opacity: 0;
+  transition: opacity 80ms linear;
+}
+
+.hurt-flash.active {
+  opacity: 1;
+}
+
+.death-banner {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  padding: 0.85rem 1.4rem;
+  color: #f2d6d6;
+  background: rgba(20, 4, 4, 0.72);
+  border: 1px solid rgba(180, 80, 80, 0.5);
+  pointer-events: none;
+  letter-spacing: 0.04em;
+}
+
+.death-banner kbd {
+  font-family: Georgia, serif;
+  color: #ffd0d0;
 }
 
 .crosshair {

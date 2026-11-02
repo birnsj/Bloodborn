@@ -5,13 +5,14 @@ import { castHitscan } from './hitscan.js';
  * Hitscan fire control: cooldown, raycast, damage, and impact flashes.
  */
 export class CombatSystem {
-  constructor({ camera, weaponDef, worldMeshes, characterManager, weaponView, scene }) {
+  constructor({ camera, weaponDef, worldMeshes, characterManager, weaponView, scene, isPlayerAlive }) {
     this.camera = camera;
     this.weaponDef = weaponDef;
     this.worldMeshes = worldMeshes;
     this.characterManager = characterManager;
     this.weaponView = weaponView;
     this.scene = scene;
+    this.isPlayerAlive = isPlayerAlive ?? (() => true);
 
     this.cooldown = 0;
     this.impacts = [];
@@ -27,7 +28,7 @@ export class CombatSystem {
     this.cooldown = Math.max(0, this.cooldown - dt);
     this.updateImpacts(dt);
 
-    if (wantsFire && this.cooldown <= 0) {
+    if (wantsFire && this.cooldown <= 0 && this.isPlayerAlive()) {
       this.fire();
     }
   }

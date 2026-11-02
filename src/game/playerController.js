@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { moveCylinder } from './collision/moveCylinder.js';
 
 /**
  * First-person controller: pointer lock, WASD, mouse look, AABB collision.
@@ -14,10 +15,18 @@ export class PlayerController {
     this.radius = playerConfig.radius ?? 0.35;
     this.walkSpeed = playerConfig.walkSpeed ?? 4;
     this.lookSensitivity = playerConfig.lookSensitivity ?? 0.002;
+    this.maxHealth = playerConfig.maxHealth ?? 100;
 
-    this.position = new THREE.Vector3().fromArray(playerConfig.spawnPosition ?? [0, 0, 0]);
-    this.yaw = playerConfig.spawnYaw ?? 0;
+    this.spawnPosition = new THREE.Vector3().fromArray(
+      playerConfig.spawnPosition ?? [0, 0, 0],
+    );
+    this.spawnYaw = playerConfig.spawnYaw ?? 0;
+
+    this.position = this.spawnPosition.clone();
+    this.yaw = this.spawnYaw;
     this.pitch = 0;
+    this.health = this.maxHealth;
+    this.dead = false;
 
     this.keys = {
       forward: false,
@@ -28,6 +37,10 @@ export class PlayerController {
     };
 
     this.isLocked = false;
+    this.restartCallback = null;
+    this.damageCallback = null;
+    this.deathCallback = null;
+
     this._onKeyDown = this.onKeyDown.bind(this);
     this._onKeyUp = this.onKeyUp.bind(this);
     this._onMouseMove = this.onMouseMove.bind(this);
@@ -46,6 +59,18 @@ export class PlayerController {
 
   setLockChangeCallback(cb) {
     this.lockChangeCallback = cb;
+  }
+
+  setRestartCallback(cb) {
+    this.restartCallback = cb;
+  }
+
+  setDamageCallback(cb) {
+    this.damageCallback = cb;
+  }
+
+  setDeathCallback(cb) {
+    this.deathCallback = cb;
   }
 
   attach() {
@@ -73,6 +98,7 @@ export class PlayerController {
   }
 
   requestLock() {
+    if (this.dead) return;
     if (document.pointerLockElement !== this.domElement) {
       this.domElement.requestPointerLock();
     }
@@ -87,8 +113,7 @@ export class PlayerController {
   }
 
   onMouseDown(event) {
-    // Only fire when already locked so the lock-acquiring click does not shoot.
-    if (event.button === 0 && this.isLocked) {
+    if (event.button === 0 && this.isLocked && !this.dead) {
       this.keys.fire = true;
     }
   }
@@ -104,6 +129,13 @@ export class PlayerController {
       document.exitPointerLock();
       return;
     }
+
+    if (event.code === 'KeyR' && this.dead) {
+      this.restartCallback?.();
+      return;
+    }
+
+    if (this.dead) return;
 
     switch (event.code) {
       case 'KeyW':
@@ -151,16 +183,51 @@ export class PlayerController {
   }
 
   onMouseMove(event) {
-    if (!this.isLocked) return;
+    if (!this.isLocked || this.dead) return;
     this.yaw -= event.movementX * this.lookSensitivity;
     this.pitch -= event.movementY * this.lookSensitivity;
     const limit = Math.PI * 0.45;
     this.pitch = Math.max(-limit, Math.min(limit, this.pitch));
   }
 
+  applyDamage(amount) {
+    if (this.dead || amount <= 0) {
+      return { health: this.health, dead: this.dead };
+    }
+    this.health = Math.max(0, this.health - amount);
+    this.damageCallback?.({ damage: amount, health: this.health });
+    if (this.health <= 0) {
+      this.die();
+    }
+    return { health: this.health, dead: this.dead };
+  }
+
+  die() {
+    if (this.dead) return;
+    this.dead = true;
+    this.keys.fire = false;
+    this.keys.forward = false;
+    this.keys.back = false;
+    this.keys.left = false;
+    this.keys.right = false;
+    if (document.pointerLockElement === this.domElement) {
+      document.exitPointerLock();
+    }
+    this.deathCallback?.();
+  }
+
+  resetToSpawn() {
+    this.position.copy(this.spawnPosition);
+    this.yaw = this.spawnYaw;
+    this.pitch = 0;
+    this.health = this.maxHealth;
+    this.dead = false;
+    this.keys.fire = false;
+    this.syncCamera();
+  }
+
   update(deltaSeconds) {
-    if (this.isLocked) {
-      // yaw 0 faces -Z (Three.js default camera forward).
+    if (this.isLocked && !this.dead) {
       this.forward.set(-Math.sin(this.yaw), 0, -Math.cos(this.yaw));
       this.right.set(Math.cos(this.yaw), 0, -Math.sin(this.yaw));
 
@@ -172,51 +239,18 @@ export class PlayerController {
 
       if (this.wishDir.lengthSq() > 0) {
         this.wishDir.normalize().multiplyScalar(this.walkSpeed * deltaSeconds);
-        this.moveWithCollision(this.wishDir.x, this.wishDir.z);
+        moveCylinder(
+          this.position,
+          this.radius,
+          this.wishDir.x,
+          this.wishDir.z,
+          this.colliders,
+          this.eyeHeight,
+        );
       }
     }
 
     this.syncCamera();
-  }
-
-  moveWithCollision(dx, dz) {
-    this.position.x = this.resolveAxis(this.position.x + dx, this.position.z, 'x');
-    this.position.z = this.resolveAxis(this.position.x, this.position.z + dz, 'z');
-  }
-
-  resolveAxis(x, z, axis) {
-    let px = x;
-    let pz = z;
-
-    for (const box of this.colliders) {
-      if (box.maxY < 0.2 || box.minY > this.eyeHeight) continue;
-
-      const closestX = clamp(px, box.minX, box.maxX);
-      const closestZ = clamp(pz, box.minZ, box.maxZ);
-      const offsetX = px - closestX;
-      const offsetZ = pz - closestZ;
-      const distSq = offsetX * offsetX + offsetZ * offsetZ;
-      const radius = this.radius;
-
-      if (distSq >= radius * radius) continue;
-
-      if (distSq > 1e-8) {
-        const dist = Math.sqrt(distSq);
-        const push = (radius - dist) / dist;
-        if (axis === 'x') px += offsetX * push;
-        else pz += offsetZ * push;
-      } else if (axis === 'x') {
-        const left = Math.abs(px - box.minX);
-        const right = Math.abs(box.maxX - px);
-        px = left < right ? box.minX - radius : box.maxX + radius;
-      } else {
-        const near = Math.abs(pz - box.minZ);
-        const far = Math.abs(box.maxZ - pz);
-        pz = near < far ? box.minZ - radius : box.maxZ + radius;
-      }
-    }
-
-    return axis === 'x' ? px : pz;
   }
 
   syncCamera() {
@@ -229,8 +263,4 @@ export class PlayerController {
     this.camera.rotation.y = this.yaw;
     this.camera.rotation.x = this.pitch;
   }
-}
-
-function clamp(v, min, max) {
-  return Math.max(min, Math.min(max, v));
 }

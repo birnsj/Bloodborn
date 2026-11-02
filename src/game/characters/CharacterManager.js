@@ -12,6 +12,7 @@ export class CharacterManager {
     this.root.name = 'characters_root';
     this.textures = new Map();
     this.loader = new THREE.TextureLoader();
+    this.sheetCache = new Map();
   }
 
   async loadDefs(url = '/data/characters.json') {
@@ -34,16 +35,67 @@ export class CharacterManager {
       throw new Error(`Unknown characterId: ${instanceDef.characterId}`);
     }
 
-    const textures = {
-      idle: await this.loadTexture(def.sprites.idle),
-      hit: await this.loadTexture(def.sprites.hit),
-      dead: await this.loadTexture(def.sprites.dead),
-    };
-
-    const instance = new CharacterInstance(instanceDef, def, textures);
+    const frames = await this.loadCharacterFrames(def);
+    const instance = new CharacterInstance(instanceDef, def, frames);
     this.instances.set(instance.id, instance);
     this.root.add(instance.root);
     return instance;
+  }
+
+  async loadCharacterFrames(def) {
+    if (def.spritesheet) {
+      return this.loadSpritesheetFrames(def.spritesheet);
+    }
+
+    // Legacy Phase 2 single-image sprites.
+    const frames = {};
+    if (def.sprites?.idle) frames.idle_0 = await this.loadTexture(def.sprites.idle);
+    if (def.sprites?.hit) frames.hit_0 = await this.loadTexture(def.sprites.hit);
+    if (def.sprites?.dead) frames.dead_0 = await this.loadTexture(def.sprites.dead);
+    return frames;
+  }
+
+  async loadSpritesheetFrames(jsonUrl) {
+    if (this.sheetCache.has(jsonUrl)) {
+      return this.sheetCache.get(jsonUrl);
+    }
+
+    const response = await fetch(jsonUrl);
+    if (!response.ok) {
+      throw new Error(`Failed to load spritesheet JSON: ${jsonUrl}`);
+    }
+    const atlas = await response.json();
+    const imageName = atlas.meta?.image;
+    if (!imageName) throw new Error(`Spritesheet missing meta.image: ${jsonUrl}`);
+
+    const base = jsonUrl.slice(0, jsonUrl.lastIndexOf('/') + 1);
+    const imageUrl = base + imageName;
+    const sheetTexture = await this.loadTexture(imageUrl);
+
+    const frames = {};
+    const image = sheetTexture.image;
+    const sheetW = image.width;
+    const sheetH = image.height;
+
+    for (const [name, entry] of Object.entries(atlas.frames ?? {})) {
+      const { x, y, w, h } = entry.frame;
+      const tex = sheetTexture.clone();
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.wrapS = THREE.ClampToEdgeWrapping;
+      tex.wrapT = THREE.ClampToEdgeWrapping;
+      tex.repeat.set(w / sheetW, h / sheetH);
+      // Three.js UV origin is bottom-left; TexturePacker y is top-left.
+      tex.offset.set(x / sheetW, 1 - (y + h) / sheetH);
+      tex.needsUpdate = true;
+      // Frame pixel size (full sheet image.width is NOT the frame size).
+      tex.userData.frameWidth = w;
+      tex.userData.frameHeight = h;
+      frames[name] = tex;
+      this.textures.set(`${jsonUrl}::${name}`, tex);
+    }
+
+    this.sheetCache.set(jsonUrl, frames);
+    return frames;
   }
 
   loadTexture(url) {
@@ -81,9 +133,15 @@ export class CharacterManager {
     return instance.applyDamage(amount);
   }
 
-  update(dt) {
+  resetAll() {
     for (const instance of this.instances.values()) {
-      instance.update(dt);
+      instance.reset();
+    }
+  }
+
+  update(dt, context = {}) {
+    for (const instance of this.instances.values()) {
+      instance.update(dt, context);
     }
   }
 
@@ -97,5 +155,6 @@ export class CharacterManager {
       texture.dispose();
     }
     this.textures.clear();
+    this.sheetCache.clear();
   }
 }

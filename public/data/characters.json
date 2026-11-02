@@ -1,13 +1,24 @@
 {
-  "dummy_cultist": {
-    "id": "dummy_cultist",
+  "cultist_ranged": {
+    "id": "cultist_ranged",
     "maxHealth": 100,
-    "hitRadius": 0.45,
+    "hitRadius": 0.4,
     "height": 1.8,
-    "sprites": {
-      "idle": "/sprites/characters/dummy-idle.png",
-      "hit": "/sprites/characters/dummy-hit.png",
-      "dead": "/sprites/characters/dummy-dead.png"
+    "moveSpeed": 2.2,
+    "detectRange": 14,
+    "loseRange": 22,
+    "attackRange": 12,
+    "attackInterval": 1.1,
+    "attackDamage": 12,
+    "attackWindup": 0.25,
+    "requireLosToDetect": true,
+    "spritesheet": "/sprites/characters/cultist.json",
+    "animations": {
+      "idle": { "frames": ["idle_0", "idle_1"], "fps": 4 },
+      "walk": { "frames": ["walk_0", "walk_1"], "fps": 8 },
+      "attack": { "frames": ["attack_0", "attack_1"], "fps": 10, "loop": false },
+      "hit": { "frames": ["hit_0"], "fps": 8, "loop": false },
+      "death": { "frames": ["dead_0"], "fps": 1, "loop": false }
     }
   }
 }

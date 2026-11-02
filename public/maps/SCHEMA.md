@@ -1,4 +1,4 @@
-# BloodBound Level Schema (Phase 2)
+# BloodBound Level Schema (Phase 3)
 
 Portable, engine-independent level definitions. No Three.js or PixiJS types.
 
@@ -13,54 +13,47 @@ Portable, engine-independent level definitions. No Three.js or PixiJS types.
 
 | Field | Purpose |
 |-------|---------|
-| `schemaVersion` | Integer schema version (`2` for Phase 2) |
+| `schemaVersion` | Integer schema version (`3` for Phase 3) |
 | `id`, `name` | Level identity |
 | `coordinateSystem` | `"rightHandedYUp"` |
 | `units` | `"meters"` |
 | `rotationUnits` | `"radians"` |
-| `player` | Spawn, eye height, radius, speed, look sensitivity, optional `weaponId` |
+| `player` | Spawn, eye height, radius, speed, look sensitivity, `weaponId`, `maxHealth` |
 | `atmosphere` | Fog, ambient light, background color |
-| `materials` | Named material defs (albedo path, PBR params, tiling) |
+| `materials` | Named material defs |
 | `rooms` | Bounds + floor/ceiling material refs |
-| `walls` | Solid box segments (door openings = gaps between segments) |
+| `walls` | Solid box segments |
 | `doorways` | Metadata + optional wood frames |
-| `objects` | Placed instances resolved through the asset registry |
-| `characters` | Stationary character instances (Phase 2) |
-| `lights` | Point lights (position, color, intensity, distance, decay, castShadow) |
+| `objects` | Placed prop instances |
+| `characters` | Character / enemy instances |
+| `lights` | Point lights |
 
-## Objects
+## Player
 
-Each object instance:
+- `maxHealth` — starting / max hit points (Phase 3)
+- `weaponId` — key into `/data/weapons.json`
 
-- `id` — persistent unique instance ID
-- `assetId` — visual asset from `/assets/assets.json`
-- `position` — `[x, y, z]` meters (typically object origin at floor contact)
-- `rotation` — `[x, y, z]` radians (Euler XYZ)
-- `scale` — `[x, y, z]` visual scale
-- `collision` — gameplay collider, **independent of the visual asset**
-- `properties` — optional extensible bag
+On death, press **R** to restart the encounter (player + enemies reset).
 
-## Characters (Phase 2)
+## Characters
 
 Level instances in `characters[]`:
 
-- `id` — unique instance ID
-- `characterId` — definition key from `/data/characters.json`
-- `position` — `[x, y, z]` floor contact
-- `yaw` — optional facing hint (billboards still face the camera)
+- `id`, `characterId`, `position`, optional `yaw`
 
-Character definitions (`/data/characters.json`) hold `maxHealth`, `hitRadius`, `height`, and sprite paths (`idle` / `hit` / `dead`).
+Definitions in `/data/characters.json` may include AI fields:
 
-## Weapons (Phase 2)
+- `moveSpeed`, `detectRange`, `loseRange`
+- `attackRange`, `attackInterval`, `attackDamage`, `attackWindup`
+- `requireLosToDetect`
+- `spritesheet` + `animations` (`idle` / `walk` / `attack` / `hit` / `death`)
 
-Weapon definitions live in `/data/weapons.json` (damage, fireInterval, range, Pixi view/spritesheet refs).  
-The equipped weapon is selected via `player.weaponId`.
+Steering uses the same cylinder-vs-AABB collision as the player. No navmesh.
 
-Combat stats are portable; rendering libraries consume them at runtime only.
+## Weapons
+
+See `/data/weapons.json` for damage, fire rate, range, and Pixi view/spritesheet refs.
 
 ## Assets
 
-See `/assets/assets.json`. Types:
-
-- `primitive` — box / cylinder / pillar / beam
-- `glb` — external glTF/GLB file URL
+`/assets/assets.json` types: `primitive`, `glb`.

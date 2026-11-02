@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "gothic_test_level",
   "name": "Gothic Test Level",
-  "description": "Entrance chamber, connecting corridor, and main chamber with Phase 2 combat dummy.",
+  "description": "Entrance chamber, connecting corridor, and main chamber with Phase 3 ranged cultist encounter.",
   "coordinateSystem": "rightHandedYUp",
   "units": "meters",
   "rotationUnits": "radians",
@@ -14,7 +14,8 @@
     "radius": 0.35,
     "walkSpeed": 4.2,
     "lookSensitivity": 0.0022,
-    "weaponId": "pistol_placeholder"
+    "weaponId": "pistol_placeholder",
+    "maxHealth": 100
   },
   "atmosphere": {
     "fog": {
@@ -338,7 +339,7 @@
   "characters": [
     {
       "id": "dummy_main_01",
-      "characterId": "dummy_cultist",
+      "characterId": "cultist_ranged",
       "position": [0, 0, 19],
       "yaw": 3.14159
     }

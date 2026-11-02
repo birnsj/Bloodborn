@@ -175,4 +175,107 @@ writePng(path.join(charsDir, 'dummy-idle.png'), paintDummy('idle'));
 writePng(path.join(charsDir, 'dummy-hit.png'), paintDummy('hit'));
 writePng(path.join(charsDir, 'dummy-dead.png'), paintDummy('dead'));
 
+// --- Cultist spritesheet (Phase 3 animated enemy) ---
+const cultistFrames = [
+  { name: 'idle_0', pose: 'idle', shift: 0 },
+  { name: 'idle_1', pose: 'idle', shift: 2 },
+  { name: 'walk_0', pose: 'walk', shift: -4 },
+  { name: 'walk_1', pose: 'walk', shift: 4 },
+  { name: 'attack_0', pose: 'attack', shift: 0 },
+  { name: 'attack_1', pose: 'attack', shift: 0, flash: true },
+  { name: 'hit_0', pose: 'hit', shift: 0 },
+  { name: 'dead_0', pose: 'dead', shift: 0 },
+];
+
+const cfW = 96;
+const cfH = 144;
+const cultistSheet = createPng(cfW * cultistFrames.length, cfH, () => [0, 0, 0, 0]);
+
+function paintCultistFrame(png, ox, pose, shift, flash) {
+  const robe =
+    pose === 'dead' ? [40, 40, 48, 255] :
+    pose === 'hit' ? [160, 50, 50, 255] :
+    pose === 'attack' ? [90, 45, 110, 255] :
+    [70, 55, 90, 255];
+  const skin =
+    pose === 'dead' ? [90, 90, 90, 255] :
+    pose === 'hit' ? [220, 180, 160, 255] :
+    [190, 160, 140, 255];
+
+  const leg = pose === 'dead' ? 0 : 8;
+  fillRect(png, ox + 28 + shift, 55, 40, 70, robe);
+  fillRect(png, ox + 34 + shift, 20, 28, 34, skin);
+  fillRect(png, ox + 30 + shift, 14, 36, 14, robe);
+  if (pose !== 'dead') {
+    fillRect(png, ox + 40 + shift, 32, 6, 6, [20, 20, 30, 255]);
+    fillRect(png, ox + 52 + shift, 32, 6, 6, [20, 20, 30, 255]);
+  }
+  // Arms
+  if (pose === 'attack') {
+    fillRect(png, ox + 10 + shift, 60, 18, 14, robe);
+    fillRect(png, ox + 68 + shift, 58, 22, 12, robe);
+    fillRect(png, ox + 82 + shift, 54, 10, 8, [140, 140, 150, 255]);
+  } else {
+    fillRect(png, ox + 14 + shift, 62, 14, 40, robe);
+    fillRect(png, ox + 68 + shift, 62, 14, 40, robe);
+  }
+  // Legs / stance
+  fillRect(png, ox + 30 + shift - leg, 120, 14, 20, robe);
+  fillRect(png, ox + 52 + shift + leg, 120, 14, 20, robe);
+
+  if (pose === 'hit') {
+    fillRect(png, ox + 42 + shift, 80, 12, 18, [200, 30, 30, 220]);
+  }
+  if (flash) {
+    for (let y = 40; y < 70; y++) {
+      for (let x = 78; x < 95; x++) {
+        const dx = x - 88;
+        const dy = y - 55;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 10) {
+          const idx = (png.width * y + (ox + x)) << 2;
+          png.data[idx] = 255;
+          png.data[idx + 1] = 200;
+          png.data[idx + 2] = 80;
+          png.data[idx + 3] = Math.max(0, 200 - d * 12);
+        }
+      }
+    }
+  }
+}
+
+cultistFrames.forEach((frame, i) => {
+  paintCultistFrame(cultistSheet, i * cfW, frame.pose, frame.shift, frame.flash);
+});
+writePng(path.join(charsDir, 'cultist.png'), cultistSheet);
+
+const cultistAtlasFrames = {};
+cultistFrames.forEach((frame, i) => {
+  cultistAtlasFrames[frame.name] = {
+    frame: { x: i * cfW, y: 0, w: cfW, h: cfH },
+    rotated: false,
+    trimmed: false,
+    spriteSourceSize: { x: 0, y: 0, w: cfW, h: cfH },
+    sourceSize: { w: cfW, h: cfH },
+  };
+});
+fs.writeFileSync(
+  path.join(charsDir, 'cultist.json'),
+  JSON.stringify(
+    {
+      frames: cultistAtlasFrames,
+      meta: {
+        app: 'bloodbound-generate-combat-sprites',
+        version: '1.0',
+        image: 'cultist.png',
+        size: { w: cfW * cultistFrames.length, h: cfH },
+        scale: '1',
+      },
+    },
+    null,
+    2,
+  ),
+);
+console.log('Wrote', path.join(charsDir, 'cultist.json'));
+
 console.log('Combat sprite generation complete.');

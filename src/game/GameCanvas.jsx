@@ -11,6 +11,7 @@ import { WeaponView } from './overlay/WeaponView.js';
 import { loadWeapons, getWeapon } from './combat/weaponStats.js';
 import { CombatSystem } from './combat/CombatSystem.js';
 import { CharacterManager } from './characters/CharacterManager.js';
+import { EncounterController } from './encounter/EncounterController.js';
 
 /**
  * Owns Three.js + PixiJS renderers and the shared animation loop.
@@ -22,19 +23,22 @@ export default function GameCanvas({
   onLockChange,
   onError,
   onCombatEvent,
+  onHudEvent,
 }) {
   const mountRef = useRef(null);
   const onReadyRef = useRef(onReady);
   const onLockChangeRef = useRef(onLockChange);
   const onErrorRef = useRef(onError);
   const onCombatEventRef = useRef(onCombatEvent);
+  const onHudEventRef = useRef(onHudEvent);
 
   useEffect(() => {
     onReadyRef.current = onReady;
     onLockChangeRef.current = onLockChange;
     onErrorRef.current = onError;
     onCombatEventRef.current = onCombatEvent;
-  }, [onReady, onLockChange, onError, onCombatEvent]);
+    onHudEventRef.current = onHudEvent;
+  }, [onReady, onLockChange, onError, onCombatEvent, onHudEvent]);
 
   useEffect(() => {
     const mount = mountRef.current;
@@ -57,6 +61,9 @@ export default function GameCanvas({
     let weaponView;
     let combat;
     let characters;
+    let encounter;
+    let levelColliders = [];
+    let raycastMeshes = [];
 
     const clock = new THREE.Clock();
 
@@ -100,6 +107,8 @@ export default function GameCanvas({
         const level = buildLevel(map, materials, assets);
         levelRoot = level.root;
         ownedGeometries = level.ownedGeometries;
+        levelColliders = level.colliders;
+        raycastMeshes = level.raycastMeshes;
         scene.add(levelRoot);
 
         lights = createLights(map.lights);
@@ -124,23 +133,39 @@ export default function GameCanvas({
         weaponView.layout(mount.clientWidth, mount.clientHeight);
         if (disposed) return;
 
-        combat = new CombatSystem({
-          camera,
-          weaponDef,
-          worldMeshes: level.raycastMeshes,
-          characterManager: characters,
-          weaponView,
-          scene,
-        });
-        combat.onHitCharacter = (evt) => onCombatEventRef.current?.(evt);
-
         player = new PlayerController(
           camera,
           map.player,
-          level.colliders,
+          levelColliders,
           renderer.domElement,
         );
         player.setLockChangeCallback((locked) => onLockChangeRef.current?.(locked));
+
+        combat = new CombatSystem({
+          camera,
+          weaponDef,
+          worldMeshes: raycastMeshes,
+          characterManager: characters,
+          weaponView,
+          scene,
+          isPlayerAlive: () => !player.dead,
+        });
+        combat.onHitCharacter = (evt) => onCombatEventRef.current?.(evt);
+
+        encounter = new EncounterController({
+          player,
+          characters,
+          combat,
+          onHud: (evt) => onHudEventRef.current?.(evt),
+        });
+        encounter.bind();
+
+        onHudEventRef.current?.({
+          type: 'ready',
+          health: player.health,
+          maxHealth: player.maxHealth,
+        });
+
         player.attach();
 
         onResize = () => {
@@ -161,8 +186,17 @@ export default function GameCanvas({
           const delta = Math.min(clock.getDelta(), 0.05);
 
           player.update(delta);
-          combat.update(delta, player.isLocked && player.keys.fire);
-          characters.update(delta);
+          combat.update(delta, player.isLocked && player.keys.fire && !player.dead);
+
+          characters.update(delta, {
+            playerPosition: player.position,
+            playerAlive: !player.dead,
+            playerEyeHeight: player.eyeHeight,
+            worldMeshes: raycastMeshes,
+            colliders: levelColliders,
+            onEnemyAttack: (evt) => encounter.handleEnemyAttack(evt),
+          });
+
           weaponView.update(delta, {
             width: mount.clientWidth,
             height: mount.clientHeight,
