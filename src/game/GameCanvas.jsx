@@ -6,9 +6,14 @@ import { AssetRegistry } from './assetRegistry.js';
 import { buildLevel, disposeLevel } from './levelBuilder.js';
 import { applyAtmosphere, createLights, disposeLights } from './lighting.js';
 import { PlayerController } from './playerController.js';
+import { PixiOverlay } from './overlay/PixiOverlay.js';
+import { WeaponView } from './overlay/WeaponView.js';
+import { loadWeapons, getWeapon } from './combat/weaponStats.js';
+import { CombatSystem } from './combat/CombatSystem.js';
+import { CharacterManager } from './characters/CharacterManager.js';
 
 /**
- * Owns the Three.js renderer, scene graph, and animation loop.
+ * Owns Three.js + PixiJS renderers and the shared animation loop.
  */
 export default function GameCanvas({
   mapUrl,
@@ -16,17 +21,20 @@ export default function GameCanvas({
   onReady,
   onLockChange,
   onError,
+  onCombatEvent,
 }) {
   const mountRef = useRef(null);
   const onReadyRef = useRef(onReady);
   const onLockChangeRef = useRef(onLockChange);
   const onErrorRef = useRef(onError);
+  const onCombatEventRef = useRef(onCombatEvent);
 
   useEffect(() => {
     onReadyRef.current = onReady;
     onLockChangeRef.current = onLockChange;
     onErrorRef.current = onError;
-  }, [onReady, onLockChange, onError]);
+    onCombatEventRef.current = onCombatEvent;
+  }, [onReady, onLockChange, onError, onCombatEvent]);
 
   useEffect(() => {
     const mount = mountRef.current;
@@ -45,6 +53,10 @@ export default function GameCanvas({
     let lights = [];
     let ambient;
     let onResize;
+    let pixiOverlay;
+    let weaponView;
+    let combat;
+    let characters;
 
     const clock = new THREE.Clock();
 
@@ -62,6 +74,9 @@ export default function GameCanvas({
         renderer.toneMapping = THREE.ACESFilmicToneMapping;
         renderer.toneMappingExposure = 1.2;
         renderer.setClearColor(0x070605, 1);
+        renderer.domElement.style.position = 'absolute';
+        renderer.domElement.style.inset = '0';
+        renderer.domElement.style.zIndex = '0';
         mount.appendChild(renderer.domElement);
 
         scene = new THREE.Scene();
@@ -92,6 +107,33 @@ export default function GameCanvas({
           scene.add(light);
         }
 
+        characters = new CharacterManager();
+        await characters.loadDefs('/data/characters.json');
+        await characters.spawnFromLevel(map.characters ?? []);
+        scene.add(characters.root);
+        if (disposed) return;
+
+        pixiOverlay = new PixiOverlay();
+        await pixiOverlay.init(mount);
+        if (disposed) return;
+
+        const weapons = await loadWeapons('/data/weapons.json');
+        const weaponId = map.player.weaponId ?? 'pistol_placeholder';
+        const weaponDef = getWeapon(weapons, weaponId);
+        weaponView = await WeaponView.create(pixiOverlay.stage, weaponDef);
+        weaponView.layout(mount.clientWidth, mount.clientHeight);
+        if (disposed) return;
+
+        combat = new CombatSystem({
+          camera,
+          weaponDef,
+          worldMeshes: level.raycastMeshes,
+          characterManager: characters,
+          weaponView,
+          scene,
+        });
+        combat.onHitCharacter = (evt) => onCombatEventRef.current?.(evt);
+
         player = new PlayerController(
           camera,
           map.player,
@@ -108,6 +150,8 @@ export default function GameCanvas({
           camera.aspect = w / h;
           camera.updateProjectionMatrix();
           renderer.setSize(w, h);
+          pixiOverlay?.resize(w, h);
+          weaponView?.layout(w, h);
         };
         window.addEventListener('resize', onResize);
 
@@ -115,8 +159,17 @@ export default function GameCanvas({
           if (disposed) return;
           animationId = requestAnimationFrame(tick);
           const delta = Math.min(clock.getDelta(), 0.05);
+
           player.update(delta);
+          combat.update(delta, player.isLocked && player.keys.fire);
+          characters.update(delta);
+          weaponView.update(delta, {
+            width: mount.clientWidth,
+            height: mount.clientHeight,
+          });
+
           renderer.render(scene, camera);
+          pixiOverlay.render();
         };
 
         tick();
@@ -138,6 +191,14 @@ export default function GameCanvas({
       }
 
       player?.detach();
+      combat?.dispose();
+      weaponView?.destroy();
+      pixiOverlay?.destroy();
+
+      if (characters) {
+        scene?.remove(characters.root);
+        characters.dispose();
+      }
 
       if (levelRoot) {
         scene?.remove(levelRoot);

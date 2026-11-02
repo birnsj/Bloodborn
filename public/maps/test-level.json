@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "gothic_test_level",
   "name": "Gothic Test Level",
-  "description": "Entrance chamber, connecting corridor, and main chamber for Phase 1 navigation tests.",
+  "description": "Entrance chamber, connecting corridor, and main chamber with Phase 2 combat dummy.",
   "coordinateSystem": "rightHandedYUp",
   "units": "meters",
   "rotationUnits": "radians",
@@ -13,7 +13,8 @@
     "eyeHeight": 1.7,
     "radius": 0.35,
     "walkSpeed": 4.2,
-    "lookSensitivity": 0.0022
+    "lookSensitivity": 0.0022,
+    "weaponId": "pistol_placeholder"
   },
   "atmosphere": {
     "fog": {
@@ -332,6 +333,14 @@
       "rotation": [0, 0, 0],
       "scale": [9.4, 0.28, 0.35],
       "collision": { "enabled": false, "size": [9.4, 0.28, 0.35] }
+    }
+  ],
+  "characters": [
+    {
+      "id": "dummy_main_01",
+      "characterId": "dummy_cultist",
+      "position": [0, 0, 19],
+      "yaw": 3.14159
     }
   ],
   "lights": [

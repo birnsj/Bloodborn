@@ -55,4 +55,13 @@ function validateMap(map) {
   });
   map.lights.forEach((light) => track(light.id, 'light'));
   (map.doorways ?? []).forEach((door) => track(door.id, 'doorway'));
+  (map.characters ?? []).forEach((character) => {
+    track(character.id, 'character');
+    if (!character.characterId) {
+      throw new Error(`Character ${character.id} is missing characterId`);
+    }
+    if (!character.position) {
+      throw new Error(`Character ${character.id} is missing position`);
+    }
+  });
 }

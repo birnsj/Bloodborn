@@ -24,12 +24,15 @@ export class PlayerController {
       back: false,
       left: false,
       right: false,
+      fire: false,
     };
 
     this.isLocked = false;
     this._onKeyDown = this.onKeyDown.bind(this);
     this._onKeyUp = this.onKeyUp.bind(this);
     this._onMouseMove = this.onMouseMove.bind(this);
+    this._onMouseDown = this.onMouseDown.bind(this);
+    this._onMouseUp = this.onMouseUp.bind(this);
     this._onPointerLockChange = this.onPointerLockChange.bind(this);
     this._onClick = this.requestLock.bind(this);
 
@@ -49,6 +52,8 @@ export class PlayerController {
     document.addEventListener('keydown', this._onKeyDown);
     document.addEventListener('keyup', this._onKeyUp);
     document.addEventListener('mousemove', this._onMouseMove);
+    document.addEventListener('mousedown', this._onMouseDown);
+    document.addEventListener('mouseup', this._onMouseUp);
     document.addEventListener('pointerlockchange', this._onPointerLockChange);
     this.domElement.addEventListener('click', this._onClick);
   }
@@ -57,8 +62,11 @@ export class PlayerController {
     document.removeEventListener('keydown', this._onKeyDown);
     document.removeEventListener('keyup', this._onKeyUp);
     document.removeEventListener('mousemove', this._onMouseMove);
+    document.removeEventListener('mousedown', this._onMouseDown);
+    document.removeEventListener('mouseup', this._onMouseUp);
     document.removeEventListener('pointerlockchange', this._onPointerLockChange);
     this.domElement.removeEventListener('click', this._onClick);
+    this.keys.fire = false;
     if (document.pointerLockElement === this.domElement) {
       document.exitPointerLock();
     }
@@ -72,7 +80,23 @@ export class PlayerController {
 
   onPointerLockChange() {
     this.isLocked = document.pointerLockElement === this.domElement;
+    if (!this.isLocked) {
+      this.keys.fire = false;
+    }
     this.lockChangeCallback?.(this.isLocked);
+  }
+
+  onMouseDown(event) {
+    // Only fire when already locked so the lock-acquiring click does not shoot.
+    if (event.button === 0 && this.isLocked) {
+      this.keys.fire = true;
+    }
+  }
+
+  onMouseUp(event) {
+    if (event.button === 0) {
+      this.keys.fire = false;
+    }
   }
 
   onKeyDown(event) {

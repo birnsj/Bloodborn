@@ -8,9 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "generate-textures": "node scripts/generate-textures.mjs",
-    "generate-test-glb": "node scripts/generate-test-glb.mjs"
+    "generate-test-glb": "node scripts/generate-test-glb.mjs",
+    "generate-combat-sprites": "node scripts/generate-combat-sprites.mjs"
   },
   "dependencies": {
+    "pixi.js": "^8.22.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.172.0"

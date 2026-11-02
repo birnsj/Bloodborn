@@ -1,0 +1,13 @@
+{
+  "dummy_cultist": {
+    "id": "dummy_cultist",
+    "maxHealth": 100,
+    "hitRadius": 0.45,
+    "height": 1.8,
+    "sprites": {
+      "idle": "/sprites/characters/dummy-idle.png",
+      "hit": "/sprites/characters/dummy-hit.png",
+      "dead": "/sprites/characters/dummy-dead.png"
+    }
+  }
+}

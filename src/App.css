@@ -14,7 +14,14 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.game-canvas canvas:not(.pixi-overlay) {
   cursor: crosshair;
+}
+
+.game-canvas canvas.pixi-overlay {
+  pointer-events: none;
 }
 
 .hud {

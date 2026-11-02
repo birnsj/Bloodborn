@@ -9,6 +9,7 @@ export function buildLevel(map, materials, assetRegistry) {
   root.name = 'level_root';
   const colliders = [];
   const ownedGeometries = [];
+  const raycastMeshes = [];
 
   for (const room of map.rooms) {
     const { min, max } = room.bounds;
@@ -26,6 +27,7 @@ export function buildLevel(map, materials, assetRegistry) {
       ownedGeometries,
     });
     root.add(floor);
+    raycastMeshes.push(floor);
 
     const ceiling = createBoxMesh({
       id: room.ceiling.id,
@@ -36,6 +38,7 @@ export function buildLevel(map, materials, assetRegistry) {
       ownedGeometries,
     });
     root.add(ceiling);
+    raycastMeshes.push(ceiling);
   }
 
   for (const wall of map.walls) {
@@ -53,6 +56,7 @@ export function buildLevel(map, materials, assetRegistry) {
       ownedGeometries,
     });
     root.add(mesh);
+    raycastMeshes.push(mesh);
 
     if (wall.collision?.enabled !== false) {
       colliders.push(createCollider(wall.id, wall.position, wall.size, rotY));
@@ -61,7 +65,11 @@ export function buildLevel(map, materials, assetRegistry) {
 
   for (const door of map.doorways ?? []) {
     if (!door.frame) continue;
-    root.add(buildDoorFrame(door, materials, ownedGeometries));
+    const frame = buildDoorFrame(door, materials, ownedGeometries);
+    root.add(frame);
+    frame.traverse((child) => {
+      if (child.isMesh) raycastMeshes.push(child);
+    });
   }
 
   for (const obj of map.objects) {
@@ -85,10 +93,13 @@ export function buildLevel(map, materials, assetRegistry) {
         obj.position[2] + offset[2],
       ];
       colliders.push(createCollider(obj.id, center, size, ry));
+      visual.traverse((child) => {
+        if (child.isMesh) raycastMeshes.push(child);
+      });
     }
   }
 
-  return { root, colliders, ownedGeometries };
+  return { root, colliders, ownedGeometries, raycastMeshes };
 }
 
 function buildDoorFrame(door, materials, ownedGeometries) {

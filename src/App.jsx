@@ -10,7 +10,7 @@ export default function App() {
     setLocked(isLocked);
     setStatus(
       isLocked
-        ? 'WASD move · Mouse look · Esc release'
+        ? 'WASD move · Mouse look · LMB fire · Esc release'
         : 'Click the viewport to capture the mouse.',
     );
   }, []);
@@ -23,12 +23,21 @@ export default function App() {
     setStatus(`Error: ${message}`);
   }, []);
 
+  const handleCombatEvent = useCallback((evt) => {
+    if (!evt) return;
+    if (evt.dead) {
+      setStatus(`Target down (${evt.characterId})`);
+    } else {
+      setStatus(`Hit ${evt.characterId} for ${evt.damage} · HP ${evt.remaining}`);
+    }
+  }, []);
+
   return (
     <div className="app">
       <header className="hud">
         <div className="brand">
           <span className="title">BloodBound</span>
-          <span className="subtitle">Phase 1 — Gothic Test Level</span>
+          <span className="subtitle">Phase 2 — Hybrid Combat Foundation</span>
         </div>
         <div className={`status ${locked ? 'locked' : ''}`}>{status}</div>
       </header>
@@ -39,6 +48,7 @@ export default function App() {
         onReady={handleReady}
         onLockChange={handleLockChange}
         onError={handleError}
+        onCombatEvent={handleCombatEvent}
       />
 
       <div className={`crosshair ${locked ? '' : 'hint'}`} aria-hidden="true">

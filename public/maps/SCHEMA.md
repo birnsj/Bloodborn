@@ -1,6 +1,6 @@
-# BloodBound Level Schema (Phase 1)
+# BloodBound Level Schema (Phase 2)
 
-Portable, engine-independent level definitions. No Three.js types or class names.
+Portable, engine-independent level definitions. No Three.js or PixiJS types.
 
 ## Coordinate system
 
@@ -13,19 +13,20 @@ Portable, engine-independent level definitions. No Three.js types or class names
 
 | Field | Purpose |
 |-------|---------|
-| `schemaVersion` | Integer schema version |
+| `schemaVersion` | Integer schema version (`2` for Phase 2) |
 | `id`, `name` | Level identity |
 | `coordinateSystem` | `"rightHandedYUp"` |
 | `units` | `"meters"` |
 | `rotationUnits` | `"radians"` |
-| `player` | Spawn, eye height, radius, speed, look sensitivity |
+| `player` | Spawn, eye height, radius, speed, look sensitivity, optional `weaponId` |
 | `atmosphere` | Fog, ambient light, background color |
 | `materials` | Named material defs (albedo path, PBR params, tiling) |
 | `rooms` | Bounds + floor/ceiling material refs |
 | `walls` | Solid box segments (door openings = gaps between segments) |
 | `doorways` | Metadata + optional wood frames |
 | `objects` | Placed instances resolved through the asset registry |
-| `lights` | Point lights (position, color, intensity, distance, decay, castShadow). Intensity is a portable scalar; the Three.js runtime interprets point intensity in physically based candela-scale units (typical torch values ~35–90). |
+| `characters` | Stationary character instances (Phase 2) |
+| `lights` | Point lights (position, color, intensity, distance, decay, castShadow) |
 
 ## Objects
 
@@ -37,12 +38,25 @@ Each object instance:
 - `rotation` — `[x, y, z]` radians (Euler XYZ)
 - `scale` — `[x, y, z]` visual scale
 - `collision` — gameplay collider, **independent of the visual asset**
-  - `enabled` — boolean
-  - `size` — `[x, y, z]` box extents in meters
-  - `offset` — optional center offset from `position` (default: lift by half height)
 - `properties` — optional extensible bag
 
-Swapping `assetId` (primitive ↔ GLB) must not change `id`, transform, or `collision`.
+## Characters (Phase 2)
+
+Level instances in `characters[]`:
+
+- `id` — unique instance ID
+- `characterId` — definition key from `/data/characters.json`
+- `position` — `[x, y, z]` floor contact
+- `yaw` — optional facing hint (billboards still face the camera)
+
+Character definitions (`/data/characters.json`) hold `maxHealth`, `hitRadius`, `height`, and sprite paths (`idle` / `hit` / `dead`).
+
+## Weapons (Phase 2)
+
+Weapon definitions live in `/data/weapons.json` (damage, fireInterval, range, Pixi view/spritesheet refs).  
+The equipped weapon is selected via `player.weaponId`.
+
+Combat stats are portable; rendering libraries consume them at runtime only.
 
 ## Assets
 
