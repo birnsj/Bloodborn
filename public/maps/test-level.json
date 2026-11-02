@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "id": "gothic_test_level",
+  "name": "Gothic Test Level",
+  "description": "Entrance chamber, connecting corridor, and main chamber for Phase 1 navigation tests.",
+  "coordinateSystem": "rightHandedYUp",
+  "units": "meters",
+  "rotationUnits": "radians",
+  "player": {
+    "id": "player_spawn",
+    "spawnPosition": [0, 0, 2],
+    "spawnYaw": 3.14159,
+    "eyeHeight": 1.7,
+    "radius": 0.35,
+    "walkSpeed": 4.2,
+    "lookSensitivity": 0.0022
+  },
+  "atmosphere": {
+    "fog": {
+      "enabled": true,
+      "color": "#0a0807",
+      "near": 2,
+      "far": 28
+    },
+    "ambient": {
+      "color": "#2a2218",
+      "intensity": 0.55
+    },
+    "background": "#070605"
+  },
+  "materials": {
+    "stone_floor": {
+      "id": "stone_floor",
+      "albedo": "/textures/stone-floor.png",
+      "color": "#c8b8a0",
+      "repeatPerMeter": [0.5, 0.5],
+      "roughness": 0.92,
+      "metalness": 0.02
+    },
+    "stone_wall": {
+      "id": "stone_wall",
+      "albedo": "/textures/stone-wall.png",
+      "color": "#b5a48c",
+      "repeatPerMeter": [0.4, 0.4],
+      "roughness": 0.95,
+      "metalness": 0.0
+    },
+    "ceiling": {
+      "id": "ceiling",
+      "albedo": "/textures/ceiling.png",
+      "color": "#9a9084",
+      "repeatPerMeter": [0.35, 0.35],
+      "roughness": 0.97,
+      "metalness": 0.0
+    },
+    "wood": {
+      "id": "wood",
+      "albedo": "/textures/wood.png",
+      "color": "#c49a6c",
+      "repeatPerMeter": [0.6, 0.6],
+      "roughness": 0.85,
+      "metalness": 0.0
+    },
+    "pillar_stone": {
+      "id": "pillar_stone",
+      "albedo": "/textures/pillar.png",
+      "color": "#d0c4b0",
+      "repeatPerMeter": [0.7, 0.35],
+      "roughness": 0.9,
+      "metalness": 0.05
+    }
+  },
+  "rooms": [
+    {
+      "id": "room_entrance",
+      "name": "Entrance Chamber",
+      "bounds": { "min": [-4, 0, 0], "max": [4, 4, 8] },
+      "floor": { "id": "floor_entrance", "material": "stone_floor" },
+      "ceiling": { "id": "ceiling_entrance", "material": "ceiling" }
+    },
+    {
+      "id": "room_hallway",
+      "name": "Connecting Corridor",
+      "bounds": { "min": [-1.5, 0, 8], "max": [1.5, 3.5, 14] },
+      "floor": { "id": "floor_hallway", "material": "stone_floor" },
+      "ceiling": { "id": "ceiling_hallway", "material": "ceiling" }
+    },
+    {
+      "id": "room_main",
+      "name": "Main Chamber",
+      "bounds": { "min": [-5, 0, 14], "max": [5, 4.5, 24] },
+      "floor": { "id": "floor_main", "material": "stone_floor" },
+      "ceiling": { "id": "ceiling_main", "material": "ceiling" }
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_entrance_south",
+      "material": "stone_wall",
+      "position": [0, 2, 0],
+      "size": [8.6, 4, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_entrance_west",
+      "material": "stone_wall",
+      "position": [-4, 2, 4],
+      "size": [0.4, 4, 8.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_entrance_east",
+      "material": "stone_wall",
+      "position": [4, 2, 4],
+      "size": [0.4, 4, 8.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_entrance_north_left",
+      "material": "stone_wall",
+      "position": [-2.7, 2, 8],
+      "size": [2.6, 4, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_entrance_north_right",
+      "material": "stone_wall",
+      "position": [2.7, 2, 8],
+      "size": [2.6, 4, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_entrance_north_lintel",
+      "material": "stone_wall",
+      "position": [0, 3.4, 8],
+      "size": [2.8, 1.2, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_hall_west",
+      "material": "stone_wall",
+      "position": [-1.5, 1.75, 11],
+      "size": [0.35, 3.5, 6.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_hall_east",
+      "material": "stone_wall",
+      "position": [1.5, 1.75, 11],
+      "size": [0.35, 3.5, 6.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_main_south_left",
+      "material": "stone_wall",
+      "position": [-3.35, 2.25, 14],
+      "size": [3.5, 4.5, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_main_south_right",
+      "material": "stone_wall",
+      "position": [3.35, 2.25, 14],
+      "size": [3.5, 4.5, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_main_south_lintel",
+      "material": "stone_wall",
+      "position": [0, 3.85, 14],
+      "size": [3.2, 1.3, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_main_west",
+      "material": "stone_wall",
+      "position": [-5, 2.25, 19],
+      "size": [0.4, 4.5, 10.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_main_east",
+      "material": "stone_wall",
+      "position": [5, 2.25, 19],
+      "size": [0.4, 4.5, 10.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    },
+    {
+      "id": "wall_main_north",
+      "material": "stone_wall",
+      "position": [0, 2.25, 24],
+      "size": [10.4, 4.5, 0.4],
+      "rotation": [0, 0, 0],
+      "collision": { "enabled": true }
+    }
+  ],
+  "doorways": [
+    {
+      "id": "door_entrance_to_hall",
+      "fromRoom": "room_entrance",
+      "toRoom": "room_hallway",
+      "center": [0, 1.4, 8],
+      "size": [2.2, 2.8, 0.5],
+      "frame": {
+        "id": "frame_entrance_to_hall",
+        "material": "wood",
+        "thickness": 0.12
+      }
+    },
+    {
+      "id": "door_hall_to_main",
+      "fromRoom": "room_hallway",
+      "toRoom": "room_main",
+      "center": [0, 1.4, 14],
+      "size": [2.4, 2.8, 0.5],
+      "frame": {
+        "id": "frame_hall_to_main",
+        "material": "wood",
+        "thickness": 0.12
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "pillar_nw",
+      "assetId": "pillar_stone_primitive",
+      "position": [-2.5, 0, 17],
+      "rotation": [0, 0, 0],
+      "scale": [0.7, 4.5, 0.7],
+      "collision": { "enabled": true, "size": [0.7, 4.5, 0.7] }
+    },
+    {
+      "id": "pillar_ne",
+      "assetId": "pillar_stone_primitive",
+      "position": [2.5, 0, 17],
+      "rotation": [0, 0, 0],
+      "scale": [0.7, 4.5, 0.7],
+      "collision": { "enabled": true, "size": [0.7, 4.5, 0.7] }
+    },
+    {
+      "id": "pillar_sw",
+      "assetId": "pillar_stone_primitive",
+      "position": [-2.5, 0, 21],
+      "rotation": [0, 0, 0],
+      "scale": [0.7, 4.5, 0.7],
+      "collision": { "enabled": true, "size": [0.7, 4.5, 0.7] }
+    },
+    {
+      "id": "pillar_se",
+      "assetId": "pillar_stone_primitive",
+      "position": [2.5, 0, 21],
+      "rotation": [0, 0, 0],
+      "scale": [0.7, 4.5, 0.7],
+      "collision": { "enabled": true, "size": [0.7, 4.5, 0.7] }
+    },
+    {
+      "id": "crate_entrance_a",
+      "assetId": "crate_wood_primitive",
+      "position": [-2.8, 0, 1.4],
+      "rotation": [0, 0.2, 0],
+      "scale": [0.9, 0.9, 0.9],
+      "collision": { "enabled": true, "size": [0.9, 0.9, 0.9] }
+    },
+    {
+      "id": "crate_entrance_b",
+      "assetId": "crate_wood_primitive",
+      "position": [-2.8, 0.9, 1.4],
+      "rotation": [0, -0.35, 0],
+      "scale": [0.7, 0.7, 0.7],
+      "collision": { "enabled": true, "size": [0.7, 0.7, 0.7] }
+    },
+    {
+      "id": "crate_entrance_c",
+      "assetId": "crate_wood_glb",
+      "position": [3.0, 0, 6.2],
+      "rotation": [0, 0.5, 0],
+      "scale": [1.0, 0.8, 0.8],
+      "collision": { "enabled": true, "size": [1.0, 0.8, 0.8] },
+      "properties": {
+        "note": "Uses GLB visual; collision stays instance-defined"
+      }
+    },
+    {
+      "id": "crate_main_a",
+      "assetId": "crate_wood_primitive",
+      "position": [-4.0, 0, 22.5],
+      "rotation": [0, 0.1, 0],
+      "scale": [1.1, 1.0, 0.9],
+      "collision": { "enabled": true, "size": [1.1, 1.0, 0.9] }
+    },
+    {
+      "id": "crate_main_b",
+      "assetId": "crate_wood_primitive",
+      "position": [3.8, 0, 15.8],
+      "rotation": [0, -0.4, 0],
+      "scale": [0.85, 0.85, 0.85],
+      "collision": { "enabled": true, "size": [0.85, 0.85, 0.85] }
+    },
+    {
+      "id": "crate_main_c",
+      "assetId": "crate_wood_primitive",
+      "position": [3.8, 0.85, 15.8],
+      "rotation": [0, 0.6, 0],
+      "scale": [0.6, 0.6, 0.6],
+      "collision": { "enabled": true, "size": [0.6, 0.6, 0.6] }
+    },
+    {
+      "id": "beam_entrance",
+      "assetId": "beam_wood_primitive",
+      "position": [0, 3.6, 4],
+      "rotation": [0, 0, 0],
+      "scale": [7.6, 0.25, 0.35],
+      "collision": { "enabled": false, "size": [7.6, 0.25, 0.35] }
+    },
+    {
+      "id": "beam_main",
+      "assetId": "beam_wood_primitive",
+      "position": [0, 4.1, 19],
+      "rotation": [0, 0, 0],
+      "scale": [9.4, 0.28, 0.35],
+      "collision": { "enabled": false, "size": [9.4, 0.28, 0.35] }
+    }
+  ],
+  "lights": [
+    {
+      "id": "torch_entrance_left",
+      "type": "point",
+      "position": [-3.2, 2.4, 3],
+      "color": "#ff9a4a",
+      "intensity": 55,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": true
+    },
+    {
+      "id": "torch_entrance_right",
+      "type": "point",
+      "position": [3.2, 2.4, 5.5],
+      "color": "#ffb06a",
+      "intensity": 45,
+      "distance": 11,
+      "decay": 2,
+      "castShadow": true
+    },
+    {
+      "id": "torch_hall",
+      "type": "point",
+      "position": [0, 2.6, 11],
+      "color": "#ff8f3d",
+      "intensity": 35,
+      "distance": 9,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "torch_main_center",
+      "type": "point",
+      "position": [0, 3.2, 19],
+      "color": "#ffb45c",
+      "intensity": 90,
+      "distance": 16,
+      "decay": 2,
+      "castShadow": true
+    },
+    {
+      "id": "torch_main_nw",
+      "type": "point",
+      "position": [-4.2, 2.6, 16],
+      "color": "#ff9440",
+      "intensity": 40,
+      "distance": 10,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "torch_main_se",
+      "type": "point",
+      "position": [4.2, 2.6, 22],
+      "color": "#ffaa55",
+      "intensity": 40,
+      "distance": 10,
+      "decay": 2,
+      "castShadow": false
+    }
+  ]
+}

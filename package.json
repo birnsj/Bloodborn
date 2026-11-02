@@ -1,0 +1,23 @@
+{
+  "name": "bloodbound-proto",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-textures": "node scripts/generate-textures.mjs",
+    "generate-test-glb": "node scripts/generate-test-glb.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "pngjs": "^7.0.0",
+    "vite": "^6.0.7"
+  }
+}

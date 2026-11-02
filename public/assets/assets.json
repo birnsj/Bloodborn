@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "assets": {
+    "crate_wood_primitive": {
+      "id": "crate_wood_primitive",
+      "type": "primitive",
+      "primitive": "box",
+      "material": "wood",
+      "description": "Placeholder wooden crate"
+    },
+    "crate_wood_glb": {
+      "id": "crate_wood_glb",
+      "type": "glb",
+      "url": "/models/crate-test.glb",
+      "description": "GLB swap target for crate_wood_primitive"
+    },
+    "pillar_stone_primitive": {
+      "id": "pillar_stone_primitive",
+      "type": "primitive",
+      "primitive": "pillar",
+      "material": "pillar_stone",
+      "description": "Placeholder stone pillar"
+    },
+    "beam_wood_primitive": {
+      "id": "beam_wood_primitive",
+      "type": "primitive",
+      "primitive": "beam",
+      "material": "wood",
+      "description": "Placeholder wooden beam"
+    }
+  }
+}
