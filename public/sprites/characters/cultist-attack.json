@@ -1,0 +1,33 @@
+{
+  "image": "cultist-attack.png",
+  "cellWidth": 256,
+  "cellHeight": 512,
+  "columns": 8,
+  "rows": 4,
+  "anchor": [
+    0.5,
+    0
+  ],
+  "animations": {
+    "attack_front": {
+      "start": 0,
+      "count": 4
+    },
+    "attack_frontSide": {
+      "start": 4,
+      "count": 4
+    },
+    "attack_side": {
+      "start": 8,
+      "count": 4
+    },
+    "attack_backSide": {
+      "start": 12,
+      "count": 4
+    },
+    "attack_back": {
+      "start": 16,
+      "count": 4
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "image": "cultist-walk.png",
+  "cellWidth": 256,
+  "cellHeight": 512,
+  "columns": 8,
+  "rows": 4,
+  "anchor": [
+    0.5,
+    0
+  ],
+  "animations": {
+    "walk_front": {
+      "start": 0,
+      "count": 6
+    },
+    "walk_frontSide": {
+      "start": 6,
+      "count": 6
+    },
+    "walk_side": {
+      "start": 12,
+      "count": 6
+    },
+    "walk_backSide": {
+      "start": 18,
+      "count": 6
+    },
+    "walk_back": {
+      "start": 24,
+      "count": 6
+    }
+  }
+}

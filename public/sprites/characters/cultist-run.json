@@ -1,0 +1,33 @@
+{
+  "image": "cultist-run.png",
+  "cellWidth": 256,
+  "cellHeight": 512,
+  "columns": 8,
+  "rows": 4,
+  "anchor": [
+    0.5,
+    0
+  ],
+  "animations": {
+    "run_front": {
+      "start": 0,
+      "count": 6
+    },
+    "run_frontSide": {
+      "start": 6,
+      "count": 6
+    },
+    "run_side": {
+      "start": 12,
+      "count": 6
+    },
+    "run_backSide": {
+      "start": 18,
+      "count": 6
+    },
+    "run_back": {
+      "start": 24,
+      "count": 6
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "image": "pistol-fp-a.png",
+  "cellWidth": 512,
+  "cellHeight": 512,
+  "columns": 4,
+  "rows": 4,
+  "anchor": [
+    0.72,
+    0.94
+  ],
+  "animations": {
+    "idle": {
+      "start": 0,
+      "count": 4
+    },
+    "walk": {
+      "start": 4,
+      "count": 4
+    },
+    "fire": {
+      "start": 8,
+      "count": 4
+    },
+    "recoil": {
+      "start": 12,
+      "count": 4
+    }
+  },
+  "frameNames": {
+    "0": "idle_0",
+    "1": "idle_1",
+    "2": "idle_2",
+    "3": "idle_3",
+    "4": "walk_0",
+    "5": "walk_1",
+    "6": "walk_2",
+    "7": "walk_3",
+    "8": "fire_0",
+    "9": "fire_1",
+    "10": "fire_2",
+    "11": "fire_3",
+    "12": "recoil_0",
+    "13": "recoil_1",
+    "14": "recoil_2",
+    "15": "recoil_3"
+  }
+}

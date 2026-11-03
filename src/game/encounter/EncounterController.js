@@ -2,11 +2,12 @@
  * Tracks encounter lifecycle: player damage feedback hooks and full reset.
  */
 export class EncounterController {
-  constructor({ player, characters, combat, onHud }) {
+  constructor({ player, characters, combat, onHud, weaponView }) {
     this.player = player;
     this.characters = characters;
     this.combat = combat;
     this.onHud = onHud;
+    this.weaponView = weaponView;
   }
 
   bind() {
@@ -31,6 +32,7 @@ export class EncounterController {
     if (this.combat) {
       this.combat.cooldown = 0;
     }
+    this.weaponView?.playEquip?.();
     this.onHud?.({
       type: 'restart',
       health: this.player.health,

@@ -5,20 +5,24 @@
     "fireInterval": 0.28,
     "range": 40,
     "view": {
-      "spritesheet": "/sprites/weapons/pistol.json",
-      "anchor": [0.72, 0.92],
-      "screenOffset": [0.18, 0.22],
-      "baseScale": 0.55,
-      "refHeight": 900,
-      "idleFrames": ["idle_0", "idle_1"],
-      "fireFrames": ["fire_0", "fire_1", "fire_2"],
-      "frameRate": 12,
-      "recoilPixels": 14,
-      "recoilRecover": 10,
-      "muzzleFlash": {
-        "frame": "muzzle_0",
-        "duration": 0.05,
-        "offset": [-48, -110]
+      "mode": "viewmodel3d",
+      "bobAmplitude": 6,
+      "bobSpeed": 10,
+      "swayAmplitude": 2,
+      "swaySpeed": 1.5,
+      "reloadEvery": 8,
+      "pose": {
+        "position": [
+          0.055,
+          -0.19,
+          -0.45
+        ],
+        "rotation": [
+          0.17,
+          0.1,
+          0.05
+        ],
+        "scale": 1
       }
     }
   }

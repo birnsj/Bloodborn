@@ -6,12 +6,15 @@ import { AssetRegistry } from './assetRegistry.js';
 import { buildLevel, disposeLevel } from './levelBuilder.js';
 import { applyAtmosphere, createLights, disposeLights } from './lighting.js';
 import { PlayerController } from './playerController.js';
-import { PixiOverlay } from './overlay/PixiOverlay.js';
-import { WeaponView } from './overlay/WeaponView.js';
+import { WeaponViewModel } from './overlay/WeaponViewModel.js';
+import { WeaponPoseTune } from './overlay/WeaponPoseTune.js';
 import { loadWeapons, getWeapon } from './combat/weaponStats.js';
 import { CombatSystem } from './combat/CombatSystem.js';
 import { CharacterManager } from './characters/CharacterManager.js';
 import { EncounterController } from './encounter/EncounterController.js';
+import { AudioBus } from './audio/AudioBus.js';
+import { AnimPreview } from './debug/AnimPreview.js';
+import { PhysicsWorld } from './physics/PhysicsWorld.js';
 
 /**
  * Owns Three.js + PixiJS renderers and the shared animation loop.
@@ -24,6 +27,7 @@ export default function GameCanvas({
   onError,
   onCombatEvent,
   onHudEvent,
+  onWeaponReady,
 }) {
   const mountRef = useRef(null);
   const onReadyRef = useRef(onReady);
@@ -31,6 +35,7 @@ export default function GameCanvas({
   const onErrorRef = useRef(onError);
   const onCombatEventRef = useRef(onCombatEvent);
   const onHudEventRef = useRef(onHudEvent);
+  const onWeaponReadyRef = useRef(onWeaponReady);
 
   useEffect(() => {
     onReadyRef.current = onReady;
@@ -38,7 +43,8 @@ export default function GameCanvas({
     onErrorRef.current = onError;
     onCombatEventRef.current = onCombatEvent;
     onHudEventRef.current = onHudEvent;
-  }, [onReady, onLockChange, onError, onCombatEvent, onHudEvent]);
+    onWeaponReadyRef.current = onWeaponReady;
+  }, [onReady, onLockChange, onError, onCombatEvent, onHudEvent, onWeaponReady]);
 
   useEffect(() => {
     const mount = mountRef.current;
@@ -57,11 +63,14 @@ export default function GameCanvas({
     let lights = [];
     let ambient;
     let onResize;
-    let pixiOverlay;
     let weaponView;
+    let weaponPoseTune;
     let combat;
     let characters;
     let encounter;
+    let audioBus;
+    let animPreview;
+    let physics;
     let levelColliders = [];
     let raycastMeshes = [];
 
@@ -93,6 +102,8 @@ export default function GameCanvas({
           0.08,
           80,
         );
+        // Camera must be in the scene graph so viewmodel children render.
+        scene.add(camera);
 
         ambient = applyAtmosphere(scene, map.atmosphere);
 
@@ -116,22 +127,24 @@ export default function GameCanvas({
           scene.add(light);
         }
 
-        characters = new CharacterManager();
+        audioBus = new AudioBus();
+
+        physics = await PhysicsWorld.create();
+        if (disposed) {
+          physics.dispose();
+          return;
+        }
+        physics.addLevelColliders(levelColliders);
+
+        characters = new CharacterManager({ audioBus, physics, scene });
         await characters.loadDefs('/data/characters.json');
         await characters.spawnFromLevel(map.characters ?? []);
         scene.add(characters.root);
         if (disposed) return;
 
-        pixiOverlay = new PixiOverlay();
-        await pixiOverlay.init(mount);
-        if (disposed) return;
-
         const weapons = await loadWeapons('/data/weapons.json');
         const weaponId = map.player.weaponId ?? 'pistol_placeholder';
         const weaponDef = getWeapon(weapons, weaponId);
-        weaponView = await WeaponView.create(pixiOverlay.stage, weaponDef);
-        weaponView.layout(mount.clientWidth, mount.clientHeight);
-        if (disposed) return;
 
         player = new PlayerController(
           camera,
@@ -139,7 +152,26 @@ export default function GameCanvas({
           levelColliders,
           renderer.domElement,
         );
-        player.setLockChangeCallback((locked) => onLockChangeRef.current?.(locked));
+
+        weaponView = await WeaponViewModel.create(camera, weaponDef);
+        weaponView.setEventHandler((evt) => {
+          if (evt?.name) audioBus?.play?.(evt.name);
+        });
+        weaponPoseTune = new WeaponPoseTune(weaponView, {
+          weaponId,
+          onStatus: (evt) => onHudEventRef.current?.(evt),
+        });
+        weaponPoseTune.attach();
+        onWeaponReadyRef.current?.({ weaponView, weaponId });
+        onHudEventRef.current?.({
+          type: 'preview',
+          message: 'pose panel + numpad · Esc frees mouse · Save writes weapons.json',
+        });
+        if (disposed) return;
+        player.setLockChangeCallback((locked) => {
+          if (locked) audioBus?.unlock?.();
+          onLockChangeRef.current?.(locked);
+        });
 
         combat = new CombatSystem({
           camera,
@@ -156,9 +188,27 @@ export default function GameCanvas({
           player,
           characters,
           combat,
+          weaponView,
           onHud: (evt) => onHudEventRef.current?.(evt),
         });
         encounter.bind();
+
+        animPreview = new AnimPreview({
+          characters,
+          weaponView,
+          onStatus: (evt) => onHudEventRef.current?.(evt),
+        });
+        animPreview.attach();
+
+        // Preview-only: R reloads weapon while alive (no ammo system).
+        const onPreviewReload = (event) => {
+          if (!animPreview?.enabled) return;
+          if (event.code !== 'KeyR' || player?.dead) return;
+          weaponView?.playReload();
+          onHudEventRef.current?.({ type: 'preview', message: 'weapon → reload' });
+        };
+        window.addEventListener('keydown', onPreviewReload);
+        animPreview._reloadHandler = onPreviewReload;
 
         onHudEventRef.current?.({
           type: 'ready',
@@ -175,8 +225,6 @@ export default function GameCanvas({
           camera.aspect = w / h;
           camera.updateProjectionMatrix();
           renderer.setSize(w, h);
-          pixiOverlay?.resize(w, h);
-          weaponView?.layout(w, h);
         };
         window.addEventListener('resize', onResize);
 
@@ -194,16 +242,68 @@ export default function GameCanvas({
             playerEyeHeight: player.eyeHeight,
             worldMeshes: raycastMeshes,
             colliders: levelColliders,
+            camera,
             onEnemyAttack: (evt) => encounter.handleEnemyAttack(evt),
           });
 
-          weaponView.update(delta, {
-            width: mount.clientWidth,
-            height: mount.clientHeight,
-          });
+          physics?.step(delta);
+
+          // Live anim probe for AI debugging (window.__bbAnim).
+          if (window.__bbAnimProbe) {
+            const log = (window.__bbAnim ??= []);
+            for (const ch of characters.instances.values()) {
+              const a = ch.animator?.player;
+              const snap = {
+                t: performance.now(),
+                id: ch.id,
+                state: ch.brain?.state,
+                clip: a?.current,
+                dir: a?.direction,
+                mirror: a?.mirror,
+                strafing: !!ch.brain?._strafing,
+                inBand: !!ch.brain?._inBand,
+                loco: ch.brain?._locoClip,
+              };
+              const prev = log[log.length - 1];
+              if (
+                !prev ||
+                prev.clip !== snap.clip ||
+                prev.dir !== snap.dir ||
+                prev.mirror !== snap.mirror ||
+                prev.state !== snap.state ||
+                prev.loco !== snap.loco
+              ) {
+                log.push(snap);
+                if (log.length > 120) log.shift();
+              }
+            }
+          }
+
+          const moving =
+            !player.dead &&
+            (player.keys.forward ||
+              player.keys.back ||
+              player.keys.left ||
+              player.keys.right);
+          weaponView.update(delta, {}, { moving, playerDead: player.dead });
+
+          animPreview?.update();
 
           renderer.render(scene, camera);
-          pixiOverlay.render();
+        };
+
+        window.__bb = {
+          characters,
+          player,
+          weaponView,
+          weaponPoseTune,
+          weaponId,
+          physics,
+          enableAnimProbe: () => {
+            window.__bbAnimProbe = true;
+            window.__bbAnim = [];
+          },
+          animLog: () => window.__bbAnim ?? [],
         };
 
         tick();
@@ -219,20 +319,28 @@ export default function GameCanvas({
     return () => {
       disposed = true;
       cancelAnimationFrame(animationId);
+      onWeaponReadyRef.current?.({ weaponView: null, weaponId: null });
 
       if (onResize) {
         window.removeEventListener('resize', onResize);
       }
 
       player?.detach();
+      if (animPreview?._reloadHandler) {
+        window.removeEventListener('keydown', animPreview._reloadHandler);
+      }
+      animPreview?.detach();
       combat?.dispose();
+      weaponPoseTune?.detach();
       weaponView?.destroy();
-      pixiOverlay?.destroy();
+      audioBus?.dispose?.();
 
       if (characters) {
         scene?.remove(characters.root);
         characters.dispose();
       }
+      physics?.dispose();
+      physics = null;
 
       if (levelRoot) {
         scene?.remove(levelRoot);

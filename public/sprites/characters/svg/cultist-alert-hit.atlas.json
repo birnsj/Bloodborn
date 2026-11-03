@@ -1,0 +1,56 @@
+{
+  "name": "cultist-alert-hit",
+  "outDir": "characters",
+  "image": "cultist-alert-hit.png",
+  "sourceSvg": "svg/cultist-alert-hit.svg",
+  "cellWidth": 256,
+  "cellHeight": 512,
+  "columns": 8,
+  "rows": 4,
+  "anchor": [
+    0.5,
+    0
+  ],
+  "animations": {
+    "alert_front": {
+      "start": 0,
+      "count": 3
+    },
+    "alert_frontSide": {
+      "start": 3,
+      "count": 3
+    },
+    "alert_side": {
+      "start": 6,
+      "count": 3
+    },
+    "alert_backSide": {
+      "start": 9,
+      "count": 3
+    },
+    "alert_back": {
+      "start": 12,
+      "count": 3
+    },
+    "hit_front": {
+      "start": 15,
+      "count": 3
+    },
+    "hit_frontSide": {
+      "start": 18,
+      "count": 3
+    },
+    "hit_side": {
+      "start": 21,
+      "count": 3
+    },
+    "hit_backSide": {
+      "start": 24,
+      "count": 3
+    },
+    "hit_back": {
+      "start": 27,
+      "count": 3
+    }
+  }
+}

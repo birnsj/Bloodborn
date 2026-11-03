@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 import GameCanvas from './game/GameCanvas.jsx';
+import WeaponPosePanel from './game/debug/WeaponPosePanel.jsx';
 import './App.css';
 
 export default function App() {
@@ -9,6 +10,13 @@ export default function App() {
   const [maxHealth, setMaxHealth] = useState(100);
   const [hurtFlash, setHurtFlash] = useState(false);
   const [dead, setDead] = useState(false);
+  const [weaponView, setWeaponView] = useState(null);
+  const [weaponId, setWeaponId] = useState(null);
+
+  const handleWeaponReady = useCallback(({ weaponView: view, weaponId: id }) => {
+    setWeaponView(view);
+    setWeaponId(id);
+  }, []);
 
   const handleLockChange = useCallback((isLocked) => {
     setLocked(isLocked);
@@ -62,6 +70,10 @@ export default function App() {
       setDead(true);
       setHealth(0);
       setStatus('You died — press R to restart');
+      return;
+    }
+    if (evt.type === 'preview') {
+      setStatus(`Preview: ${evt.message}`);
     }
   }, []);
 
@@ -70,7 +82,7 @@ export default function App() {
       <header className="hud">
         <div className="brand">
           <span className="title">BloodBound</span>
-          <span className="subtitle">Phase 3 — First Enemy Encounter</span>
+          <span className="subtitle">Phase 5 — Combat Visuals</span>
         </div>
         <div className="hud-right">
           {health != null && (
@@ -92,6 +104,7 @@ export default function App() {
         onError={handleError}
         onCombatEvent={handleCombatEvent}
         onHudEvent={handleHudEvent}
+        onWeaponReady={handleWeaponReady}
       />
 
       <div className={`crosshair ${locked && !dead ? '' : 'hint'}`} aria-hidden="true">
@@ -103,6 +116,7 @@ export default function App() {
           You died — press <kbd>R</kbd> to restart
         </div>
       )}
+      <WeaponPosePanel weaponView={weaponView} weaponId={weaponId} />
     </div>
   );
 }

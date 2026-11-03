@@ -1,0 +1,68 @@
+{
+  "image": "pistol.png",
+  "cellWidth": 256,
+  "cellHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "anchor": [
+    0.62,
+    0.92
+  ],
+  "muzzleHint": {
+    "cell": {
+      "x": 39,
+      "y": 18
+    },
+    "offsetFromAnchor": [
+      -120,
+      -218
+    ]
+  },
+  "animations": {
+    "idle": {
+      "start": 0,
+      "count": 3
+    },
+    "fire": {
+      "start": 4,
+      "count": 4
+    },
+    "reload": {
+      "start": 8,
+      "count": 4
+    },
+    "equip": {
+      "start": 12,
+      "count": 3
+    },
+    "lower": {
+      "start": 16,
+      "count": 3
+    },
+    "muzzle": {
+      "start": 20,
+      "count": 2
+    }
+  },
+  "frameNames": {
+    "0": "idle_0",
+    "1": "idle_1",
+    "2": "idle_2",
+    "4": "fire_0",
+    "5": "fire_1",
+    "6": "fire_2",
+    "7": "fire_3",
+    "8": "reload_0",
+    "9": "reload_1",
+    "10": "reload_2",
+    "11": "reload_3",
+    "12": "equip_0",
+    "13": "equip_1",
+    "14": "equip_2",
+    "16": "lower_0",
+    "17": "lower_1",
+    "18": "lower_2",
+    "20": "muzzle_0",
+    "21": "muzzle_1"
+  }
+}

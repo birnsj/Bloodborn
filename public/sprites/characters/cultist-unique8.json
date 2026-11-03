@@ -1,0 +1,213 @@
+{
+  "image": "cultist-unique8.png",
+  "cellWidth": 128,
+  "cellHeight": 192,
+  "columns": 16,
+  "rows": 8,
+  "anchor": [
+    0.5,
+    1
+  ],
+  "animations": {
+    "idle_front": {
+      "start": 0,
+      "count": 2
+    },
+    "idle_frontSide": {
+      "start": 2,
+      "count": 2
+    },
+    "idle_side": {
+      "start": 4,
+      "count": 2
+    },
+    "idle_backSide": {
+      "start": 6,
+      "count": 2
+    },
+    "idle_back": {
+      "start": 8,
+      "count": 2
+    },
+    "idle_backSideL": {
+      "start": 10,
+      "count": 2
+    },
+    "idle_sideL": {
+      "start": 12,
+      "count": 2
+    },
+    "idle_frontSideL": {
+      "start": 14,
+      "count": 2
+    },
+    "walk_front": {
+      "start": 16,
+      "count": 2
+    },
+    "walk_frontSide": {
+      "start": 18,
+      "count": 2
+    },
+    "walk_side": {
+      "start": 20,
+      "count": 2
+    },
+    "walk_backSide": {
+      "start": 22,
+      "count": 2
+    },
+    "walk_back": {
+      "start": 24,
+      "count": 2
+    },
+    "walk_backSideL": {
+      "start": 26,
+      "count": 2
+    },
+    "walk_sideL": {
+      "start": 28,
+      "count": 2
+    },
+    "walk_frontSideL": {
+      "start": 30,
+      "count": 2
+    },
+    "run_front": {
+      "start": 32,
+      "count": 2
+    },
+    "run_frontSide": {
+      "start": 34,
+      "count": 2
+    },
+    "run_side": {
+      "start": 36,
+      "count": 2
+    },
+    "run_backSide": {
+      "start": 38,
+      "count": 2
+    },
+    "run_back": {
+      "start": 40,
+      "count": 2
+    },
+    "run_backSideL": {
+      "start": 42,
+      "count": 2
+    },
+    "run_sideL": {
+      "start": 44,
+      "count": 2
+    },
+    "run_frontSideL": {
+      "start": 46,
+      "count": 2
+    },
+    "alert_front": {
+      "start": 48,
+      "count": 2
+    },
+    "alert_frontSide": {
+      "start": 50,
+      "count": 2
+    },
+    "alert_side": {
+      "start": 52,
+      "count": 2
+    },
+    "alert_backSide": {
+      "start": 54,
+      "count": 2
+    },
+    "alert_back": {
+      "start": 56,
+      "count": 2
+    },
+    "alert_backSideL": {
+      "start": 58,
+      "count": 2
+    },
+    "alert_sideL": {
+      "start": 60,
+      "count": 2
+    },
+    "alert_frontSideL": {
+      "start": 62,
+      "count": 2
+    },
+    "attack_front": {
+      "start": 64,
+      "count": 2
+    },
+    "attack_frontSide": {
+      "start": 66,
+      "count": 2
+    },
+    "attack_side": {
+      "start": 68,
+      "count": 2
+    },
+    "attack_backSide": {
+      "start": 70,
+      "count": 2
+    },
+    "attack_back": {
+      "start": 72,
+      "count": 2
+    },
+    "attack_backSideL": {
+      "start": 74,
+      "count": 2
+    },
+    "attack_sideL": {
+      "start": 76,
+      "count": 2
+    },
+    "attack_frontSideL": {
+      "start": 78,
+      "count": 2
+    },
+    "hit_front": {
+      "start": 80,
+      "count": 2
+    },
+    "hit_frontSide": {
+      "start": 82,
+      "count": 2
+    },
+    "hit_side": {
+      "start": 84,
+      "count": 2
+    },
+    "hit_backSide": {
+      "start": 86,
+      "count": 2
+    },
+    "hit_back": {
+      "start": 88,
+      "count": 2
+    },
+    "hit_backSideL": {
+      "start": 90,
+      "count": 2
+    },
+    "hit_sideL": {
+      "start": 92,
+      "count": 2
+    },
+    "hit_frontSideL": {
+      "start": 94,
+      "count": 2
+    },
+    "death": {
+      "start": 96,
+      "count": 4
+    },
+    "dead": {
+      "start": 112,
+      "count": 1
+    }
+  }
+}

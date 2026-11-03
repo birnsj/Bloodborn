@@ -1,0 +1,41 @@
+{
+  "image": "cultist-idle.png",
+  "cellWidth": 256,
+  "cellHeight": 512,
+  "columns": 8,
+  "rows": 4,
+  "anchor": [
+    0.5,
+    0
+  ],
+  "animations": {
+    "idle_front": {
+      "start": 0,
+      "count": 4
+    },
+    "idle_frontSide": {
+      "start": 4,
+      "count": 4
+    },
+    "idle_side": {
+      "start": 8,
+      "count": 4
+    },
+    "idle_backSide": {
+      "start": 12,
+      "count": 4
+    },
+    "idle_back": {
+      "start": 16,
+      "count": 4
+    },
+    "death": {
+      "start": 20,
+      "count": 6
+    },
+    "dead": {
+      "start": 26,
+      "count": 1
+    }
+  }
+}

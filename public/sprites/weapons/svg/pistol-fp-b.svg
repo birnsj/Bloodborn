@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 2048 2048">
+  <defs>
+    <clipPath id="clip_0_0"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_0_1"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_0_2"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_0_3"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_1_0"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_1_1"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_1_2"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_1_3"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_2_0"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_2_1"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_2_2"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_2_3"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_3_0"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_3_1"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_3_2"><rect x="0" y="0" width="512" height="512"/></clipPath>
+    <clipPath id="clip_3_3"><rect x="0" y="0" width="512" height="512"/></clipPath>
+  </defs>
+  <g id="layer-guides" data-export="false">
+<line x1="0" y1="0" x2="0" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="512" y1="0" x2="512" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="2048" y1="0" x2="2048" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="0" x2="2048" y2="0" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="512" x2="2048" y2="512" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="2048" x2="2048" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <circle cx="368" cy="480" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="880" cy="480" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1392" cy="480" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1904" cy="480" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="368" cy="992" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="880" cy="992" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1392" cy="992" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1904" cy="992" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="368" cy="1504" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="880" cy="1504" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1392" cy="1504" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1904" cy="1504" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="368" cy="2016" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="880" cy="2016" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1392" cy="2016" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1904" cy="2016" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+  </g>
+  <g id="layer-art">
+  <g id="cell_0_0" transform="translate(0,0)" clip-path="url(#clip_0_0)">
+    <g id="reload_0">
+
+    <g transform="translate(0,0) rotate(6 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(-6,-4)">
+        <defs>
+          <linearGradient id="gt16" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt16)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt16)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="430" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="424" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="420" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="416" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="418" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="426" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="436" rx="11" ry="14" transform="rotate(-28 272 436)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_1" transform="translate(512,0)" clip-path="url(#clip_0_1)">
+    <g id="reload_1">
+
+    <g transform="translate(0,0) rotate(10 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(-12,-8)">
+        <defs>
+          <linearGradient id="gt17" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt17)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,-18)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt17)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="445" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="439" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="435" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="431" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="433" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="441" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="451" rx="11" ry="14" transform="rotate(-28 272 451)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_2" transform="translate(1024,0)" clip-path="url(#clip_0_2)">
+    <g id="reload_2">
+
+    <g transform="translate(0,0) rotate(8 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(-10,-10)">
+        <defs>
+          <linearGradient id="gt18" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt18)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,-36)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt18)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="455" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="449" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="445" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="441" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="443" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="451" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="461" rx="11" ry="14" transform="rotate(-28 272 461)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_3" transform="translate(1536,0)" clip-path="url(#clip_0_3)">
+    <g id="reload_3">
+
+    <g transform="translate(0,0) rotate(5 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(-6,-8)">
+        <defs>
+          <linearGradient id="gt19" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt19)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,-18)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt19)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="440" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="434" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="430" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="426" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="428" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="436" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="446" rx="11" ry="14" transform="rotate(-28 272 446)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_0" transform="translate(0,512)" clip-path="url(#clip_1_0)">
+    <g id="reload_4">
+
+    <g transform="translate(0,0) rotate(2 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(-2,-3)">
+        <defs>
+          <linearGradient id="gt20" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt20)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt20)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="425" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="419" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="415" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="411" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="413" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="421" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="431" rx="11" ry="14" transform="rotate(-28 272 431)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_1" transform="translate(512,512)" clip-path="url(#clip_1_1)">
+    <g id="reload_5">
+
+    <g transform="translate(0,0) rotate(0 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt21" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt21)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt21)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="418" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="412" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="408" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="404" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="406" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="414" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="424" rx="11" ry="14" transform="rotate(-28 272 424)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_2" transform="translate(1024,512)" clip-path="url(#clip_1_2)">
+    <g id="equip_0">
+
+    <g transform="translate(0,0) rotate(4 368 480)">
+      <g transform="translate(0,95)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt22" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt22)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt22)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="430" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="424" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="420" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="416" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="418" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="426" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="436" rx="11" ry="14" transform="rotate(-28 272 436)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_3" transform="translate(1536,512)" clip-path="url(#clip_1_3)">
+    <g id="equip_1">
+
+    <g transform="translate(0,0) rotate(2 368 480)">
+      <g transform="translate(0,48)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt23" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt23)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt23)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="424" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="418" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="414" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="410" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="412" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="420" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="430" rx="11" ry="14" transform="rotate(-28 272 430)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_0" transform="translate(0,1024)" clip-path="url(#clip_2_0)">
+    <g id="equip_2">
+
+    <g transform="translate(0,0) rotate(0.8 368 480)">
+      <g transform="translate(0,16)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt24" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt24)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt24)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="420" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="414" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="410" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="406" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="408" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="416" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="426" rx="11" ry="14" transform="rotate(-28 272 426)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_1" transform="translate(512,1024)" clip-path="url(#clip_2_1)">
+    <g id="equip_3">
+
+    <g transform="translate(0,0) rotate(0 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt25" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt25)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt25)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="418" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="412" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="408" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="404" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="406" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="414" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="424" rx="11" ry="14" transform="rotate(-28 272 424)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_2" transform="translate(1024,1024)" clip-path="url(#clip_2_2)">
+    <g id="lower_0">
+
+    <g transform="translate(0,0) rotate(0 368 480)">
+      <g transform="translate(0,0)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt26" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt26)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt26)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="418" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="412" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="408" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="404" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="406" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="414" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="424" rx="11" ry="14" transform="rotate(-28 272 424)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_3" transform="translate(1536,1024)" clip-path="url(#clip_2_3)">
+    <g id="lower_1">
+
+    <g transform="translate(0,0) rotate(3 368 480)">
+      <g transform="translate(0,36)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt27" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt27)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt27)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="424" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="418" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="414" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="410" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="412" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="420" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="430" rx="11" ry="14" transform="rotate(-28 272 430)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_3_0" transform="translate(0,1536)" clip-path="url(#clip_3_0)">
+    <g id="lower_2">
+
+    <g transform="translate(0,0) rotate(6 368 480)">
+      <g transform="translate(0,72)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt28" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt28)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt28)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="432" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="426" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="422" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="418" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="420" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="428" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="438" rx="11" ry="14" transform="rotate(-28 272 438)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_3_1" transform="translate(512,1536)" clip-path="url(#clip_3_1)">
+    <g id="lower_3">
+
+    <g transform="translate(0,0) rotate(8 368 480)">
+      <g transform="translate(0,110)">
+      <g transform="translate(0,0)">
+        <defs>
+          <linearGradient id="gt29" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#050505"/>
+            <stop offset="45%" stop-color="#2c2c2c"/>
+            <stop offset="100%" stop-color="#5a5a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stock / near body (thick, readable) -->
+        <path d="M295 395 L285 465 L325 508 L405 508 L425 450 L410 395 Z" fill="#080808"/>
+        <path d="M305 405 L298 455 L335 495 L395 495 L415 445 L400 405 Z" fill="#1c1c1c"/>
+        <path d="M312 395 L318 365 L398 365 L408 395 Z" fill="#121212"/>
+        <path d="M322 390 L328 372 L390 372 L396 390 Z" fill="#333"/>
+
+        <!-- grip -->
+        <path d="M348 470 L338 508 L390 508 L395 470 Z" fill="#050505"/>
+        <path d="M354 476 L346 500 L382 500 L386 476 Z" fill="#242424"/>
+
+        <!-- receiver block -->
+        <path d="M278 325 L268 400 L415 400 L402 325 Z" fill="url(#gt29)"/>
+        <path d="M268 400 L278 325 L258 338 L248 405 Z" fill="#000"/>
+        <path d="M415 400 L402 325 L428 338 L432 408 Z" fill="#050505"/>
+        <rect x="318" y="348" width="68" height="28" rx="4" fill="#050505"/>
+        <rect x="322" y="352" width="60" height="20" rx="3" fill="#333"/>
+        <rect x="392" y="356" width="18" height="10" rx="1" fill="#4a4a4a"/>
+
+        <!-- barrel / forend into scene (upper-left of cluster) -->
+        <g transform="translate(0,0)">
+          <path d="M295 325 L220 175 L290 162 L398 325 Z" fill="url(#gt29)"/>
+          <path d="M295 325 L220 175 L205 188 L258 335 Z" fill="#000"/>
+          <path d="M398 325 L290 162 L305 155 L415 318 Z" fill="#050505"/>
+          <!-- ribs -->
+          <g stroke="#ddd" stroke-width="2.5" opacity="0.55" fill="none">
+            <line x1="292" y1="310" x2="380" y2="308"/>
+            <line x1="284" y1="292" x2="372" y2="288"/>
+            <line x1="275" y1="274" x2="362" y2="268"/>
+            <line x1="266" y1="256" x2="350" y2="248"/>
+            <line x1="256" y1="238" x2="338" y2="228"/>
+            <line x1="248" y1="220" x2="326" y2="208"/>
+            <line x1="240" y1="202" x2="314" y2="188"/>
+            <line x1="234" y1="188" x2="304" y2="172"/>
+          </g>
+          <path d="M332 318 L268 185 L276 182 L340 314 Z" fill="#aaa" opacity="0.35"/>
+          <!-- mag tube -->
+          <path d="M290 325 L238 195 L258 188 L308 322 Z" fill="#0a0a0a"/>
+        </g>
+
+        <!-- sights (fixed to receiver) -->
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="342" cy="322" r="12" fill="none" stroke="#777" stroke-width="2"/>
+        <circle cx="342" cy="322" r="4" fill="#050505"/>
+        <rect x="236" y="168" width="11" height="18" fill="#111"/>
+        <rect x="232" y="164" width="19" height="7" rx="1" fill="#444"/>
+
+        <!-- muzzle -->
+        <ellipse cx="248" cy="172" rx="26" ry="13" transform="rotate(-14 248 172)" fill="#000"/>
+        <ellipse cx="250" cy="170" rx="17" ry="8" transform="rotate(-14 250 170)" fill="#2a2a2a"/>
+        <ellipse cx="251" cy="168" rx="8" ry="3.5" transform="rotate(-14 251 168)" fill="#000"/>
+
+        
+      </g>
+      
+      <!-- sleeve from BR -->
+      <path d="M430 508 L360 440 L320 460 L350 508 Z" fill="#0a0806"/>
+      <path d="M410 508 L355 450 L325 468 L348 508 Z" fill="#1a1410"/>
+      <!-- skin wrist -->
+      <path d="M300 455 C285 470 295 500 325 508 L395 508 L385 470 C360 450 320 448 300 455 Z"
+            fill="#c4a070"/>
+      <path d="M310 465 C305 485 320 500 345 503 L375 498 C365 480 335 470 315 470 Z" fill="#a88860"/>
+      <!-- glove under forend -->
+      <ellipse cx="305" cy="440" rx="44" ry="30" fill="#0a0a0a"/>
+      <ellipse cx="310" cy="434" rx="34" ry="22" fill="#1c1c1c"/>
+      <ellipse cx="288" cy="430" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="305" cy="426" rx="10" ry="12" fill="#2a2a2a"/>
+      <ellipse cx="322" cy="428" rx="9" ry="11" fill="#2a2a2a"/>
+      <ellipse cx="336" cy="436" rx="9" ry="10" fill="#222"/>
+      <ellipse cx="272" cy="446" rx="11" ry="14" transform="rotate(-28 272 446)" fill="#111"/>
+
+</g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_3_2" transform="translate(1024,1536)" clip-path="url(#clip_3_2)">
+    <g id="muzzle_0">
+
+      <g transform="translate(256,256) scale(0.9)">
+        <circle r="44" fill="#ffaa22" opacity="0.95"/>
+        <circle r="20" fill="#fff5d0"/>
+        <path d="M0 -54 L11 -9 L0 -18 L-11 -9 Z" fill="#ffe060"/>
+        <path d="M0 54 L11 9 L0 18 L-11 9 Z" fill="#ffe060"/>
+        <path d="M-54 0 L-9 11 L-18 0 L-9 -11 Z" fill="#ffd040"/>
+        <path d="M54 0 L9 11 L18 0 L9 -11 Z" fill="#ffd040"/>
+      </g>
+    </g>
+  </g>
+  <g id="cell_3_3" transform="translate(1536,1536)" clip-path="url(#clip_3_3)">
+    <g id="muzzle_1">
+
+      <g transform="translate(256,256) scale(1.2)">
+        <circle r="44" fill="#ffaa22" opacity="0.95"/>
+        <circle r="20" fill="#fff5d0"/>
+        <path d="M0 -54 L11 -9 L0 -18 L-11 -9 Z" fill="#ffe060"/>
+        <path d="M0 54 L11 9 L0 18 L-11 9 Z" fill="#ffe060"/>
+        <path d="M-54 0 L-9 11 L-18 0 L-9 -11 Z" fill="#ffd040"/>
+        <path d="M54 0 L9 11 L18 0 L9 -11 Z" fill="#ffd040"/>
+      </g>
+    </g>
+  </g>
+  </g>
+</svg>

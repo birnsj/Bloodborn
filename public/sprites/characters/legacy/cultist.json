@@ -1,0 +1,141 @@
+{
+  "image": "cultist.png",
+  "cellWidth": 128,
+  "cellHeight": 192,
+  "columns": 15,
+  "rows": 8,
+  "anchor": [
+    0.5,
+    0
+  ],
+  "animations": {
+    "idle_front": {
+      "start": 0,
+      "count": 3
+    },
+    "idle_frontSide": {
+      "start": 3,
+      "count": 3
+    },
+    "idle_side": {
+      "start": 6,
+      "count": 3
+    },
+    "idle_backSide": {
+      "start": 9,
+      "count": 3
+    },
+    "idle_back": {
+      "start": 12,
+      "count": 3
+    },
+    "walk_front": {
+      "start": 15,
+      "count": 3
+    },
+    "walk_frontSide": {
+      "start": 18,
+      "count": 3
+    },
+    "walk_side": {
+      "start": 21,
+      "count": 3
+    },
+    "walk_backSide": {
+      "start": 24,
+      "count": 3
+    },
+    "walk_back": {
+      "start": 27,
+      "count": 3
+    },
+    "run_front": {
+      "start": 30,
+      "count": 3
+    },
+    "run_frontSide": {
+      "start": 33,
+      "count": 3
+    },
+    "run_side": {
+      "start": 36,
+      "count": 3
+    },
+    "run_backSide": {
+      "start": 39,
+      "count": 3
+    },
+    "run_back": {
+      "start": 42,
+      "count": 3
+    },
+    "alert_front": {
+      "start": 45,
+      "count": 2
+    },
+    "alert_frontSide": {
+      "start": 47,
+      "count": 2
+    },
+    "alert_side": {
+      "start": 49,
+      "count": 2
+    },
+    "alert_backSide": {
+      "start": 51,
+      "count": 2
+    },
+    "alert_back": {
+      "start": 53,
+      "count": 2
+    },
+    "attack_front": {
+      "start": 60,
+      "count": 3
+    },
+    "attack_frontSide": {
+      "start": 63,
+      "count": 3
+    },
+    "attack_side": {
+      "start": 66,
+      "count": 3
+    },
+    "attack_backSide": {
+      "start": 69,
+      "count": 3
+    },
+    "attack_back": {
+      "start": 72,
+      "count": 3
+    },
+    "hit_front": {
+      "start": 75,
+      "count": 2
+    },
+    "hit_frontSide": {
+      "start": 77,
+      "count": 2
+    },
+    "hit_side": {
+      "start": 79,
+      "count": 2
+    },
+    "hit_backSide": {
+      "start": 81,
+      "count": 2
+    },
+    "hit_back": {
+      "start": 83,
+      "count": 2
+    },
+    "death": {
+      "start": 90,
+      "count": 4
+    },
+    "dead": {
+      "start": 105,
+      "count": 1
+    }
+  }
+}

@@ -28,7 +28,28 @@ function validateWeapon(id, def) {
       throw new Error(`Weapon ${id} missing "${key}"`);
     }
   }
-  if (!def.view.spritesheet || !def.view.idleFrames?.length || !def.view.fireFrames?.length) {
+  // Live Three.js capsule viewmodel — no sprite atlas required.
+  if (def.view.mode === 'viewmodel3d') {
+    return;
+  }
+
+  const hasSheets = Array.isArray(def.view.sheets) && def.view.sheets.length > 0;
+  if (!def.view.spritesheet && !hasSheets) {
+    throw new Error(`Weapon ${id} missing view.spritesheet or view.sheets`);
+  }
+  if (hasSheets) {
+    for (const sheet of def.view.sheets) {
+      if (!sheet?.spritesheet) {
+        throw new Error(`Weapon ${id} sheet entry missing spritesheet URL`);
+      }
+    }
+  }
+  const hasLegacyFrames =
+    def.view.idleFrames?.length && def.view.fireFrames?.length;
+  const hasAnimClips =
+    def.view.animations?.idle?.frames?.length &&
+    def.view.animations?.fire?.frames?.length;
+  if (!hasLegacyFrames && !hasAnimClips) {
     throw new Error(`Weapon ${id} has incomplete view definition`);
   }
 }

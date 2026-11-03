@@ -26,12 +26,17 @@ export function castRay(origin, direction, meshes, range, options = {}) {
     return { kind: 'miss', point: null, distance: range, object: null };
   }
 
+  const normal = hit.face?.normal
+    ? hit.face.normal.clone().transformDirection(hit.object.matrixWorld).normalize()
+    : null;
+
   const characterId = hit.object.userData?.characterId;
   if (characterId) {
     return {
       kind: 'character',
       characterId,
       point: hit.point.clone(),
+      normal,
       distance: hit.distance,
       object: hit.object,
     };
@@ -41,6 +46,7 @@ export function castRay(origin, direction, meshes, range, options = {}) {
     return {
       kind: 'player',
       point: hit.point.clone(),
+      normal,
       distance: hit.distance,
       object: hit.object,
     };
@@ -49,6 +55,7 @@ export function castRay(origin, direction, meshes, range, options = {}) {
   return {
     kind: 'world',
     point: hit.point.clone(),
+    normal,
     distance: hit.distance,
     object: hit.object,
   };

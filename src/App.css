@@ -1,7 +1,18 @@
 .app {
+  /* 16:9 stage — fits browser, capped so Simple Browser / large displays stay usable. */
+  --stage-max-w: 960px;
+  container-type: size;
+  container-name: stage;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: min(100vw - 1.5rem, calc((100vh - 1.5rem) * 16 / 9), var(--stage-max-w));
+  aspect-ratio: 16 / 9;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 1.5rem);
+  overflow: hidden;
+  background: #070605;
+  /* UI scale tracks stage height (~12px at 540p). */
+  font-size: clamp(10px, 2.2cqh, 13px);
 }
 
 .game-canvas {
@@ -33,8 +44,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
+  gap: 0.6em;
+  padding: 0.55em 0.75em;
   pointer-events: none;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent);
 }
@@ -42,31 +53,33 @@
 .brand {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1em;
 }
 
 .title {
-  font-size: 1.35rem;
-  letter-spacing: 0.18em;
+  font-size: 1.05em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #f0d7a8;
+  line-height: 1.15;
 }
 
 .subtitle {
-  font-size: 0.85rem;
+  font-size: 0.78em;
   color: #b9a88c;
+  line-height: 1.2;
 }
 
 .hud-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.35rem;
+  gap: 0.25em;
 }
 
 .hp {
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
   color: #e8c48a;
 }
 
@@ -75,10 +88,11 @@
 }
 
 .status {
-  max-width: 28rem;
+  max-width: 28em;
   text-align: right;
-  font-size: 0.9rem;
+  font-size: 0.78em;
   color: #d8c7a8;
+  line-height: 1.25;
 }
 
 .status.locked {
@@ -109,7 +123,8 @@
   left: 50%;
   top: 42%;
   transform: translate(-50%, -50%);
-  padding: 0.85rem 1.4rem;
+  padding: 0.6em 1em;
+  font-size: 0.95em;
   color: #f2d6d6;
   background: rgba(20, 4, 4, 0.72);
   border: 1px solid rgba(180, 80, 80, 0.5);
@@ -129,7 +144,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(240, 220, 180, 0.85);
-  font-size: 1.4rem;
+  font-size: 1.1em;
   line-height: 1;
   pointer-events: none;
   user-select: none;
@@ -137,4 +152,87 @@
 
 .crosshair.hint {
   opacity: 0.35;
+}
+
+.weapon-pose-panel {
+  position: absolute;
+  z-index: 5;
+  left: 0.6em;
+  top: 3.2em;
+  width: min(11.5em, 28cqw);
+  padding: 0.45em 0.55em 0.55em;
+  pointer-events: auto;
+  color: #e8dcc4;
+  background: rgba(12, 10, 8, 0.88);
+  border: 1px solid rgba(180, 150, 100, 0.35);
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+.weapon-pose-panel__title {
+  font-size: 0.95em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f0d7a8;
+  margin-bottom: 0.15em;
+}
+
+.weapon-pose-panel__hint {
+  color: #9a8a72;
+  margin-bottom: 0.4em;
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+
+.weapon-pose-panel__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12em;
+  margin-bottom: 0.35em;
+}
+
+.weapon-pose-panel__label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4em;
+  color: #cbb894;
+  font-size: 0.9em;
+}
+
+.weapon-pose-panel__label em {
+  font-style: normal;
+  color: #f0e0c0;
+  font-variant-numeric: tabular-nums;
+}
+
+.weapon-pose-panel__row input[type='range'] {
+  width: 100%;
+  height: 1em;
+  margin: 0;
+  accent-color: #c4a46a;
+}
+
+.weapon-pose-panel__save {
+  width: 100%;
+  margin-top: 0.15em;
+  padding: 0.35em 0.45em;
+  cursor: pointer;
+  color: #1a1208;
+  background: #d4b078;
+  border: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.weapon-pose-panel__save:hover {
+  background: #e4c490;
+}
+
+.weapon-pose-panel__status {
+  margin-top: 0.35em;
+  color: #9fd8a8;
+  font-size: 0.8em;
+  word-break: break-word;
 }

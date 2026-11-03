@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { moveCylinder } from './collision/moveCylinder.js';
+import { moveCylinderSlide } from './collision/moveCylinder.js';
 
 /**
  * First-person controller: pointer lock, WASD, mouse look, AABB collision.
@@ -239,7 +239,7 @@ export class PlayerController {
 
       if (this.wishDir.lengthSq() > 0) {
         this.wishDir.normalize().multiplyScalar(this.walkSpeed * deltaSeconds);
-        moveCylinder(
+        moveCylinderSlide(
           this.position,
           this.radius,
           this.wishDir.x,

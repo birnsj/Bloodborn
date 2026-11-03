@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 2048 2048">
+  <defs>
+    <clipPath id="clip_0_0"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_1"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_2"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_3"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_4"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_5"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_6"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_0_7"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_0"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_1"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_2"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_3"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_4"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_5"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_6"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_1_7"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_0"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_1"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_2"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_3"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_4"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_5"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_6"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_2_7"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_3_0"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_3_1"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="clip_3_2"><rect x="0" y="0" width="256" height="512"/></clipPath>
+  </defs>
+  <g id="layer-guides" data-export="false">
+<line x1="0" y1="0" x2="0" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="256" y1="0" x2="256" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="512" y1="0" x2="512" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="768" y1="0" x2="768" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="2048" y1="0" x2="2048" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="0" x2="2048" y2="0" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="512" x2="2048" y2="512" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <line x1="0" y1="2048" x2="2048" y2="2048" stroke="#4488ff" stroke-opacity="0.25" stroke-width="1"/>
+    <circle cx="128" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="384" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="640" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="896" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1152" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1408" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1664" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1920" cy="500" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="128" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="384" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="640" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="896" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1152" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1408" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1664" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1920" cy="1012" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="128" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="384" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="640" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="896" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1152" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1408" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1664" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1920" cy="1524" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="128" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="384" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="640" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="896" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1152" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1408" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1664" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1920" cy="2036" r="4" fill="none" stroke="#ff6688" stroke-opacity="0.5" stroke-width="1"/>
+  </g>
+  <g id="layer-art">
+  <g id="cell_0_0" transform="translate(0,0)" clip-path="url(#clip_0_0)">
+    <g id="idle_front_0">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="308" x2="100.06979598957292" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="308" x2="100.06979598957292" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="402.47958005998595" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="402.47958005998595" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="308" x2="155.93020401042708" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="308" x2="155.93020401042708" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="402.47958005998595" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="402.47958005998595" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="300" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 290 L70 370 L186 370 L178 290 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(0 128 260)">
+        <!-- torso -->
+        <path d="M88 280
+                 C80 220 86 170 92 155
+                 L164 155
+                 C170 170 176 220 168 280 Z"
+              fill="#2a1824"/>
+        <path d="M100 270 L96 170 L160 170 L156 270 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="205" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="190" x2="53.03461977939974" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="190" x2="53.03461977939974" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="53.03461977939974" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="190" x2="202.96538022060025" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="190" x2="202.96538022060025" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="202.96538022060025" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 145
+                 C80 95 108 70 128 67
+                 C148 70 176 95 170 145
+                 C152 133 104 133 86 145 Z"
+              fill="#120c12"/>
+        <path d="M98 133 C108 113 148 113 158 133
+                 C146 147 110 147 98 133 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="128" cy="125" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="118" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="138" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M118 137 Q128 143 138 137"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_1" transform="translate(256,0)" clip-path="url(#clip_0_1)">
+    <g id="idle_front_1">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="309.56665381925495" x2="100.06979598957292" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="309.56665381925495" x2="100.06979598957292" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.0462338792409" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.0462338792409" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="309.56665381925495" x2="155.93020401042708" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="309.56665381925495" x2="155.93020401042708" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.0462338792409" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.0462338792409" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="301.56665381925495" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 291.56665381925495 L70 371.56665381925495 L186 371.56665381925495 L178 291.56665381925495 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(1.1749903644412252 128 261.56665381925495)">
+        <!-- torso -->
+        <path d="M88 281.56665381925495
+                 C80 221.56665381925495 86 171.56665381925495 92 156.56665381925495
+                 L164 156.56665381925495
+                 C170 171.56665381925495 176 221.56665381925495 168 281.56665381925495 Z"
+              fill="#2a1824"/>
+        <path d="M100 271.56665381925495 L96 171.56665381925495 L160 171.56665381925495 L156 271.56665381925495 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="206.56665381925495" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="192.56665381925495" x2="49.71678645882331" y2="272.7385217975263" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="192.56665381925495" x2="49.71678645882331" y2="272.7385217975263" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="49.71678645882331" cy="272.7385217975263" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="192.56665381925495" x2="199.59209958208515" y2="275.441907317051" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="192.56665381925495" x2="199.59209958208515" y2="275.441907317051" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="199.59209958208515" cy="275.441907317051" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 145.56665381925495
+                 C80 95.56665381925495 108 70.56665381925495 128 67.56665381925495
+                 C148 70.56665381925495 176 95.56665381925495 170 145.56665381925495
+                 C152 133.56665381925495 104 133.56665381925495 86 145.56665381925495 Z"
+              fill="#120c12"/>
+        <path d="M98 133.56665381925495 C108 113.56665381925495 148 113.56665381925495 158 133.56665381925495
+                 C146 147.56665381925495 110 147.56665381925495 98 133.56665381925495 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="128" cy="125.56665381925495" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="118" cy="123.56665381925495" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="138" cy="123.56665381925495" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M118 137.56665381925495 Q128 143.56665381925495 138 137.56665381925495"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_2" transform="translate(512,0)" clip-path="url(#clip_0_2)">
+    <g id="idle_front_2">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="309.9476952617564" x2="100.06979598957292" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="309.9476952617564" x2="100.06979598957292" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.42727532174234" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.42727532174234" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="309.9476952617564" x2="155.93020401042708" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="309.9476952617564" x2="155.93020401042708" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.42727532174234" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.42727532174234" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="301.9476952617564" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 291.9476952617564 L70 371.9476952617564 L186 371.9476952617564 L178 291.9476952617564 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(1.4607714463172927 128 261.9476952617564)">
+        <!-- torso -->
+        <path d="M88 281.9476952617564
+                 C80 221.9476952617564 86 171.9476952617564 92 156.9476952617564
+                 L164 156.9476952617564
+                 C170 171.9476952617564 176 221.9476952617564 168 281.9476952617564 Z"
+              fill="#2a1824"/>
+        <path d="M100 271.9476952617564 L96 171.9476952617564 L160 171.9476952617564 L156 271.9476952617564 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="206.9476952617564" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="191.9476952617564" x2="48.918839217459265" y2="271.75363185183323" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="191.9476952617564" x2="48.918839217459265" y2="271.75363185183323" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="48.918839217459265" cy="271.75363185183323" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="191.9476952617564" x2="198.76390707097858" y2="275.1140204782291" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="191.9476952617564" x2="198.76390707097858" y2="275.1140204782291" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="198.76390707097858" cy="275.1140204782291" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 146.9476952617564
+                 C80 96.9476952617564 108 71.9476952617564 128 68.9476952617564
+                 C148 71.9476952617564 176 96.9476952617564 170 146.9476952617564
+                 C152 134.9476952617564 104 134.9476952617564 86 146.9476952617564 Z"
+              fill="#120c12"/>
+        <path d="M98 134.9476952617564 C108 114.9476952617564 148 114.9476952617564 158 134.9476952617564
+                 C146 148.9476952617564 110 148.9476952617564 98 134.9476952617564 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="128" cy="126.9476952617564" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="118" cy="124.9476952617564" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="138" cy="124.9476952617564" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M118 138.9476952617564 Q128 144.9476952617564 138 138.9476952617564"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_3" transform="translate(768,0)" clip-path="url(#clip_0_3)">
+    <g id="idle_front_3">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="308.8547597604677" x2="100.06979598957292" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="308.8547597604677" x2="100.06979598957292" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="403.33433982045364" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="403.33433982045364" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="308.8547597604677" x2="155.93020401042708" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="308.8547597604677" x2="155.93020401042708" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="403.33433982045364" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="403.33433982045364" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="300.8547597604677" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 290.8547597604677 L70 370.8547597604677 L186 370.8547597604677 L178 290.8547597604677 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(0.6410698203507447 128 260.8547597604677)">
+        <!-- torso -->
+        <path d="M88 280.8547597604677
+                 C80 220.8547597604677 86 170.8547597604677 92 155.8547597604677
+                 L164 155.8547597604677
+                 C170 170.8547597604677 176 220.8547597604677 168 280.8547597604677 Z"
+              fill="#2a1824"/>
+        <path d="M100 270.8547597604677 L96 170.8547597604677 L160 170.8547597604677 L156 270.8547597604677 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="205.8547597604677" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="191.8547597604677" x2="51.217191866273055" y2="272.6888878149741" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="191.8547597604677" x2="51.217191866273055" y2="272.6888878149741" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="51.217191866273055" cy="272.6888878149741" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="191.8547597604677" x2="201.1314454136846" y2="274.164134113908" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="191.8547597604677" x2="201.1314454136846" y2="274.164134113908" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="201.1314454136846" cy="274.164134113908" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 144.8547597604677
+                 C80 94.85475976046769 108 69.85475976046769 128 66.85475976046769
+                 C148 69.85475976046769 176 94.85475976046769 170 144.8547597604677
+                 C152 132.8547597604677 104 132.8547597604677 86 144.8547597604677 Z"
+              fill="#120c12"/>
+        <path d="M98 132.8547597604677 C108 112.85475976046769 148 112.85475976046769 158 132.8547597604677
+                 C146 146.8547597604677 110 146.8547597604677 98 132.8547597604677 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="128" cy="124.85475976046769" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="118" cy="122.85475976046769" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="138" cy="122.85475976046769" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M118 136.8547597604677 Q128 142.8547597604677 138 136.8547597604677"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_4" transform="translate(1024,0)" clip-path="url(#clip_0_4)">
+    <g id="idle_frontSide_0">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="128" y1="308" x2="122.5383877942651" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="128" y1="308" x2="122.5383877942651" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="402.47958005998595" x2="112.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="402.47958005998595" x2="112.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="112.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="140" y1="308" x2="145.4616122057349" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="140" y1="308" x2="145.4616122057349" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="402.47958005998595" x2="155.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="402.47958005998595" x2="155.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="155.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="134" cy="300" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M84 290 L76 370 L192 370 L184 290 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(4 134 260)">
+        <!-- torso -->
+        <path d="M94 280
+                 C86 220 92 170 98 155
+                 L170 155
+                 C176 170 182 220 174 280 Z"
+              fill="#2a1824"/>
+        <path d="M106 270 L102 170 L166 170 L162 270 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="134" cy="205" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="112" y1="190" x2="88.92423384557982" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="112" y1="190" x2="88.92423384557982" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="88.92423384557982" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="156" y1="190" x2="179.0757661544202" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="156" y1="190" x2="179.0757661544202" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="179.0757661544202" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M92 145
+                 C86 95 114 70 134 67
+                 C154 70 182 95 176 145
+                 C158 133 110 133 92 145 Z"
+              fill="#120c12"/>
+        <path d="M104 133 C114 113 154 113 164 133
+                 C152 147 116 147 104 133 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="134" cy="125" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="124" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="144" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M124 137 Q134 143 144 137"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_5" transform="translate(1280,0)" clip-path="url(#clip_0_5)">
+    <g id="idle_frontSide_1">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="128" y1="309.56665381925495" x2="122.5383877942651" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="128" y1="309.56665381925495" x2="122.5383877942651" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="404.0462338792409" x2="112.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="404.0462338792409" x2="112.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="112.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="140" y1="309.56665381925495" x2="145.4616122057349" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="140" y1="309.56665381925495" x2="145.4616122057349" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="404.0462338792409" x2="155.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="404.0462338792409" x2="155.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="155.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="134" cy="301.56665381925495" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M84 291.56665381925495 L76 371.56665381925495 L192 371.56665381925495 L184 291.56665381925495 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(5.174990364441225 134 261.56665381925495)">
+        <!-- torso -->
+        <path d="M94 281.56665381925495
+                 C86 221.56665381925495 92 171.56665381925495 98 156.56665381925495
+                 L170 156.56665381925495
+                 C176 171.56665381925495 182 221.56665381925495 174 281.56665381925495 Z"
+              fill="#2a1824"/>
+        <path d="M106 271.56665381925495 L102 171.56665381925495 L166 171.56665381925495 L162 271.56665381925495 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="134" cy="206.56665381925495" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="112" y1="192.56665381925495" x2="86.60175052117631" y2="272.7385217975263" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="112" y1="192.56665381925495" x2="86.60175052117631" y2="272.7385217975263" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="86.60175052117631" cy="272.7385217975263" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="156" y1="192.56665381925495" x2="176.7144697074596" y2="275.441907317051" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="156" y1="192.56665381925495" x2="176.7144697074596" y2="275.441907317051" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="176.7144697074596" cy="275.441907317051" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M92 145.56665381925495
+                 C86 95.56665381925495 114 70.56665381925495 134 67.56665381925495
+                 C154 70.56665381925495 182 95.56665381925495 176 145.56665381925495
+                 C158 133.56665381925495 110 133.56665381925495 92 145.56665381925495 Z"
+              fill="#120c12"/>
+        <path d="M104 133.56665381925495 C114 113.56665381925495 154 113.56665381925495 164 133.56665381925495
+                 C152 147.56665381925495 116 147.56665381925495 104 133.56665381925495 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="134" cy="125.56665381925495" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="124" cy="123.56665381925495" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="144" cy="123.56665381925495" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M124 137.56665381925495 Q134 143.56665381925495 144 137.56665381925495"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_6" transform="translate(1536,0)" clip-path="url(#clip_0_6)">
+    <g id="idle_frontSide_2">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="128" y1="309.9476952617564" x2="122.5383877942651" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="128" y1="309.9476952617564" x2="122.5383877942651" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="404.42727532174234" x2="112.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="404.42727532174234" x2="112.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="112.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="140" y1="309.9476952617564" x2="145.4616122057349" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="140" y1="309.9476952617564" x2="145.4616122057349" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="404.42727532174234" x2="155.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="404.42727532174234" x2="155.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="155.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="134" cy="301.9476952617564" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M84 291.9476952617564 L76 371.9476952617564 L192 371.9476952617564 L184 291.9476952617564 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(5.460771446317293 134 261.9476952617564)">
+        <!-- torso -->
+        <path d="M94 281.9476952617564
+                 C86 221.9476952617564 92 171.9476952617564 98 156.9476952617564
+                 L170 156.9476952617564
+                 C176 171.9476952617564 182 221.9476952617564 174 281.9476952617564 Z"
+              fill="#2a1824"/>
+        <path d="M106 271.9476952617564 L102 171.9476952617564 L166 171.9476952617564 L162 271.9476952617564 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="134" cy="206.9476952617564" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="112" y1="191.9476952617564" x2="86.04318745222149" y2="271.75363185183323" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="112" y1="191.9476952617564" x2="86.04318745222149" y2="271.75363185183323" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="86.04318745222149" cy="271.75363185183323" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="156" y1="191.9476952617564" x2="176.134734949685" y2="275.1140204782291" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="156" y1="191.9476952617564" x2="176.134734949685" y2="275.1140204782291" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="176.134734949685" cy="275.1140204782291" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M92 146.9476952617564
+                 C86 96.9476952617564 114 71.9476952617564 134 68.9476952617564
+                 C154 71.9476952617564 182 96.9476952617564 176 146.9476952617564
+                 C158 134.9476952617564 110 134.9476952617564 92 146.9476952617564 Z"
+              fill="#120c12"/>
+        <path d="M104 134.9476952617564 C114 114.9476952617564 154 114.9476952617564 164 134.9476952617564
+                 C152 148.9476952617564 116 148.9476952617564 104 134.9476952617564 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="134" cy="126.9476952617564" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="124" cy="124.9476952617564" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="144" cy="124.9476952617564" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M124 138.9476952617564 Q134 144.9476952617564 144 138.9476952617564"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_0_7" transform="translate(1792,0)" clip-path="url(#clip_0_7)">
+    <g id="idle_frontSide_3">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="128" y1="308.8547597604677" x2="122.5383877942651" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="128" y1="308.8547597604677" x2="122.5383877942651" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="403.33433982045364" x2="112.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="122.5383877942651" y1="403.33433982045364" x2="112.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="112.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="140" y1="308.8547597604677" x2="145.4616122057349" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="140" y1="308.8547597604677" x2="145.4616122057349" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="403.33433982045364" x2="155.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="145.4616122057349" y1="403.33433982045364" x2="155.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="155.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="134" cy="300.8547597604677" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M84 290.8547597604677 L76 370.8547597604677 L192 370.8547597604677 L184 290.8547597604677 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(4.641069820350745 134 260.8547597604677)">
+        <!-- torso -->
+        <path d="M94 280.8547597604677
+                 C86 220.8547597604677 92 170.8547597604677 98 155.8547597604677
+                 L170 155.8547597604677
+                 C176 170.8547597604677 182 220.8547597604677 174 280.8547597604677 Z"
+              fill="#2a1824"/>
+        <path d="M106 270.8547597604677 L102 170.8547597604677 L166 170.8547597604677 L162 270.8547597604677 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="134" cy="205.8547597604677" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="112" y1="191.8547597604677" x2="87.65203430639114" y2="272.6888878149741" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="112" y1="191.8547597604677" x2="87.65203430639114" y2="272.6888878149741" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="87.65203430639114" cy="272.6888878149741" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="156" y1="191.8547597604677" x2="177.7920117895792" y2="274.164134113908" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="156" y1="191.8547597604677" x2="177.7920117895792" y2="274.164134113908" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="177.7920117895792" cy="274.164134113908" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M92 144.8547597604677
+                 C86 94.85475976046769 114 69.85475976046769 134 66.85475976046769
+                 C154 69.85475976046769 182 94.85475976046769 176 144.8547597604677
+                 C158 132.8547597604677 110 132.8547597604677 92 144.8547597604677 Z"
+              fill="#120c12"/>
+        <path d="M104 132.8547597604677 C114 112.85475976046769 154 112.85475976046769 164 132.8547597604677
+                 C152 146.8547597604677 116 146.8547597604677 104 132.8547597604677 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="134" cy="124.85475976046769" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="124" cy="122.85475976046769" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="144" cy="122.85475976046769" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M124 136.8547597604677 Q134 142.8547597604677 144 136.8547597604677"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_0" transform="translate(0,512)" clip-path="url(#clip_1_0)">
+    <g id="idle_side_0">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="132" y1="308" x2="126.5383877942651" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="132" y1="308" x2="126.5383877942651" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="402.47958005998595" x2="116.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="402.47958005998595" x2="116.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="116.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="144" y1="308" x2="149.4616122057349" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="144" y1="308" x2="149.4616122057349" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="402.47958005998595" x2="159.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="402.47958005998595" x2="159.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="159.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="138" cy="300" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M88 290 L80 370 L196 370 L188 290 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(8 138 260)">
+        <!-- torso -->
+        <path d="M98 280
+                 C90 220 96 170 102 155
+                 L174 155
+                 C180 170 186 220 178 280 Z"
+              fill="#2a1824"/>
+        <path d="M110 270 L106 170 L170 170 L166 270 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="138" cy="205" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="116" y1="190" x2="92.92423384557982" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="116" y1="190" x2="92.92423384557982" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="92.92423384557982" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="160" y1="190" x2="183.0757661544202" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="160" y1="190" x2="183.0757661544202" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="183.0757661544202" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M96 145
+                 C90 95 118 70 138 67
+                 C158 70 186 95 180 145
+                 C162 133 114 133 96 145 Z"
+              fill="#120c12"/>
+        <path d="M108 133 C118 113 158 113 168 133
+                 C156 147 120 147 108 133 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="138" cy="125" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="128" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="148" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M128 137 Q138 143 148 137"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_1" transform="translate(256,512)" clip-path="url(#clip_1_1)">
+    <g id="idle_side_1">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="132" y1="309.56665381925495" x2="126.5383877942651" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="132" y1="309.56665381925495" x2="126.5383877942651" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="404.0462338792409" x2="116.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="404.0462338792409" x2="116.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="116.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="144" y1="309.56665381925495" x2="149.4616122057349" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="144" y1="309.56665381925495" x2="149.4616122057349" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="404.0462338792409" x2="159.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="404.0462338792409" x2="159.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="159.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="138" cy="301.56665381925495" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M88 291.56665381925495 L80 371.56665381925495 L196 371.56665381925495 L188 291.56665381925495 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(9.174990364441225 138 261.56665381925495)">
+        <!-- torso -->
+        <path d="M98 281.56665381925495
+                 C90 221.56665381925495 96 171.56665381925495 102 156.56665381925495
+                 L174 156.56665381925495
+                 C180 171.56665381925495 186 221.56665381925495 178 281.56665381925495 Z"
+              fill="#2a1824"/>
+        <path d="M110 271.56665381925495 L106 171.56665381925495 L170 171.56665381925495 L166 271.56665381925495 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="138" cy="206.56665381925495" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="116" y1="192.56665381925495" x2="90.60175052117631" y2="272.7385217975263" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="116" y1="192.56665381925495" x2="90.60175052117631" y2="272.7385217975263" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="90.60175052117631" cy="272.7385217975263" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="160" y1="192.56665381925495" x2="180.7144697074596" y2="275.441907317051" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="160" y1="192.56665381925495" x2="180.7144697074596" y2="275.441907317051" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="180.7144697074596" cy="275.441907317051" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M96 145.56665381925495
+                 C90 95.56665381925495 118 70.56665381925495 138 67.56665381925495
+                 C158 70.56665381925495 186 95.56665381925495 180 145.56665381925495
+                 C162 133.56665381925495 114 133.56665381925495 96 145.56665381925495 Z"
+              fill="#120c12"/>
+        <path d="M108 133.56665381925495 C118 113.56665381925495 158 113.56665381925495 168 133.56665381925495
+                 C156 147.56665381925495 120 147.56665381925495 108 133.56665381925495 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="138" cy="125.56665381925495" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="128" cy="123.56665381925495" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="148" cy="123.56665381925495" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M128 137.56665381925495 Q138 143.56665381925495 148 137.56665381925495"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_2" transform="translate(512,512)" clip-path="url(#clip_1_2)">
+    <g id="idle_side_2">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="132" y1="309.9476952617564" x2="126.5383877942651" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="132" y1="309.9476952617564" x2="126.5383877942651" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="404.42727532174234" x2="116.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="404.42727532174234" x2="116.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="116.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="144" y1="309.9476952617564" x2="149.4616122057349" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="144" y1="309.9476952617564" x2="149.4616122057349" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="404.42727532174234" x2="159.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="404.42727532174234" x2="159.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="159.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="138" cy="301.9476952617564" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M88 291.9476952617564 L80 371.9476952617564 L196 371.9476952617564 L188 291.9476952617564 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(9.460771446317292 138 261.9476952617564)">
+        <!-- torso -->
+        <path d="M98 281.9476952617564
+                 C90 221.9476952617564 96 171.9476952617564 102 156.9476952617564
+                 L174 156.9476952617564
+                 C180 171.9476952617564 186 221.9476952617564 178 281.9476952617564 Z"
+              fill="#2a1824"/>
+        <path d="M110 271.9476952617564 L106 171.9476952617564 L170 171.9476952617564 L166 271.9476952617564 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="138" cy="206.9476952617564" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="116" y1="191.9476952617564" x2="90.04318745222149" y2="271.75363185183323" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="116" y1="191.9476952617564" x2="90.04318745222149" y2="271.75363185183323" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="90.04318745222149" cy="271.75363185183323" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="160" y1="191.9476952617564" x2="180.134734949685" y2="275.1140204782291" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="160" y1="191.9476952617564" x2="180.134734949685" y2="275.1140204782291" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="180.134734949685" cy="275.1140204782291" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M96 146.9476952617564
+                 C90 96.9476952617564 118 71.9476952617564 138 68.9476952617564
+                 C158 71.9476952617564 186 96.9476952617564 180 146.9476952617564
+                 C162 134.9476952617564 114 134.9476952617564 96 146.9476952617564 Z"
+              fill="#120c12"/>
+        <path d="M108 134.9476952617564 C118 114.9476952617564 158 114.9476952617564 168 134.9476952617564
+                 C156 148.9476952617564 120 148.9476952617564 108 134.9476952617564 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="138" cy="126.9476952617564" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="128" cy="124.9476952617564" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="148" cy="124.9476952617564" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M128 138.9476952617564 Q138 144.9476952617564 148 138.9476952617564"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_3" transform="translate(768,512)" clip-path="url(#clip_1_3)">
+    <g id="idle_side_3">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="132" y1="308.8547597604677" x2="126.5383877942651" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="132" y1="308.8547597604677" x2="126.5383877942651" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="403.33433982045364" x2="116.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="126.5383877942651" y1="403.33433982045364" x2="116.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="116.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="144" y1="308.8547597604677" x2="149.4616122057349" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="144" y1="308.8547597604677" x2="149.4616122057349" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="403.33433982045364" x2="159.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="149.4616122057349" y1="403.33433982045364" x2="159.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="159.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="138" cy="300.8547597604677" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M88 290.8547597604677 L80 370.8547597604677 L196 370.8547597604677 L188 290.8547597604677 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(8.641069820350745 138 260.8547597604677)">
+        <!-- torso -->
+        <path d="M98 280.8547597604677
+                 C90 220.8547597604677 96 170.8547597604677 102 155.8547597604677
+                 L174 155.8547597604677
+                 C180 170.8547597604677 186 220.8547597604677 178 280.8547597604677 Z"
+              fill="#2a1824"/>
+        <path d="M110 270.8547597604677 L106 170.8547597604677 L170 170.8547597604677 L166 270.8547597604677 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="138" cy="205.8547597604677" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="116" y1="191.8547597604677" x2="91.65203430639114" y2="272.6888878149741" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="116" y1="191.8547597604677" x2="91.65203430639114" y2="272.6888878149741" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="91.65203430639114" cy="272.6888878149741" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="160" y1="191.8547597604677" x2="181.7920117895792" y2="274.164134113908" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="160" y1="191.8547597604677" x2="181.7920117895792" y2="274.164134113908" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="181.7920117895792" cy="274.164134113908" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M96 144.8547597604677
+                 C90 94.85475976046769 118 69.85475976046769 138 66.85475976046769
+                 C158 69.85475976046769 186 94.85475976046769 180 144.8547597604677
+                 C162 132.8547597604677 114 132.8547597604677 96 144.8547597604677 Z"
+              fill="#120c12"/>
+        <path d="M108 132.8547597604677 C118 112.85475976046769 158 112.85475976046769 168 132.8547597604677
+                 C156 146.8547597604677 120 146.8547597604677 108 132.8547597604677 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="138" cy="124.85475976046769" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="128" cy="122.85475976046769" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="148" cy="122.85475976046769" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M128 136.8547597604677 Q138 142.8547597604677 148 136.8547597604677"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_4" transform="translate(1024,512)" clip-path="url(#clip_1_4)">
+    <g id="idle_backSide_0">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="126" y1="308" x2="120.5383877942651" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="126" y1="308" x2="120.5383877942651" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="402.47958005998595" x2="110.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="402.47958005998595" x2="110.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="110.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="138" y1="308" x2="143.4616122057349" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="138" y1="308" x2="143.4616122057349" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="402.47958005998595" x2="153.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="402.47958005998595" x2="153.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="153.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="132" cy="300" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M82 290 L74 370 L190 370 L182 290 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(3 132 260)">
+        <!-- torso -->
+        <path d="M92 280
+                 C84 220 90 170 96 155
+                 L168 155
+                 C174 170 180 220 172 280 Z"
+              fill="#2a1824"/>
+        <path d="M104 270 L100 170 L164 170 L160 270 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="132" cy="205" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="110" y1="190" x2="86.92423384557982" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="110" y1="190" x2="86.92423384557982" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="86.92423384557982" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="154" y1="190" x2="177.0757661544202" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="154" y1="190" x2="177.0757661544202" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="177.0757661544202" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M90 145
+                 C84 95 112 70 132 67
+                 C152 70 180 95 174 145
+                 C156 133 108 133 90 145 Z"
+              fill="#120c12"/>
+        <path d="M102 133 C112 113 152 113 162 133
+                 C150 147 114 147 102 133 Z"
+              fill="#0a060a"/>
+        <ellipse cx="132" cy="125" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_5" transform="translate(1280,512)" clip-path="url(#clip_1_5)">
+    <g id="idle_backSide_1">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="126" y1="309.56665381925495" x2="120.5383877942651" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="126" y1="309.56665381925495" x2="120.5383877942651" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="404.0462338792409" x2="110.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="404.0462338792409" x2="110.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="110.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="138" y1="309.56665381925495" x2="143.4616122057349" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="138" y1="309.56665381925495" x2="143.4616122057349" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="404.0462338792409" x2="153.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="404.0462338792409" x2="153.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="153.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="132" cy="301.56665381925495" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M82 291.56665381925495 L74 371.56665381925495 L190 371.56665381925495 L182 291.56665381925495 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(4.174990364441225 132 261.56665381925495)">
+        <!-- torso -->
+        <path d="M92 281.56665381925495
+                 C84 221.56665381925495 90 171.56665381925495 96 156.56665381925495
+                 L168 156.56665381925495
+                 C174 171.56665381925495 180 221.56665381925495 172 281.56665381925495 Z"
+              fill="#2a1824"/>
+        <path d="M104 271.56665381925495 L100 171.56665381925495 L164 171.56665381925495 L160 271.56665381925495 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="132" cy="206.56665381925495" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="110" y1="192.56665381925495" x2="84.60175052117631" y2="272.7385217975263" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="110" y1="192.56665381925495" x2="84.60175052117631" y2="272.7385217975263" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="84.60175052117631" cy="272.7385217975263" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="154" y1="192.56665381925495" x2="174.7144697074596" y2="275.441907317051" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="154" y1="192.56665381925495" x2="174.7144697074596" y2="275.441907317051" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="174.7144697074596" cy="275.441907317051" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M90 145.56665381925495
+                 C84 95.56665381925495 112 70.56665381925495 132 67.56665381925495
+                 C152 70.56665381925495 180 95.56665381925495 174 145.56665381925495
+                 C156 133.56665381925495 108 133.56665381925495 90 145.56665381925495 Z"
+              fill="#120c12"/>
+        <path d="M102 133.56665381925495 C112 113.56665381925495 152 113.56665381925495 162 133.56665381925495
+                 C150 147.56665381925495 114 147.56665381925495 102 133.56665381925495 Z"
+              fill="#0a060a"/>
+        <ellipse cx="132" cy="125.56665381925495" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_6" transform="translate(1536,512)" clip-path="url(#clip_1_6)">
+    <g id="idle_backSide_2">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="126" y1="309.9476952617564" x2="120.5383877942651" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="126" y1="309.9476952617564" x2="120.5383877942651" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="404.42727532174234" x2="110.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="404.42727532174234" x2="110.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="110.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="138" y1="309.9476952617564" x2="143.4616122057349" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="138" y1="309.9476952617564" x2="143.4616122057349" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="404.42727532174234" x2="153.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="404.42727532174234" x2="153.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="153.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="132" cy="301.9476952617564" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M82 291.9476952617564 L74 371.9476952617564 L190 371.9476952617564 L182 291.9476952617564 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(4.460771446317293 132 261.9476952617564)">
+        <!-- torso -->
+        <path d="M92 281.9476952617564
+                 C84 221.9476952617564 90 171.9476952617564 96 156.9476952617564
+                 L168 156.9476952617564
+                 C174 171.9476952617564 180 221.9476952617564 172 281.9476952617564 Z"
+              fill="#2a1824"/>
+        <path d="M104 271.9476952617564 L100 171.9476952617564 L164 171.9476952617564 L160 271.9476952617564 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="132" cy="206.9476952617564" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="110" y1="191.9476952617564" x2="84.04318745222149" y2="271.75363185183323" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="110" y1="191.9476952617564" x2="84.04318745222149" y2="271.75363185183323" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="84.04318745222149" cy="271.75363185183323" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="154" y1="191.9476952617564" x2="174.134734949685" y2="275.1140204782291" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="154" y1="191.9476952617564" x2="174.134734949685" y2="275.1140204782291" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="174.134734949685" cy="275.1140204782291" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M90 146.9476952617564
+                 C84 96.9476952617564 112 71.9476952617564 132 68.9476952617564
+                 C152 71.9476952617564 180 96.9476952617564 174 146.9476952617564
+                 C156 134.9476952617564 108 134.9476952617564 90 146.9476952617564 Z"
+              fill="#120c12"/>
+        <path d="M102 134.9476952617564 C112 114.9476952617564 152 114.9476952617564 162 134.9476952617564
+                 C150 148.9476952617564 114 148.9476952617564 102 134.9476952617564 Z"
+              fill="#0a060a"/>
+        <ellipse cx="132" cy="126.9476952617564" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_1_7" transform="translate(1792,512)" clip-path="url(#clip_1_7)">
+    <g id="idle_backSide_3">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="126" y1="308.8547597604677" x2="120.5383877942651" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="126" y1="308.8547597604677" x2="120.5383877942651" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="403.33433982045364" x2="110.98773802258394" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="120.5383877942651" y1="403.33433982045364" x2="110.98773802258394" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="110.98773802258394" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="138" y1="308.8547597604677" x2="143.4616122057349" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="138" y1="308.8547597604677" x2="143.4616122057349" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="403.33433982045364" x2="153.01226197741607" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="143.4616122057349" y1="403.33433982045364" x2="153.01226197741607" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="153.01226197741607" cy="502" rx="18" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="132" cy="300.8547597604677" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M82 290.8547597604677 L74 370.8547597604677 L190 370.8547597604677 L182 290.8547597604677 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(3.6410698203507446 132 260.8547597604677)">
+        <!-- torso -->
+        <path d="M92 280.8547597604677
+                 C84 220.8547597604677 90 170.8547597604677 96 155.8547597604677
+                 L168 155.8547597604677
+                 C174 170.8547597604677 180 220.8547597604677 172 280.8547597604677 Z"
+              fill="#2a1824"/>
+        <path d="M104 270.8547597604677 L100 170.8547597604677 L164 170.8547597604677 L160 270.8547597604677 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="132" cy="205.8547597604677" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="110" y1="191.8547597604677" x2="85.65203430639114" y2="272.6888878149741" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="110" y1="191.8547597604677" x2="85.65203430639114" y2="272.6888878149741" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="85.65203430639114" cy="272.6888878149741" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="154" y1="191.8547597604677" x2="175.7920117895792" y2="274.164134113908" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="154" y1="191.8547597604677" x2="175.7920117895792" y2="274.164134113908" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="175.7920117895792" cy="274.164134113908" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M90 144.8547597604677
+                 C84 94.85475976046769 112 69.85475976046769 132 66.85475976046769
+                 C152 69.85475976046769 180 94.85475976046769 174 144.8547597604677
+                 C156 132.8547597604677 108 132.8547597604677 90 144.8547597604677 Z"
+              fill="#120c12"/>
+        <path d="M102 132.8547597604677 C112 112.85475976046769 152 112.85475976046769 162 132.8547597604677
+                 C150 146.8547597604677 114 146.8547597604677 102 132.8547597604677 Z"
+              fill="#0a060a"/>
+        <ellipse cx="132" cy="124.85475976046769" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_0" transform="translate(0,1024)" clip-path="url(#clip_2_0)">
+    <g id="idle_back_0">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="308" x2="100.06979598957292" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="308" x2="100.06979598957292" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="402.47958005998595" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="402.47958005998595" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="308" x2="155.93020401042708" y2="402.47958005998595" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="308" x2="155.93020401042708" y2="402.47958005998595" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="402.47958005998595" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="402.47958005998595" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="300" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 290 L70 370 L186 370 L178 290 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(0 128 260)">
+        <!-- torso -->
+        <path d="M88 280
+                 C80 220 86 170 92 155
+                 L164 155
+                 C170 170 176 220 168 280 Z"
+              fill="#2a1824"/>
+        <path d="M100 270 L96 170 L160 170 L156 270 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="205" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="190" x2="53.03461977939974" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="190" x2="53.03461977939974" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="53.03461977939974" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="190" x2="202.96538022060025" y2="271.5921792018773" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="190" x2="202.96538022060025" y2="271.5921792018773" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="202.96538022060025" cy="271.5921792018773" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 145
+                 C80 95 108 70 128 67
+                 C148 70 176 95 170 145
+                 C152 133 104 133 86 145 Z"
+              fill="#120c12"/>
+        <path d="M98 133 C108 113 148 113 158 133
+                 C146 147 110 147 98 133 Z"
+              fill="#0a060a"/>
+        <ellipse cx="128" cy="125" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_1" transform="translate(256,1024)" clip-path="url(#clip_2_1)">
+    <g id="idle_back_1">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="309.56665381925495" x2="100.06979598957292" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="309.56665381925495" x2="100.06979598957292" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.0462338792409" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.0462338792409" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="309.56665381925495" x2="155.93020401042708" y2="404.0462338792409" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="309.56665381925495" x2="155.93020401042708" y2="404.0462338792409" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.0462338792409" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.0462338792409" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="301.56665381925495" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 291.56665381925495 L70 371.56665381925495 L186 371.56665381925495 L178 291.56665381925495 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(1.1749903644412252 128 261.56665381925495)">
+        <!-- torso -->
+        <path d="M88 281.56665381925495
+                 C80 221.56665381925495 86 171.56665381925495 92 156.56665381925495
+                 L164 156.56665381925495
+                 C170 171.56665381925495 176 221.56665381925495 168 281.56665381925495 Z"
+              fill="#2a1824"/>
+        <path d="M100 271.56665381925495 L96 171.56665381925495 L160 171.56665381925495 L156 271.56665381925495 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="206.56665381925495" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="192.56665381925495" x2="49.71678645882331" y2="272.7385217975263" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="192.56665381925495" x2="49.71678645882331" y2="272.7385217975263" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="49.71678645882331" cy="272.7385217975263" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="192.56665381925495" x2="199.59209958208515" y2="275.441907317051" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="192.56665381925495" x2="199.59209958208515" y2="275.441907317051" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="199.59209958208515" cy="275.441907317051" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 145.56665381925495
+                 C80 95.56665381925495 108 70.56665381925495 128 67.56665381925495
+                 C148 70.56665381925495 176 95.56665381925495 170 145.56665381925495
+                 C152 133.56665381925495 104 133.56665381925495 86 145.56665381925495 Z"
+              fill="#120c12"/>
+        <path d="M98 133.56665381925495 C108 113.56665381925495 148 113.56665381925495 158 133.56665381925495
+                 C146 147.56665381925495 110 147.56665381925495 98 133.56665381925495 Z"
+              fill="#0a060a"/>
+        <ellipse cx="128" cy="125.56665381925495" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_2" transform="translate(512,1024)" clip-path="url(#clip_2_2)">
+    <g id="idle_back_2">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="309.9476952617564" x2="100.06979598957292" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="309.9476952617564" x2="100.06979598957292" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.42727532174234" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="404.42727532174234" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="309.9476952617564" x2="155.93020401042708" y2="404.42727532174234" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="309.9476952617564" x2="155.93020401042708" y2="404.42727532174234" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.42727532174234" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="404.42727532174234" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="301.9476952617564" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 291.9476952617564 L70 371.9476952617564 L186 371.9476952617564 L178 291.9476952617564 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(1.4607714463172927 128 261.9476952617564)">
+        <!-- torso -->
+        <path d="M88 281.9476952617564
+                 C80 221.9476952617564 86 171.9476952617564 92 156.9476952617564
+                 L164 156.9476952617564
+                 C170 171.9476952617564 176 221.9476952617564 168 281.9476952617564 Z"
+              fill="#2a1824"/>
+        <path d="M100 271.9476952617564 L96 171.9476952617564 L160 171.9476952617564 L156 271.9476952617564 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="206.9476952617564" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="191.9476952617564" x2="48.918839217459265" y2="271.75363185183323" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="191.9476952617564" x2="48.918839217459265" y2="271.75363185183323" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="48.918839217459265" cy="271.75363185183323" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="191.9476952617564" x2="198.76390707097858" y2="275.1140204782291" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="191.9476952617564" x2="198.76390707097858" y2="275.1140204782291" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="198.76390707097858" cy="275.1140204782291" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 146.9476952617564
+                 C80 96.9476952617564 108 71.9476952617564 128 68.9476952617564
+                 C148 71.9476952617564 176 96.9476952617564 170 146.9476952617564
+                 C152 134.9476952617564 104 134.9476952617564 86 146.9476952617564 Z"
+              fill="#120c12"/>
+        <path d="M98 134.9476952617564 C108 114.9476952617564 148 114.9476952617564 158 134.9476952617564
+                 C146 148.9476952617564 110 148.9476952617564 98 134.9476952617564 Z"
+              fill="#0a060a"/>
+        <ellipse cx="128" cy="126.9476952617564" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_3" transform="translate(768,1024)" clip-path="url(#clip_2_3)">
+    <g id="idle_back_3">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="308.8547597604677" x2="100.06979598957292" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="308.8547597604677" x2="100.06979598957292" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="403.33433982045364" x2="82.70497822287989" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="100.06979598957292" y1="403.33433982045364" x2="82.70497822287989" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="82.70497822287989" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="308.8547597604677" x2="155.93020401042708" y2="403.33433982045364" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="308.8547597604677" x2="155.93020401042708" y2="403.33433982045364" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="403.33433982045364" x2="173.2950217771201" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="155.93020401042708" y1="403.33433982045364" x2="173.2950217771201" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="173.2950217771201" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="300.8547597604677" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 290.8547597604677 L70 370.8547597604677 L186 370.8547597604677 L178 290.8547597604677 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(0.6410698203507447 128 260.8547597604677)">
+        <!-- torso -->
+        <path d="M88 280.8547597604677
+                 C80 220.8547597604677 86 170.8547597604677 92 155.8547597604677
+                 L164 155.8547597604677
+                 C170 170.8547597604677 176 220.8547597604677 168 280.8547597604677 Z"
+              fill="#2a1824"/>
+        <path d="M100 270.8547597604677 L96 170.8547597604677 L160 170.8547597604677 L156 270.8547597604677 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="205.8547597604677" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="191.8547597604677" x2="51.217191866273055" y2="272.6888878149741" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="191.8547597604677" x2="51.217191866273055" y2="272.6888878149741" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="51.217191866273055" cy="272.6888878149741" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="191.8547597604677" x2="201.1314454136846" y2="274.164134113908" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="191.8547597604677" x2="201.1314454136846" y2="274.164134113908" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="201.1314454136846" cy="274.164134113908" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 144.8547597604677
+                 C80 94.85475976046769 108 69.85475976046769 128 66.85475976046769
+                 C148 69.85475976046769 176 94.85475976046769 170 144.8547597604677
+                 C152 132.8547597604677 104 132.8547597604677 86 144.8547597604677 Z"
+              fill="#120c12"/>
+        <path d="M98 132.8547597604677 C108 112.85475976046769 148 112.85475976046769 158 132.8547597604677
+                 C146 146.8547597604677 110 146.8547597604677 98 132.8547597604677 Z"
+              fill="#0a060a"/>
+        <ellipse cx="128" cy="124.85475976046769" rx="34" ry="38" fill="#120c12"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_4" transform="translate(1024,1024)" clip-path="url(#clip_2_4)">
+    <g id="death_0">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="110" y1="308" x2="85.41219071526052" y2="399.76295349746147" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="110" y1="308" x2="85.41219071526052" y2="399.76295349746147" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="85.41219071526052" y1="399.76295349746147" x2="14.701512596605781" y2="470.4736316161162" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="85.41219071526052" y1="399.76295349746147" x2="14.701512596605781" y2="470.4736316161162" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="14.701512596605781" cy="476.4736316161162" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="146" y1="308" x2="162.49657687835838" y2="401.55673653615975" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="146" y1="308" x2="162.49657687835838" y2="401.55673653615975" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="162.49657687835838" y1="401.55673653615975" x2="219.854220513463" y2="483.47194096505893" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="162.49657687835838" y1="401.55673653615975" x2="219.854220513463" y2="483.47194096505893" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="219.854220513463" cy="489.47194096505893" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="128" cy="300" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M78 290 L70 370 L186 370 L178 290 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(0 128 260)">
+        <!-- torso -->
+        <path d="M88 280
+                 C80 220 86 170 92 155
+                 L164 155
+                 C170 170 176 220 168 280 Z"
+              fill="#2a1824"/>
+        <path d="M100 270 L96 170 L160 170 L156 270 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="128" cy="205" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="86" y1="190" x2="29.43469034758455" y2="257.4119109944701" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="86" y1="190" x2="29.43469034758455" y2="257.4119109944701" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="29.43469034758455" cy="257.4119109944701" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="170" y1="190" x2="185.28103963468988" y2="276.6630822650743" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="170" y1="190" x2="185.28103963468988" y2="276.6630822650743" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="185.28103963468988" cy="276.6630822650743" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M86 145
+                 C80 95 108 70 128 67
+                 C148 70 176 95 170 145
+                 C152 133 104 133 86 145 Z"
+              fill="#120c12"/>
+        <path d="M98 133 C108 113 148 113 158 133
+                 C146 147 110 147 98 133 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="128" cy="125" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="118" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="138" cy="123" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M118 137 Q128 143 138 137"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_5" transform="translate(1280,1024)" clip-path="url(#clip_2_5)">
+    <g id="death_1">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="117.5" y1="318" x2="85.00808638406147" y2="407.2707989746613" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="117.5" y1="318" x2="85.00808638406147" y2="407.2707989746613" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="85.00808638406147" y1="407.2707989746613" x2="8.403642072163677" y2="471.5495599433153" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="85.00808638406147" y1="407.2707989746613" x2="8.403642072163677" y2="471.5495599433153" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="8.403642072163677" cy="477.5495599433153" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="153.5" y1="318" x2="176.08015977098646" y2="410.27749663225984" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="153.5" y1="318" x2="176.08015977098646" y2="410.27749663225984" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="176.08015977098646" y1="410.27749663225984" x2="238.67250698939236" y2="488.265944941548" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="176.08015977098646" y1="410.27749663225984" x2="238.67250698939236" y2="488.265944941548" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="238.67250698939236" cy="494.265944941548" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="135.5" cy="310" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M85.5 300 L77.5 380 L193.5 380 L185.5 300 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(13.75 135.5 270)">
+        <!-- torso -->
+        <path d="M95.5 290
+                 C87.5 230 93.5 180 99.5 165
+                 L171.5 165
+                 C177.5 180 183.5 230 175.5 290 Z"
+              fill="#2a1824"/>
+        <path d="M107.5 280 L103.5 180 L167.5 180 L163.5 280 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="135.5" cy="215" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="93.5" y1="197.5" x2="31.274603255583827" y2="259.7253967444162" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="93.5" y1="197.5" x2="31.274603255583827" y2="259.7253967444162" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="31.274603255583827" cy="259.7253967444162" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="177.5" y1="197.5" x2="181.33850608814956" y2="285.41624349920346" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="177.5" y1="197.5" x2="181.33850608814956" y2="285.41624349920346" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="181.33850608814956" cy="285.41624349920346" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M93.5 157.5
+                 C87.5 107.5 115.5 82.5 135.5 79.5
+                 C155.5 82.5 183.5 107.5 177.5 157.5
+                 C159.5 145.5 111.5 145.5 93.5 157.5 Z"
+              fill="#120c12"/>
+        <path d="M105.5 145.5 C115.5 125.5 155.5 125.5 165.5 145.5
+                 C153.5 159.5 117.5 159.5 105.5 145.5 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="135.5" cy="137.5" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="125.5" cy="135.5" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="145.5" cy="135.5" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M125.5 149.5 Q135.5 155.5 145.5 149.5"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_6" transform="translate(1536,1024)" clip-path="url(#clip_2_6)">
+    <g id="death_2">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="125" y1="328" x2="84.85126513463355" y2="414.09923976848177" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="125" y1="328" x2="84.85126513463355" y2="414.09923976848177" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="84.85126513463355" y1="414.09923976848177" x2="2.936060705734377" y2="471.4568834035864" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="84.85126513463355" y1="414.09923976848177" x2="2.936060705734377" y2="471.4568834035864" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="2.936060705734377" cy="477.4568834035864" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="161" y1="328" x2="189.56705095290596" y2="418.60311032108154" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="161" y1="328" x2="189.56705095290596" y2="418.60311032108154" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="189.56705095290596" y1="418.60311032108154" x2="257.126071714472" y2="492.33084400209395" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="189.56705095290596" y1="418.60311032108154" x2="257.126071714472" y2="492.33084400209395" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="257.126071714472" cy="498.33084400209395" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="143" cy="320" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M93 310 L85 390 L201 390 L193 310 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(27.5 143 280)">
+        <!-- torso -->
+        <path d="M103 300
+                 C95 240 101 190 107 175
+                 L179 175
+                 C185 190 191 240 183 300 Z"
+              fill="#2a1824"/>
+        <path d="M115 290 L111 190 L175 190 L171 290 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="143" cy="225" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="101" y1="205" x2="33.58808900552994" y2="261.56530965241546" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="101" y1="205" x2="33.58808900552994" y2="261.56530965241546" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="33.58808900552994" cy="261.56530965241546" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="185" y1="205" x2="177.33029463820608" y2="292.6651334320736" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="185" y1="205" x2="177.33029463820608" y2="292.6651334320736" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="177.33029463820608" cy="292.6651334320736" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M101 170
+                 C95 120 123 95 143 92
+                 C163 95 191 120 185 170
+                 C167 158 119 158 101 170 Z"
+              fill="#120c12"/>
+        <path d="M113 158 C123 138 163 138 173 158
+                 C161 172 125 172 113 158 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="143" cy="150" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="133" cy="148" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="153" cy="148" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M133 162 Q143 168 153 162"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_2_7" transform="translate(1792,1024)" clip-path="url(#clip_2_7)">
+    <g id="death_3">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="132.5" y1="338" x2="85" y2="420.2724133595217" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="132.5" y1="338" x2="85" y2="420.2724133595217" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="85" y1="420.2724133595217" x2="-1.6025403784438623" y2="470.2724133595217" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="85" y1="420.2724133595217" x2="-1.6025403784438623" y2="470.2724133595217" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="-1.6025403784438623" cy="476.2724133595217" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="168.5" y1="338" x2="202.93161363695165" y2="426.54074758186584" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="168.5" y1="338" x2="202.93161363695165" y2="426.54074758186584" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="202.93161363695165" y1="426.54074758186584" x2="275.1680098429272" y2="495.69205316009277" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="202.93161363695165" y1="426.54074758186584" x2="275.1680098429272" y2="495.69205316009277" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="275.1680098429272" cy="501.69205316009277" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="150.5" cy="330" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M100.5 320 L92.5 400 L208.5 400 L200.5 320 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(41.25 150.5 290)">
+        <!-- torso -->
+        <path d="M110.5 310
+                 C102.5 250 108.5 200 114.5 185
+                 L186.5 185
+                 C192.5 200 198.5 250 190.5 310 Z"
+              fill="#2a1824"/>
+        <path d="M122.5 300 L118.5 200 L182.5 200 L178.5 300 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="150.5" cy="235" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="108.5" y1="212.5" x2="36.41462010256872" y2="262.9747263988921" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="108.5" y1="212.5" x2="36.41462010256872" y2="262.9747263988921" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="36.41462010256872" cy="262.9747263988921" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="192.5" y1="212.5" x2="173.45331397344694" y2="298.4140486265541" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="192.5" y1="212.5" x2="173.45331397344694" y2="298.4140486265541" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="173.45331397344694" cy="298.4140486265541" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M108.5 182.5
+                 C102.5 132.5 130.5 107.5 150.5 104.5
+                 C170.5 107.5 198.5 132.5 192.5 182.5
+                 C174.5 170.5 126.5 170.5 108.5 182.5 Z"
+              fill="#120c12"/>
+        <path d="M120.5 170.5 C130.5 150.5 170.5 150.5 180.5 170.5
+                 C168.5 184.5 132.5 184.5 120.5 170.5 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="150.5" cy="162.5" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="140.5" cy="160.5" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="160.5" cy="160.5" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M140.5 174.5 Q150.5 180.5 160.5 174.5"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_3_0" transform="translate(0,1536)" clip-path="url(#clip_3_0)">
+    <g id="death_4">
+
+    <g>
+      
+      <g id="legL">
+        <line x1="140" y1="348" x2="85.51023854665063" y2="425.81944420745424" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="140" y1="348" x2="85.51023854665063" y2="425.81944420745424" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="85.51023854665063" y1="425.81944420745424" x2="-5.120540157014361" y2="468.0812703815242" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="85.51023854665063" y1="425.81944420745424" x2="-5.120540157014361" y2="468.0812703815242" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="-5.120540157014361" cy="474.0812703815242" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      
+      <g id="legR">
+        <line x1="176" y1="348" x2="216.14873486536646" y2="434.09923976848177" stroke="#1a1018" stroke-width="28" stroke-linecap="round"/>
+        <line x1="176" y1="348" x2="216.14873486536646" y2="434.09923976848177" stroke="#2a1824" stroke-width="20" stroke-linecap="round"/>
+        <line x1="216.14873486536646" y1="434.09923976848177" x2="292.75317917726426" y2="498" stroke="#1a1018" stroke-width="24" stroke-linecap="round"/>
+        <line x1="216.14873486536646" y1="434.09923976848177" x2="292.75317917726426" y2="498" stroke="#3a2434" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="292.75317917726426" cy="502" rx="22" ry="10" fill="#0e0a0c"/>
+      </g>
+      <!-- pelvis / lower robe -->
+      <ellipse cx="158" cy="340" rx="48" ry="28" fill="#1a1018"/>
+      <path d="M108 330 L100 410 L216 410 L208 330 Z"
+            fill="#2a1824" opacity="0.85"/>
+      <g transform="rotate(55 158 300)">
+        <!-- torso -->
+        <path d="M118 320
+                 C110 260 116 210 122 195
+                 L194 195
+                 C200 210 206 260 198 320 Z"
+              fill="#2a1824"/>
+        <path d="M130 310 L126 210 L190 210 L186 310 Z"
+              fill="#3a2434" opacity="0.45"/>
+        <circle cx="158" cy="245" r="11" fill="#6a5040" stroke="#c4a060" stroke-width="2.5"/>
+        
+      <g id="armL">
+        <line x1="116" y1="220" x2="39.7897644669694" y2="264" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="116" y1="220" x2="39.7897644669694" y2="264" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="39.7897644669694" cy="264" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+      <g id="armR">
+        <line x1="200" y1="220" x2="169.90222738734116" y2="302.69295062915995" stroke="#1a1018" stroke-width="22" stroke-linecap="round"/>
+        <line x1="200" y1="220" x2="169.90222738734116" y2="302.69295062915995" stroke="#2a1824" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="169.90222738734116" cy="302.69295062915995" rx="12" ry="11" fill="#d4c4b0"/>
+      </g>
+        
+        <!-- hood -->
+        <path d="M116 195
+                 C110 145 138 120 158 117
+                 C178 120 206 145 200 195
+                 C182 183 134 183 116 195 Z"
+              fill="#120c12"/>
+        <path d="M128 183 C138 163 178 163 188 183
+                 C176 197 140 197 128 183 Z"
+              fill="#0a060a"/>
+        
+      <ellipse cx="158" cy="175" rx="28" ry="32" fill="#d4c4b0"/>
+      <ellipse cx="148" cy="173" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <ellipse cx="168" cy="173" rx="4.5" ry="5.5" fill="#1a1010"/>
+      <path d="M148 187 Q158 193 168 187"
+            fill="none" stroke="#5a4030" stroke-width="2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+  <g id="cell_3_1" transform="translate(256,1536)" clip-path="url(#clip_3_1)">
+    <g id="death_5">
+
+      <g transform="translate(8,310) rotate(78 120 70)">
+        <ellipse cx="120" cy="95" rx="100" ry="42" fill="#1a1018"/>
+        <path d="M35 95 C50 45 90 35 130 40 C170 35 210 55 220 100
+                 C180 130 70 135 35 95 Z" fill="#2a1824"/>
+        <ellipse cx="48" cy="72" rx="26" ry="24" fill="#120c12"/>
+        <ellipse cx="50" cy="76" rx="14" ry="15" fill="#d4c4b0"/>
+        <ellipse cx="46" cy="74" rx="3" ry="3.5" fill="#1a1010"/>
+        <ellipse cx="56" cy="74" rx="3" ry="3.5" fill="#1a1010"/>
+      </g>
+    </g>
+  </g>
+  <g id="cell_3_2" transform="translate(512,1536)" clip-path="url(#clip_3_2)">
+    <g id="dead_0">
+
+      <g transform="translate(8,310) rotate(78 120 70)">
+        <ellipse cx="120" cy="95" rx="100" ry="42" fill="#1a1018"/>
+        <path d="M35 95 C50 45 90 35 130 40 C170 35 210 55 220 100
+                 C180 130 70 135 35 95 Z" fill="#2a1824"/>
+        <ellipse cx="48" cy="72" rx="26" ry="24" fill="#120c12"/>
+        <ellipse cx="50" cy="76" rx="14" ry="15" fill="#d4c4b0"/>
+        <ellipse cx="46" cy="74" rx="3" ry="3.5" fill="#1a1010"/>
+        <ellipse cx="56" cy="74" rx="3" ry="3.5" fill="#1a1010"/>
+      </g>
+    </g>
+  </g>
+  </g>
+</svg>
