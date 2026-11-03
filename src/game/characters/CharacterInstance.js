@@ -257,6 +257,8 @@ export class CharacterInstance {
     this.dead = false;
     this.health = this.def.maxHealth;
     this.root.position.fromArray(this.spawnPosition);
+    this.root.position._walkVy = 0;
+    this.root.position._walkGrounded = true;
     this.facingYaw = this.instanceDef.yaw ?? 0;
     this.hitProxy.visible = true;
     this._pendingImpulse = null;

@@ -2,7 +2,8 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 /**
- * Resolves asset IDs from assets.json into primitive meshes or GLB scenes.
+ * Resolves asset IDs from assets.json (and included furniture JSON files)
+ * into primitive meshes, composed furniture, or GLB scenes.
  * Visual assets are independent of instance collision data.
  */
 export class AssetRegistry {
@@ -15,21 +16,43 @@ export class AssetRegistry {
   }
 
   async load(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Failed to load assets (${response.status}): ${url}`);
-    }
-    const doc = await response.json();
     this.defs.clear();
-    for (const [id, def] of Object.entries(doc.assets ?? {})) {
-      this.defs.set(id, def);
-    }
+    await this.mergeDoc(await this.fetchJson(url));
 
     // Preload GLB assets referenced by the registry.
     const glbUrls = [...this.defs.values()]
       .filter((d) => d.type === 'glb' && d.url)
       .map((d) => d.url);
     await Promise.all([...new Set(glbUrls)].map((u) => this.loadGltf(u)));
+  }
+
+  async fetchJson(url) {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to load assets (${response.status}): ${url}`);
+    }
+    return response.json();
+  }
+
+  async mergeDoc(doc) {
+    if (!doc || typeof doc !== 'object') return;
+
+    for (const [id, def] of Object.entries(doc.assets ?? {})) {
+      this.defs.set(id, { ...def, id: def.id ?? id });
+    }
+
+    // Standalone furniture / asset files (one definition per JSON).
+    if (doc.id && doc.type && doc.type !== 'catalog') {
+      this.defs.set(doc.id, doc);
+    }
+
+    for (const include of doc.includes ?? []) {
+      await this.mergeDoc(await this.fetchJson(include));
+    }
+  }
+
+  getDef(assetId) {
+    return this.defs.get(assetId) ?? null;
   }
 
   loadGltf(url) {
@@ -65,6 +88,9 @@ export class AssetRegistry {
     }
     if (def.type === 'primitive') {
       return this.createPrimitiveVisual(def, scale);
+    }
+    if (def.type === 'furniture') {
+      return this.createFurnitureVisual(def, scale);
     }
     throw new Error(`Unsupported asset type "${def.type}" for ${assetId}`);
   }
@@ -141,6 +167,45 @@ export class AssetRegistry {
       }
       default:
         throw new Error(`Unknown primitive "${def.primitive}"`);
+    }
+
+    return group;
+  }
+
+  /**
+   * Composed furniture from a standalone JSON def.
+   * Part positions/sizes are meters at scale [1,1,1]; instance scale multiplies them.
+   * Group origin is floor contact (parts already include vertical centers).
+   */
+  createFurnitureVisual(def, scale = [1, 1, 1]) {
+    const [sx, sy, sz] = scale;
+    const group = new THREE.Group();
+
+    for (const part of def.parts ?? []) {
+      const [px, py, pz] = part.position ?? [0, 0, 0];
+      const [psx, psy, psz] = part.size ?? [1, 1, 1];
+      const size = [psx * sx, psy * sy, psz * sz];
+      const material = this.materials.get(
+        part.material ?? def.material ?? 'wood',
+        Math.max(size[0], size[2]),
+        size[1],
+      );
+
+      let mesh;
+      if (part.primitive === 'cylinder') {
+        const geo = new THREE.CylinderGeometry(size[0] * 0.5, size[0] * 0.5, size[1], 12);
+        this.ownedGeometries.push(geo);
+        mesh = new THREE.Mesh(geo, material);
+      } else {
+        const geo = new THREE.BoxGeometry(size[0], size[1], size[2]);
+        this.ownedGeometries.push(geo);
+        mesh = new THREE.Mesh(geo, material);
+      }
+
+      mesh.position.set(px * sx, py * sy, pz * sz);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      group.add(mesh);
     }
 
     return group;

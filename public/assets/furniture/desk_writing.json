@@ -1,0 +1,42 @@
+{
+  "id": "desk_writing",
+  "type": "furniture",
+  "description": "Writing desk with side drawers",
+  "collision": {
+    "enabled": true,
+    "size": [1.4, 0.78, 0.7],
+    "offset": [0, 0.39, 0]
+  },
+  "parts": [
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.74, 0],
+      "size": [1.4, 0.08, 0.7]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.55, 0.35, 0],
+      "size": [0.28, 0.7, 0.65]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.55, 0.35, 0],
+      "size": [0.28, 0.7, 0.65]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.55, 0.55, 0.28],
+      "size": [0.24, 0.12, 0.04]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.55, 0.55, 0.28],
+      "size": [0.24, 0.12, 0.04]
+    }
+  ]
+}

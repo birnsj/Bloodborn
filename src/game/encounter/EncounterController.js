@@ -18,6 +18,14 @@ export class EncounterController {
       this.onHud?.({ type: 'playerDeath' });
     });
     this.player.setRestartCallback(() => this.reset());
+    this.player.setStatusCallback((evt) => {
+      this.onHud?.(evt);
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('nodamage') === '1') {
+      this.player.setNoDamage(true);
+    }
   }
 
   handleEnemyAttack(evt) {

@@ -1,0 +1,36 @@
+{
+  "id": "bench_wood",
+  "type": "furniture",
+  "description": "Long wooden bench",
+  "collision": {
+    "enabled": true,
+    "size": [1.6, 0.5, 0.45],
+    "offset": [0, 0.25, 0]
+  },
+  "parts": [
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.45, 0],
+      "size": [1.6, 0.08, 0.42]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.7, 0.22, 0],
+      "size": [0.08, 0.44, 0.4]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.7, 0.22, 0],
+      "size": [0.08, 0.44, 0.4]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.7, -0.18],
+      "size": [1.55, 0.4, 0.06]
+    }
+  ]
+}

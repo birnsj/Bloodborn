@@ -28,5 +28,15 @@
       "material": "wood",
       "description": "Placeholder wooden beam"
     }
-  }
+  },
+  "includes": [
+    "/assets/furniture/table_dining.json",
+    "/assets/furniture/chair_wood.json",
+    "/assets/furniture/bookshelf.json",
+    "/assets/furniture/bed_simple.json",
+    "/assets/furniture/desk_writing.json",
+    "/assets/furniture/cabinet_sideboard.json",
+    "/assets/furniture/bench_wood.json",
+    "/assets/furniture/altar_crypt.json"
+  ]
 }

@@ -1,0 +1,4770 @@
+{
+  "schemaVersion": 3,
+  "id": "mansion_vertical_test",
+  "name": "Gothic Mansion Vertical Test",
+  "description": "Three-level Gothic mansion (~28×24 m) for vertical architecture / texture-grid tests. Floors at Y=-4 / 0 / +4 with walkable stair treads (0.25 m rise, max step 0.35 m).",
+  "coordinateSystem": "rightHandedYUp",
+  "units": "meters",
+  "rotationUnits": "radians",
+  "player": {
+    "id": "player_spawn",
+    "spawnPosition": [
+      0,
+      0,
+      -9
+    ],
+    "spawnYaw": 0,
+    "eyeHeight": 1.7,
+    "radius": 0.35,
+    "walkSpeed": 4.2,
+    "lookSensitivity": 0.0022,
+    "weaponId": "pistol_placeholder",
+    "maxHealth": 100
+  },
+  "atmosphere": {
+    "fog": {
+      "enabled": true,
+      "color": "#0a0807",
+      "near": 3,
+      "far": 42
+    },
+    "ambient": {
+      "color": "#2a2218",
+      "intensity": 0.48
+    },
+    "background": "#070605"
+  },
+  "materials": {
+    "stone_floor": {
+      "id": "stone_floor",
+      "albedo": "/textures/stone-floor.png",
+      "color": "#c8b8a0",
+      "repeatPerMeter": [
+        1,
+        1
+      ],
+      "roughness": 0.92,
+      "metalness": 0.02
+    },
+    "stone_wall": {
+      "id": "stone_wall",
+      "albedo": "/textures/stone-wall.png",
+      "color": "#b5a48c",
+      "repeatPerMeter": [
+        1,
+        1
+      ],
+      "roughness": 0.95,
+      "metalness": 0
+    },
+    "ceiling": {
+      "id": "ceiling",
+      "albedo": "/textures/ceiling.png",
+      "color": "#9a9084",
+      "repeatPerMeter": [
+        1,
+        1
+      ],
+      "roughness": 0.97,
+      "metalness": 0
+    },
+    "wood": {
+      "id": "wood",
+      "albedo": "/textures/wood.png",
+      "color": "#c49a6c",
+      "repeatPerMeter": [
+        1,
+        1
+      ],
+      "roughness": 0.85,
+      "metalness": 0
+    },
+    "pillar_stone": {
+      "id": "pillar_stone",
+      "albedo": "/textures/pillar.png",
+      "color": "#d0c4b0",
+      "repeatPerMeter": [
+        1,
+        0.5
+      ],
+      "roughness": 0.9,
+      "metalness": 0.05
+    }
+  },
+  "rooms": [
+    {
+      "id": "b_crypt",
+      "name": "Stone Crypt",
+      "bounds": {
+        "min": [
+          -14,
+          -4,
+          -10
+        ],
+        "max": [
+          -2,
+          0,
+          4
+        ]
+      },
+      "floor": {
+        "id": "floor_b_crypt",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_b_crypt",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "b_lab",
+      "name": "Underground Laboratory",
+      "bounds": {
+        "min": [
+          2,
+          -4,
+          -6
+        ],
+        "max": [
+          14,
+          0,
+          10
+        ]
+      },
+      "floor": {
+        "id": "floor_b_lab",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_b_lab",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "b_storage",
+      "name": "Storage Chamber",
+      "bounds": {
+        "min": [
+          -10,
+          -4,
+          4
+        ],
+        "max": [
+          2,
+          0,
+          12
+        ]
+      },
+      "floor": {
+        "id": "floor_b_storage",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_b_storage",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "b_corridor",
+      "name": "Basement Corridor",
+      "bounds": {
+        "min": [
+          -2,
+          -4,
+          -2
+        ],
+        "max": [
+          2,
+          0,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_b_corridor",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_b_corridor",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "b_stair",
+      "name": "Service Stairwell (basement)",
+      "bounds": {
+        "min": [
+          -7.5,
+          -4,
+          -1
+        ],
+        "max": [
+          -5.5,
+          0,
+          1
+        ]
+      },
+      "floor": {
+        "id": "floor_b_stair",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_b_stair",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_foyer",
+      "name": "Gothic Entrance Foyer",
+      "bounds": {
+        "min": [
+          -6,
+          0,
+          -6
+        ],
+        "max": [
+          6,
+          8,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_g_foyer",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_foyer",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_vestibule",
+      "name": "Entrance Vestibule",
+      "bounds": {
+        "min": [
+          -4,
+          0,
+          -12
+        ],
+        "max": [
+          4,
+          3.5,
+          -6
+        ]
+      },
+      "floor": {
+        "id": "floor_g_vestibule",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_vestibule",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_dining_s",
+      "name": "Dining Room (south)",
+      "bounds": {
+        "min": [
+          -14,
+          0,
+          -6
+        ],
+        "max": [
+          -7.5,
+          3.5,
+          -1
+        ]
+      },
+      "floor": {
+        "id": "floor_g_dining_s",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_dining_s",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_dining_n",
+      "name": "Dining Room (north)",
+      "bounds": {
+        "min": [
+          -14,
+          0,
+          1
+        ],
+        "max": [
+          -7.5,
+          3.5,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_g_dining_n",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_dining_n",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_west_hall",
+      "name": "West Corridor",
+      "bounds": {
+        "min": [
+          -7.5,
+          0,
+          -6
+        ],
+        "max": [
+          -6,
+          3.5,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_g_west_hall",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_west_hall",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_stair_n",
+      "name": "Stair Landing North",
+      "bounds": {
+        "min": [
+          -7.5,
+          0,
+          1
+        ],
+        "max": [
+          -5.5,
+          3.5,
+          2
+        ]
+      },
+      "floor": {
+        "id": "floor_g_stair_n",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_stair_n",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_stair_s",
+      "name": "Stair Landing South",
+      "bounds": {
+        "min": [
+          -7.5,
+          0,
+          -2
+        ],
+        "max": [
+          -5.5,
+          3.5,
+          -1
+        ]
+      },
+      "floor": {
+        "id": "floor_g_stair_s",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_stair_s",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_library",
+      "name": "Library",
+      "bounds": {
+        "min": [
+          6,
+          0,
+          -6
+        ],
+        "max": [
+          14,
+          3.5,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_g_library",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_library",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_north_w",
+      "name": "North Chamber West",
+      "bounds": {
+        "min": [
+          -6,
+          0,
+          6
+        ],
+        "max": [
+          0,
+          3.5,
+          12
+        ]
+      },
+      "floor": {
+        "id": "floor_g_north_w",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_north_w",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "g_north_e",
+      "name": "North Chamber East",
+      "bounds": {
+        "min": [
+          0,
+          0,
+          6
+        ],
+        "max": [
+          6,
+          3.5,
+          12
+        ]
+      },
+      "floor": {
+        "id": "floor_g_north_e",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_g_north_e",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_gal_s",
+      "name": "South Gallery",
+      "bounds": {
+        "min": [
+          -6,
+          4,
+          -6
+        ],
+        "max": [
+          6,
+          7.5,
+          -4
+        ]
+      },
+      "floor": {
+        "id": "floor_u_gal_s",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_gal_s",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_gal_n",
+      "name": "North Gallery",
+      "bounds": {
+        "min": [
+          -6,
+          4,
+          4
+        ],
+        "max": [
+          6,
+          7.5,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_u_gal_n",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_gal_n",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_gal_w",
+      "name": "West Gallery",
+      "bounds": {
+        "min": [
+          -6,
+          4,
+          -4
+        ],
+        "max": [
+          -4,
+          7.5,
+          4
+        ]
+      },
+      "floor": {
+        "id": "floor_u_gal_w",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_gal_w",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_gal_e",
+      "name": "East Gallery",
+      "bounds": {
+        "min": [
+          4,
+          4,
+          -4
+        ],
+        "max": [
+          6,
+          7.5,
+          4
+        ]
+      },
+      "floor": {
+        "id": "floor_u_gal_e",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_gal_e",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_bed_w",
+      "name": "West Bedrooms",
+      "bounds": {
+        "min": [
+          -14,
+          4,
+          -6
+        ],
+        "max": [
+          -6,
+          7.5,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_u_bed_w",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_bed_w",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_bed_e",
+      "name": "East Bedrooms",
+      "bounds": {
+        "min": [
+          6,
+          4,
+          -6
+        ],
+        "max": [
+          14,
+          7.5,
+          6
+        ]
+      },
+      "floor": {
+        "id": "floor_u_bed_e",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_bed_e",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_hall_n",
+      "name": "Upper North Hall",
+      "bounds": {
+        "min": [
+          -6,
+          4,
+          6
+        ],
+        "max": [
+          6,
+          7.5,
+          12
+        ]
+      },
+      "floor": {
+        "id": "floor_u_hall_n",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_hall_n",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_south",
+      "name": "Upper South Wing",
+      "bounds": {
+        "min": [
+          -4,
+          4,
+          -12
+        ],
+        "max": [
+          4,
+          7.5,
+          -6
+        ]
+      },
+      "floor": {
+        "id": "floor_u_south",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_south",
+        "material": "ceiling"
+      }
+    },
+    {
+      "id": "u_stair",
+      "name": "Service Stair Landing (upper)",
+      "bounds": {
+        "min": [
+          -7.5,
+          4,
+          -1
+        ],
+        "max": [
+          -5.5,
+          7.5,
+          1
+        ]
+      },
+      "floor": {
+        "id": "floor_u_stair",
+        "material": "stone_floor"
+      },
+      "ceiling": {
+        "id": "ceil_u_stair",
+        "material": "ceiling"
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "ext_s_b",
+      "material": "stone_wall",
+      "position": [
+        0,
+        -2,
+        -12
+      ],
+      "size": [
+        28.5,
+        4,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_s_g",
+      "material": "stone_wall",
+      "position": [
+        0,
+        1.75,
+        -12
+      ],
+      "size": [
+        8.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_s_g_w",
+      "material": "stone_wall",
+      "position": [
+        -9,
+        1.75,
+        -12
+      ],
+      "size": [
+        10,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_s_u",
+      "material": "stone_wall",
+      "position": [
+        0,
+        5.75,
+        -12
+      ],
+      "size": [
+        8.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_n_b",
+      "material": "stone_wall",
+      "position": [
+        -4,
+        -2,
+        12
+      ],
+      "size": [
+        20.5,
+        4,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_n_g",
+      "material": "stone_wall",
+      "position": [
+        0,
+        1.75,
+        12
+      ],
+      "size": [
+        12.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_n_u",
+      "material": "stone_wall",
+      "position": [
+        0,
+        5.75,
+        12
+      ],
+      "size": [
+        12.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_w_b",
+      "material": "stone_wall",
+      "position": [
+        -14,
+        -2,
+        1
+      ],
+      "size": [
+        0.5,
+        4,
+        22.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_w_g",
+      "material": "stone_wall",
+      "position": [
+        -14,
+        1.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        12.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_w_u",
+      "material": "stone_wall",
+      "position": [
+        -14,
+        5.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        12.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_e_b",
+      "material": "stone_wall",
+      "position": [
+        14,
+        -2,
+        2
+      ],
+      "size": [
+        0.5,
+        4,
+        16.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_e_g",
+      "material": "stone_wall",
+      "position": [
+        14,
+        1.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        12.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "ext_e_u",
+      "material": "stone_wall",
+      "position": [
+        14,
+        5.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        12.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "wing_s_w_b",
+      "material": "stone_wall",
+      "position": [
+        -8,
+        -2,
+        -10
+      ],
+      "size": [
+        12.5,
+        4,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "wing_s_e_b",
+      "material": "stone_wall",
+      "position": [
+        8,
+        -2,
+        -6
+      ],
+      "size": [
+        12.5,
+        4,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "wing_s_w_g",
+      "material": "stone_wall",
+      "position": [
+        -10,
+        1.75,
+        -6
+      ],
+      "size": [
+        8.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "wing_s_e_g",
+      "material": "stone_wall",
+      "position": [
+        10,
+        1.75,
+        -6
+      ],
+      "size": [
+        8.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "wing_s_w_u",
+      "material": "stone_wall",
+      "position": [
+        -10,
+        5.75,
+        -6
+      ],
+      "size": [
+        8.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "wing_s_e_u",
+      "material": "stone_wall",
+      "position": [
+        10,
+        5.75,
+        -6
+      ],
+      "size": [
+        8.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "vest_w_g",
+      "material": "stone_wall",
+      "position": [
+        -4,
+        1.75,
+        -9
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "vest_e_g",
+      "material": "stone_wall",
+      "position": [
+        4,
+        1.75,
+        -9
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "vest_w_u",
+      "material": "stone_wall",
+      "position": [
+        -4,
+        5.75,
+        -9
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "vest_e_u",
+      "material": "stone_wall",
+      "position": [
+        4,
+        5.75,
+        -9
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_s_w",
+      "material": "stone_wall",
+      "position": [
+        -4.125,
+        4,
+        -6
+      ],
+      "size": [
+        3.8125,
+        8,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_s_e",
+      "material": "stone_wall",
+      "position": [
+        4.125,
+        4,
+        -6
+      ],
+      "size": [
+        3.8125,
+        8,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_s_lintel",
+      "material": "stone_wall",
+      "position": [
+        0,
+        3.1875,
+        -6
+      ],
+      "size": [
+        4.375,
+        1.625,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_n_w",
+      "material": "stone_wall",
+      "position": [
+        -4.125,
+        4,
+        6
+      ],
+      "size": [
+        3.8125,
+        8,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_n_e",
+      "material": "stone_wall",
+      "position": [
+        4.125,
+        4,
+        6
+      ],
+      "size": [
+        3.8125,
+        8,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_n_lintel",
+      "material": "stone_wall",
+      "position": [
+        0,
+        3.1875,
+        6
+      ],
+      "size": [
+        4.375,
+        1.625,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_w_s",
+      "material": "stone_wall",
+      "position": [
+        -6,
+        4,
+        -4.125
+      ],
+      "size": [
+        0.5,
+        8,
+        3.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_w_n",
+      "material": "stone_wall",
+      "position": [
+        -6,
+        4,
+        4.125
+      ],
+      "size": [
+        0.5,
+        8,
+        3.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_w_lintel",
+      "material": "stone_wall",
+      "position": [
+        -6,
+        3.1875,
+        0
+      ],
+      "size": [
+        0.5,
+        1.625,
+        4.375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_e_s",
+      "material": "stone_wall",
+      "position": [
+        6,
+        4,
+        -4.125
+      ],
+      "size": [
+        0.5,
+        8,
+        3.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_e_n",
+      "material": "stone_wall",
+      "position": [
+        6,
+        4,
+        4.125
+      ],
+      "size": [
+        0.5,
+        8,
+        3.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "foyer_e_lintel",
+      "material": "stone_wall",
+      "position": [
+        6,
+        3.1875,
+        0
+      ],
+      "size": [
+        0.5,
+        1.625,
+        4.375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_crypt_lab_div",
+      "material": "stone_wall",
+      "position": [
+        0,
+        -2,
+        2
+      ],
+      "size": [
+        0.5,
+        4,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_crypt_e",
+      "material": "stone_wall",
+      "position": [
+        -2,
+        -2,
+        -3
+      ],
+      "size": [
+        0.5,
+        4,
+        14.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_lab_w",
+      "material": "stone_wall",
+      "position": [
+        2,
+        -2,
+        2
+      ],
+      "size": [
+        0.5,
+        4,
+        16.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_store_s",
+      "material": "stone_wall",
+      "position": [
+        -4,
+        -2,
+        4
+      ],
+      "size": [
+        12.5,
+        4,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_alcove_1",
+      "material": "stone_wall",
+      "position": [
+        -10,
+        -2,
+        -2
+      ],
+      "size": [
+        0.5,
+        4,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_alcove_2",
+      "material": "stone_wall",
+      "position": [
+        -6,
+        -2,
+        1
+      ],
+      "size": [
+        0.5,
+        4,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_lab_bench_a",
+      "material": "stone_wall",
+      "position": [
+        8,
+        -3.25,
+        0
+      ],
+      "size": [
+        6,
+        1.5,
+        0.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "b_lab_bench_b",
+      "material": "stone_wall",
+      "position": [
+        10,
+        -3.25,
+        6
+      ],
+      "size": [
+        0.75,
+        1.5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "g_dining_split_w",
+      "material": "stone_wall",
+      "position": [
+        -12.25,
+        1.75,
+        0
+      ],
+      "size": [
+        3.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "g_lib_shelf_w",
+      "material": "stone_wall",
+      "position": [
+        10,
+        1.75,
+        -2
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "g_north_div",
+      "material": "stone_wall",
+      "position": [
+        0,
+        1.75,
+        9
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "u_bed_w_div",
+      "material": "stone_wall",
+      "position": [
+        -10,
+        5.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "u_bed_e_div",
+      "material": "stone_wall",
+      "position": [
+        10,
+        5.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "u_hall_div",
+      "material": "stone_wall",
+      "position": [
+        0,
+        5.75,
+        9
+      ],
+      "size": [
+        0.5,
+        3.5,
+        6.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "rail_s",
+      "material": "wood",
+      "position": [
+        0,
+        4.5,
+        -4
+      ],
+      "size": [
+        8,
+        1,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "rail_n_w",
+      "material": "wood",
+      "position": [
+        -5.25,
+        4.5,
+        4
+      ],
+      "size": [
+        1.5,
+        1,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "rail_n_mid",
+      "material": "wood",
+      "position": [
+        0,
+        4.5,
+        4
+      ],
+      "size": [
+        4,
+        1,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "rail_n_e",
+      "material": "wood",
+      "position": [
+        5.25,
+        4.5,
+        4
+      ],
+      "size": [
+        1.5,
+        1,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "rail_w",
+      "material": "wood",
+      "position": [
+        -4,
+        4.5,
+        0
+      ],
+      "size": [
+        0.125,
+        1,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "rail_e",
+      "material": "wood",
+      "position": [
+        4,
+        4.5,
+        0
+      ],
+      "size": [
+        0.125,
+        1,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_w_b",
+      "material": "stone_wall",
+      "position": [
+        -7.5,
+        -2,
+        0
+      ],
+      "size": [
+        0.5,
+        4,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_e_b",
+      "material": "stone_wall",
+      "position": [
+        -5.5,
+        -2,
+        0
+      ],
+      "size": [
+        0.5,
+        4,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_s_b",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -2,
+        -1
+      ],
+      "size": [
+        2.5,
+        4,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_w_g",
+      "material": "stone_wall",
+      "position": [
+        -7.5,
+        1.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_e_g",
+      "material": "stone_wall",
+      "position": [
+        -5.5,
+        1.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_s_g",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        1.75,
+        -1
+      ],
+      "size": [
+        2.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_w_u",
+      "material": "stone_wall",
+      "position": [
+        -7.5,
+        5.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_e_u",
+      "material": "stone_wall",
+      "position": [
+        -5.5,
+        5.75,
+        0
+      ],
+      "size": [
+        0.5,
+        3.5,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "shaft_s_u",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        5.75,
+        -1
+      ],
+      "size": [
+        2.5,
+        3.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_0",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -3.8125,
+        -0.8125
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_1",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -3.5625,
+        -0.6875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_2",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -3.3125,
+        -0.625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_3",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -3.0625,
+        -0.5
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_4",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -2.8125,
+        -0.375
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_5",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -2.5625,
+        -0.25
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_6",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -2.3125,
+        -0.1875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_7",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -2.0625,
+        -0.0625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_8",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -1.8125,
+        0.0625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_9",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -1.5625,
+        0.1875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_10",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -1.3125,
+        0.25
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_11",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -1.0625,
+        0.375
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_12",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -0.8125,
+        0.5
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_13",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -0.5625,
+        0.625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_14",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -0.3125,
+        0.6875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_bg_15",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        -0.0625,
+        0.8125
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_0",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        0.1875,
+        -0.8125
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_1",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        0.4375,
+        -0.6875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_2",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        0.6875,
+        -0.625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_3",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        0.9375,
+        -0.5
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_4",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        1.1875,
+        -0.375
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_5",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        1.4375,
+        -0.25
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_6",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        1.6875,
+        -0.1875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_7",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        1.9375,
+        -0.0625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_8",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        2.1875,
+        0.0625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_9",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        2.4375,
+        0.1875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_10",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        2.6875,
+        0.25
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_11",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        2.9375,
+        0.375
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_12",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        3.1875,
+        0.5
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_13",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        3.4375,
+        0.625
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_14",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        3.6875,
+        0.6875
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_svc_gu_15",
+      "material": "stone_wall",
+      "position": [
+        -6.5,
+        3.9375,
+        0.8125
+      ],
+      "size": [
+        1.5,
+        0.125,
+        0.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_0",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        0.1875,
+        -2.75
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_1",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        0.4375,
+        -2.3125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_2",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        0.6875,
+        -1.875
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_3",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        0.9375,
+        -1.4375
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_4",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        1.1875,
+        -1
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_5",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        1.4375,
+        -0.5625
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_6",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        1.6875,
+        -0.125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_7",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        1.9375,
+        0.3125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_8",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        2.1875,
+        0.75
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_9",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        2.4375,
+        1.1875
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_10",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        2.6875,
+        1.625
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_11",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        2.9375,
+        2.0625
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_12",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        3.1875,
+        2.5
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_13",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        3.4375,
+        2.9375
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_14",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        3.6875,
+        3.375
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_w_15",
+      "material": "stone_wall",
+      "position": [
+        -3.25,
+        3.9375,
+        3.8125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_0",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        0.1875,
+        -2.75
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_1",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        0.4375,
+        -2.3125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_2",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        0.6875,
+        -1.875
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_3",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        0.9375,
+        -1.4375
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_4",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        1.1875,
+        -1
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_5",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        1.4375,
+        -0.5625
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_6",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        1.6875,
+        -0.125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_7",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        1.9375,
+        0.3125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_8",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        2.1875,
+        0.75
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_9",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        2.4375,
+        1.1875
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_10",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        2.6875,
+        1.625
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_11",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        2.9375,
+        2.0625
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_12",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        3.1875,
+        2.5
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_13",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        3.4375,
+        2.9375
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_14",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        3.6875,
+        3.375
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    },
+    {
+      "id": "stair_grand_e_15",
+      "material": "stone_wall",
+      "position": [
+        3.25,
+        3.9375,
+        3.8125
+      ],
+      "size": [
+        2,
+        0.125,
+        0.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": true,
+        "walkable": true
+      }
+    }
+  ],
+  "doorways": [
+    {
+      "id": "door_vest_foyer",
+      "fromRoom": "g_vestibule",
+      "toRoom": "g_foyer",
+      "center": [
+        0,
+        1.375,
+        -6
+      ],
+      "size": [
+        2.375,
+        2.8125,
+        0.5
+      ],
+      "frame": {
+        "id": "frame_door_vest_foyer",
+        "material": "wood",
+        "thickness": 0.12
+      }
+    },
+    {
+      "id": "door_foyer_north",
+      "fromRoom": "g_foyer",
+      "toRoom": "g_north_w",
+      "center": [
+        0,
+        1.375,
+        6
+      ],
+      "size": [
+        2.375,
+        2.8125,
+        0.5
+      ],
+      "frame": {
+        "id": "frame_door_foyer_north",
+        "material": "wood",
+        "thickness": 0.12
+      }
+    },
+    {
+      "id": "door_crypt_corr",
+      "fromRoom": "b_crypt",
+      "toRoom": "b_corridor",
+      "center": [
+        -2,
+        -2.625,
+        2
+      ],
+      "size": [
+        2.1875,
+        2.8125,
+        0.5
+      ],
+      "frame": {
+        "id": "frame_door_crypt_corr",
+        "material": "wood",
+        "thickness": 0.12
+      }
+    },
+    {
+      "id": "door_lab_corr",
+      "fromRoom": "b_lab",
+      "toRoom": "b_corridor",
+      "center": [
+        2,
+        -2.625,
+        2
+      ],
+      "size": [
+        2.1875,
+        2.8125,
+        0.5
+      ],
+      "frame": {
+        "id": "frame_door_lab_corr",
+        "material": "wood",
+        "thickness": 0.12
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "pillar_crypt_a",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        -11,
+        -4,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.55,
+        4,
+        0.55
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.55,
+          4,
+          0.55
+        ]
+      }
+    },
+    {
+      "id": "pillar_crypt_b",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        -11,
+        -4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.55,
+        4,
+        0.55
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.55,
+          4,
+          0.55
+        ]
+      }
+    },
+    {
+      "id": "pillar_crypt_c",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        -5,
+        -4,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.55,
+        4,
+        0.55
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.55,
+          4,
+          0.55
+        ]
+      }
+    },
+    {
+      "id": "pillar_crypt_d",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        -5,
+        -4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.55,
+        4,
+        0.55
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.55,
+          4,
+          0.55
+        ]
+      }
+    },
+    {
+      "id": "pillar_foyer_sw",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        -4.5,
+        0,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        8,
+        0.6
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.6,
+          8,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "pillar_foyer_se",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        4.5,
+        0,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        8,
+        0.6
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.6,
+          8,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "pillar_foyer_nw",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        -4.5,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        8,
+        0.6
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.6,
+          8,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "pillar_foyer_ne",
+      "assetId": "pillar_stone_primitive",
+      "position": [
+        4.5,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        8,
+        0.6
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.6,
+          8,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "crate_storage_a",
+      "assetId": "crate_wood_primitive",
+      "position": [
+        -8,
+        -4,
+        8
+      ],
+      "rotation": [
+        0,
+        0.2,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crate_storage_b",
+      "assetId": "crate_wood_primitive",
+      "position": [
+        -6,
+        -4,
+        10
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.9,
+          0.9,
+          0.9
+        ]
+      }
+    },
+    {
+      "id": "crate_storage_c",
+      "assetId": "crate_wood_primitive",
+      "position": [
+        -6,
+        -3.125,
+        10
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          0.7,
+          0.7,
+          0.7
+        ]
+      }
+    },
+    {
+      "id": "crate_lab_a",
+      "assetId": "crate_wood_primitive",
+      "position": [
+        12,
+        -4,
+        -4
+      ],
+      "rotation": [
+        0,
+        0.1,
+        0
+      ],
+      "scale": [
+        1.1,
+        0.9,
+        0.9
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          1.1,
+          0.9,
+          0.9
+        ]
+      }
+    },
+    {
+      "id": "furn_table_dining",
+      "assetId": "table_dining",
+      "position": [
+        -11.5,
+        0,
+        -3.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_dining_n",
+      "assetId": "chair_wood",
+      "position": [
+        -11.5,
+        0,
+        -2.1875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_dining_s",
+      "assetId": "chair_wood",
+      "position": [
+        -11.5,
+        0,
+        -4.8125
+      ],
+      "rotation": [
+        0,
+        3.14159,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_dining_w",
+      "assetId": "chair_wood",
+      "position": [
+        -12.8125,
+        0,
+        -3.5
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_dining_e",
+      "assetId": "chair_wood",
+      "position": [
+        -10.1875,
+        0,
+        -3.5
+      ],
+      "rotation": [
+        0,
+        -1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_cabinet_dining",
+      "assetId": "cabinet_sideboard",
+      "position": [
+        -12.5,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_shelf_lib_a",
+      "assetId": "bookshelf",
+      "position": [
+        12.5,
+        0,
+        -4
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_shelf_lib_b",
+      "assetId": "bookshelf",
+      "position": [
+        12.5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_shelf_lib_c",
+      "assetId": "bookshelf",
+      "position": [
+        12.5,
+        0,
+        4
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_desk_lib",
+      "assetId": "desk_writing",
+      "position": [
+        8.5,
+        0,
+        3.5
+      ],
+      "rotation": [
+        0,
+        3.14159,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_lib",
+      "assetId": "chair_wood",
+      "position": [
+        8.5,
+        0,
+        2.3125
+      ],
+      "rotation": [
+        0,
+        3.14159,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_bench_foyer",
+      "assetId": "bench_wood",
+      "position": [
+        0,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_cabinet_north",
+      "assetId": "cabinet_sideboard",
+      "position": [
+        -4.5,
+        0,
+        10.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_altar_crypt",
+      "assetId": "altar_crypt",
+      "position": [
+        -8,
+        -4,
+        -7
+      ],
+      "rotation": [
+        0,
+        0.2,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_bench_crypt",
+      "assetId": "bench_wood",
+      "position": [
+        -12,
+        -4,
+        2
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_desk_lab",
+      "assetId": "desk_writing",
+      "position": [
+        6,
+        -4,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_lab",
+      "assetId": "chair_wood",
+      "position": [
+        6,
+        -4,
+        -1.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_bed_w",
+      "assetId": "bed_simple",
+      "position": [
+        -12,
+        4,
+        -3.5
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_desk_bed_w",
+      "assetId": "desk_writing",
+      "position": [
+        -8.5,
+        4,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_chair_bed_w",
+      "assetId": "chair_wood",
+      "position": [
+        -8.5,
+        4,
+        -3.3125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_bed_e",
+      "assetId": "bed_simple",
+      "position": [
+        12,
+        4,
+        3.5
+      ],
+      "rotation": [
+        0,
+        -1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_shelf_bed_e",
+      "assetId": "bookshelf",
+      "position": [
+        13.1875,
+        4,
+        -3
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "furn_bench_upper_n",
+      "assetId": "bench_wood",
+      "position": [
+        0,
+        4,
+        10.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "beam_foyer_x",
+      "assetId": "beam_wood_primitive",
+      "position": [
+        0,
+        7.625,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        11,
+        0.3,
+        0.35
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          11,
+          0.3,
+          0.35
+        ]
+      }
+    },
+    {
+      "id": "beam_foyer_z",
+      "assetId": "beam_wood_primitive",
+      "position": [
+        0,
+        7.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.35,
+        0.3,
+        11
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          0.35,
+          0.3,
+          11
+        ]
+      }
+    },
+    {
+      "id": "beam_crypt",
+      "assetId": "beam_wood_primitive",
+      "position": [
+        -8,
+        -0.375,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        10,
+        0.25,
+        0.3
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          10,
+          0.25,
+          0.3
+        ]
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "cultist_dining",
+      "characterId": "cultist_ranged",
+      "position": [
+        -11.5,
+        0,
+        3.5
+      ],
+      "yaw": 1.57
+    },
+    {
+      "id": "cultist_library",
+      "characterId": "cultist_ranged",
+      "position": [
+        11.5,
+        0,
+        -2
+      ],
+      "yaw": -1.57
+    },
+    {
+      "id": "cultist_north",
+      "characterId": "cultist_ranged",
+      "position": [
+        -3,
+        0,
+        9.5
+      ],
+      "yaw": 3.14159
+    },
+    {
+      "id": "cultist_crypt",
+      "characterId": "cultist_ranged",
+      "position": [
+        -9,
+        -4,
+        -5
+      ],
+      "yaw": 0.4
+    },
+    {
+      "id": "cultist_lab",
+      "characterId": "cultist_ranged",
+      "position": [
+        9,
+        -4,
+        4
+      ],
+      "yaw": -2.2
+    },
+    {
+      "id": "cultist_storage",
+      "characterId": "cultist_ranged",
+      "position": [
+        -5,
+        -4,
+        9
+      ],
+      "yaw": 3
+    },
+    {
+      "id": "cultist_bed_w",
+      "characterId": "cultist_ranged",
+      "position": [
+        -11,
+        4,
+        3
+      ],
+      "yaw": 1.2
+    },
+    {
+      "id": "cultist_bed_e",
+      "characterId": "cultist_ranged",
+      "position": [
+        11,
+        4,
+        -3
+      ],
+      "yaw": -1
+    },
+    {
+      "id": "cultist_upper_n",
+      "characterId": "cultist_ranged",
+      "position": [
+        2.5,
+        4,
+        9
+      ],
+      "yaw": 3.14159
+    }
+  ],
+  "lights": [
+    {
+      "id": "lt_foyer_center",
+      "type": "point",
+      "position": [
+        0,
+        6.5,
+        0
+      ],
+      "color": "#ffd8a8",
+      "intensity": 110,
+      "distance": 24,
+      "decay": 2,
+      "castShadow": true
+    },
+    {
+      "id": "lt_foyer_sw",
+      "type": "point",
+      "position": [
+        -4,
+        3.5,
+        -4
+      ],
+      "color": "#ffb070",
+      "intensity": 55,
+      "distance": 14,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_foyer_se",
+      "type": "point",
+      "position": [
+        4,
+        3.5,
+        -4
+      ],
+      "color": "#ffb070",
+      "intensity": 55,
+      "distance": 14,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_vest",
+      "type": "point",
+      "position": [
+        0,
+        2.8125,
+        -9
+      ],
+      "color": "#e8c090",
+      "intensity": 45,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_dining",
+      "type": "point",
+      "position": [
+        -11,
+        2.8125,
+        2
+      ],
+      "color": "#d4a070",
+      "intensity": 50,
+      "distance": 14,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_library",
+      "type": "point",
+      "position": [
+        10,
+        2.8125,
+        0
+      ],
+      "color": "#c8b090",
+      "intensity": 50,
+      "distance": 14,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_north",
+      "type": "point",
+      "position": [
+        0,
+        2.8125,
+        9
+      ],
+      "color": "#d0b080",
+      "intensity": 40,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_crypt",
+      "type": "point",
+      "position": [
+        -8,
+        -1.5,
+        -3
+      ],
+      "color": "#a89070",
+      "intensity": 45,
+      "distance": 16,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_lab",
+      "type": "point",
+      "position": [
+        8,
+        -1.1875,
+        2
+      ],
+      "color": "#80c0ff",
+      "intensity": 60,
+      "distance": 16,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_storage",
+      "type": "point",
+      "position": [
+        -4,
+        -1.5,
+        8
+      ],
+      "color": "#b09070",
+      "intensity": 35,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_gallery_n",
+      "type": "point",
+      "position": [
+        0,
+        6.1875,
+        5
+      ],
+      "color": "#ffd0a0",
+      "intensity": 40,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_gallery_s",
+      "type": "point",
+      "position": [
+        0,
+        6.1875,
+        -5
+      ],
+      "color": "#ffd0a0",
+      "intensity": 40,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_bed_w",
+      "type": "point",
+      "position": [
+        -10,
+        6.1875,
+        0
+      ],
+      "color": "#e8c090",
+      "intensity": 35,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "id": "lt_bed_e",
+      "type": "point",
+      "position": [
+        10,
+        6.1875,
+        0
+      ],
+      "color": "#e8c090",
+      "intensity": 35,
+      "distance": 12,
+      "decay": 2,
+      "castShadow": false
+    }
+  ]
+}

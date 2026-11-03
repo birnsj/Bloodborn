@@ -18,16 +18,20 @@ export function buildLevel(map, materials, assetRegistry) {
     const cx = (min[0] + max[0]) * 0.5;
     const cz = (min[2] + max[2]) * 0.5;
 
+    const floorPos = [cx, min[1] - 0.05, cz];
+    const floorSize = [width, 0.1, depth];
     const floor = createBoxMesh({
       id: room.floor.id,
       material: materials.get(room.floor.material, width, depth),
-      position: [cx, min[1] - 0.05, cz],
-      size: [width, 0.1, depth],
+      position: floorPos,
+      size: floorSize,
       receiveShadow: true,
       ownedGeometries,
     });
     root.add(floor);
     raycastMeshes.push(floor);
+    // Walkable tops for grounding / stairs (do not block horizontally).
+    colliders.push(createCollider(room.floor.id, floorPos, floorSize, 0, true));
 
     const ceiling = createBoxMesh({
       id: room.ceiling.id,
@@ -59,7 +63,15 @@ export function buildLevel(map, materials, assetRegistry) {
     raycastMeshes.push(mesh);
 
     if (wall.collision?.enabled !== false) {
-      colliders.push(createCollider(wall.id, wall.position, wall.size, rotY));
+      colliders.push(
+        createCollider(
+          wall.id,
+          wall.position,
+          wall.size,
+          rotY,
+          wall.collision?.walkable === true,
+        ),
+      );
     }
   }
 
@@ -73,7 +85,9 @@ export function buildLevel(map, materials, assetRegistry) {
   }
 
   for (const obj of map.objects) {
-    const visual = assetRegistry.createVisual(obj.assetId, obj.scale ?? [1, 1, 1]);
+    const assetDef = assetRegistry.getDef?.(obj.assetId) ?? null;
+    const scale = obj.scale ?? [1, 1, 1];
+    const visual = assetRegistry.createVisual(obj.assetId, scale);
     visual.name = obj.id;
     visual.position.x += obj.position[0];
     // createVisual already offsets local Y for floor contact; add instance Y.
@@ -84,15 +98,18 @@ export function buildLevel(map, materials, assetRegistry) {
     visual.rotation.set(rx, ry, rz);
     root.add(visual);
 
-    if (obj.collision?.enabled) {
-      const size = obj.collision.size ?? obj.scale ?? [1, 1, 1];
-      const offset = obj.collision.offset ?? [0, size[1] * 0.5, 0];
+    const collision = resolveObjectCollision(obj, assetDef, scale);
+    if (collision?.enabled) {
+      const size = collision.size;
+      const offset = collision.offset ?? [0, size[1] * 0.5, 0];
       const center = [
         obj.position[0] + offset[0],
         obj.position[1] + offset[1],
         obj.position[2] + offset[2],
       ];
-      colliders.push(createCollider(obj.id, center, size, ry));
+      colliders.push(
+        createCollider(obj.id, center, size, ry, collision.walkable === true),
+      );
       visual.traverse((child) => {
         if (child.isMesh) raycastMeshes.push(child);
       });
@@ -164,7 +181,42 @@ function createBoxMesh({
   return mesh;
 }
 
-function createCollider(id, position, size, rotationY = 0) {
+/** Prefer instance collision; fall back to furniture JSON defaults × scale. */
+function resolveObjectCollision(obj, assetDef, scale) {
+  const inst = obj.collision;
+  if (inst?.enabled === false) return null;
+
+  if (inst?.size) {
+    return {
+      enabled: inst.enabled !== false,
+      size: inst.size,
+      offset: inst.offset,
+      walkable: inst.walkable === true,
+    };
+  }
+
+  const defCol = assetDef?.collision;
+  if (!defCol || defCol.enabled === false) {
+    if (inst?.enabled) {
+      const size = obj.scale ?? [1, 1, 1];
+      return { enabled: true, size, offset: inst.offset, walkable: inst.walkable === true };
+    }
+    return null;
+  }
+
+  const [sx, sy, sz] = scale;
+  const [dx, dy, dz] = defCol.size ?? [1, 1, 1];
+  const size = [dx * sx, dy * sy, dz * sz];
+  const [ox, oy, oz] = defCol.offset ?? [0, (defCol.size?.[1] ?? 1) * 0.5, 0];
+  return {
+    enabled: true,
+    size,
+    offset: [ox * sx, oy * sy, oz * sz],
+    walkable: inst?.walkable === true || defCol.walkable === true,
+  };
+}
+
+function createCollider(id, position, size, rotationY = 0, walkable = false) {
   const [sx, sy, sz] = size;
   const cos = Math.abs(Math.cos(rotationY));
   const sin = Math.abs(Math.sin(rotationY));
@@ -174,6 +226,7 @@ function createCollider(id, position, size, rotationY = 0) {
 
   return {
     id,
+    walkable: !!walkable,
     minX: position[0] - halfX,
     maxX: position[0] + halfX,
     minY: position[1] - halfY,

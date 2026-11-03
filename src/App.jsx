@@ -3,7 +3,19 @@ import GameCanvas from './game/GameCanvas.jsx';
 import WeaponPosePanel from './game/debug/WeaponPosePanel.jsx';
 import './App.css';
 
+const MAP_OPTIONS = {
+  test: '/maps/test-level.json',
+  mansion: '/maps/mansion-vertical-test.json',
+};
+
+function resolveMapUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const key = (params.get('map') || 'test').toLowerCase();
+  return MAP_OPTIONS[key] ?? MAP_OPTIONS.test;
+}
+
 export default function App() {
+  const [mapUrl] = useState(() => resolveMapUrl());
   const [status, setStatus] = useState('Loading level…');
   const [locked, setLocked] = useState(false);
   const [health, setHealth] = useState(null);
@@ -97,7 +109,7 @@ export default function App() {
       </header>
 
       <GameCanvas
-        mapUrl="/maps/test-level.json"
+        mapUrl={mapUrl}
         assetsUrl="/assets/assets.json"
         onReady={handleReady}
         onLockChange={handleLockChange}

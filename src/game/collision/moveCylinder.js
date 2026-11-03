@@ -4,18 +4,32 @@
  *
  * Tries both axis orders and finishes with a 2D depenetration pass so
  * sharp wall corners don't pinch / trap the capsule.
+ *
+ * Walkable AABBs (`walkable: true`) never block horizontally; they are used
+ * by applyVertical for grounding / step-up / gravity.
+ */
+
+export const WALK_MAX_STEP = 0.35;
+export const WALK_GRAVITY = 22;
+/** Vertical blend speed toward walkable tops (stairs feel continuous). */
+export const WALK_STEP_SPEED = 7;
+
+/**
+ * Axis-separated cylinder (XZ) vs AABB collision used by player and enemies.
+ * Mutates `position` in place (expects { x, y, z } or THREE.Vector3).
  */
 export function moveCylinder(position, radius, dx, dz, colliders, bodyHeight = 1.7) {
   const startX = position.x;
   const startZ = position.z;
+  const feetY = position.y;
 
   // X then Z
-  const x1 = resolveAxis(startX + dx, startZ, 'x', radius, colliders, bodyHeight);
-  const z1 = resolveAxis(x1, startZ + dz, 'z', radius, colliders, bodyHeight);
+  const x1 = resolveAxis(startX + dx, startZ, 'x', radius, colliders, feetY, bodyHeight);
+  const z1 = resolveAxis(x1, startZ + dz, 'z', radius, colliders, feetY, bodyHeight);
 
   // Z then X — often frees a corner the other order traps
-  const z2 = resolveAxis(startX, startZ + dz, 'z', radius, colliders, bodyHeight);
-  const x2 = resolveAxis(startX + dx, z2, 'x', radius, colliders, bodyHeight);
+  const z2 = resolveAxis(startX, startZ + dz, 'z', radius, colliders, feetY, bodyHeight);
+  const x2 = resolveAxis(startX + dx, z2, 'x', radius, colliders, feetY, bodyHeight);
 
   const d1 = (x1 - startX) ** 2 + (z1 - startZ) ** 2;
   const d2 = (x2 - startX) ** 2 + (z2 - startZ) ** 2;
@@ -93,6 +107,74 @@ export function moveCylinderSlide(
   return bestMoved;
 }
 
+/**
+ * Snap to walkable tops within max step, or fall under gravity.
+ * Call once per frame after horizontal movement (player and enemies).
+ */
+export function applyVertical(position, radius, colliders, dt = 0, opts = {}) {
+  const maxStep = opts.maxStep ?? WALK_MAX_STEP;
+  const gravity = opts.gravity ?? WALK_GRAVITY;
+  const stepSpeed = opts.stepSpeed ?? WALK_STEP_SPEED;
+  const dtClamped = Math.max(0, dt);
+  if (position._walkVy == null) position._walkVy = 0;
+
+  const support = findSupportY(
+    position.x,
+    position.z,
+    radius,
+    colliders,
+    position.y + maxStep,
+  );
+
+  // Within one step of a walkable: ease Y toward it (up or down) instead of snapping.
+  if (
+    support != null &&
+    support >= position.y - maxStep &&
+    support <= position.y + maxStep
+  ) {
+    const dy = support - position.y;
+    const maxDy = stepSpeed * dtClamped;
+    if (dtClamped === 0 || Math.abs(dy) <= maxDy) {
+      position.y = support;
+    } else {
+      position.y += Math.sign(dy) * maxDy;
+    }
+    position._walkVy = 0;
+    position._walkGrounded = true;
+    return;
+  }
+
+  position._walkGrounded = false;
+  position._walkVy -= gravity * dtClamped;
+  position.y += position._walkVy * dtClamped;
+
+  const land = findSupportY(position.x, position.z, radius, colliders, position.y + 0.05);
+  if (land != null && position.y <= land) {
+    position.y = land;
+    position._walkVy = 0;
+    position._walkGrounded = true;
+  }
+}
+
+/** Highest walkable top under the cylinder with top <= yMax. */
+export function findSupportY(x, z, radius, colliders, yMax) {
+  let best = null;
+  const r2 = radius * radius;
+  for (const box of colliders) {
+    if (!box.walkable) continue;
+    if (box.maxY > yMax) continue;
+
+    const closestX = clamp(x, box.minX, box.maxX);
+    const closestZ = clamp(z, box.minZ, box.maxZ);
+    const ox = x - closestX;
+    const oz = z - closestZ;
+    if (ox * ox + oz * oz > r2) continue;
+
+    if (best == null || box.maxY > best) best = box.maxY;
+  }
+  return best;
+}
+
 function scoreCandidate(x, z, startX, startZ, nx, nz, goalX, goalZ) {
   const mx = x - startX;
   const mz = z - startZ;
@@ -107,12 +189,20 @@ function scoreCandidate(x, z, startX, startZ, nx, nz, goalX, goalZ) {
   return moved * 1.2 + along * 0.6 + toward * 2.0;
 }
 
-function resolveAxis(x, z, axis, radius, colliders, bodyHeight) {
+function bodyHitsWall(box, feetY, bodyHeight) {
+  if (box.walkable) return false;
+  const headY = feetY + bodyHeight;
+  if (box.maxY <= feetY + 0.05) return false;
+  if (box.minY >= headY - 0.05) return false;
+  return true;
+}
+
+function resolveAxis(x, z, axis, radius, colliders, feetY, bodyHeight) {
   let px = x;
   let pz = z;
 
   for (const box of colliders) {
-    if (box.maxY < 0.2 || box.minY > bodyHeight) continue;
+    if (!bodyHitsWall(box, feetY, bodyHeight)) continue;
 
     const closestX = clamp(px, box.minX, box.maxX);
     const closestZ = clamp(pz, box.minZ, box.maxZ);
@@ -143,10 +233,11 @@ function resolveAxis(x, z, axis, radius, colliders, bodyHeight) {
 
 /** Full 2D push-out so a capsule pinched between two AABBs can escape the seam. */
 function depenetrate(position, radius, colliders, bodyHeight) {
+  const feetY = position.y;
   for (let pass = 0; pass < 3; pass++) {
     let moved = false;
     for (const box of colliders) {
-      if (box.maxY < 0.2 || box.minY > bodyHeight) continue;
+      if (!bodyHitsWall(box, feetY, bodyHeight)) continue;
 
       const closestX = clamp(position.x, box.minX, box.maxX);
       const closestZ = clamp(position.z, box.minZ, box.maxZ);

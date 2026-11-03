@@ -1,0 +1,60 @@
+{
+  "id": "bookshelf",
+  "type": "furniture",
+  "description": "Tall bookshelf with shelves",
+  "collision": {
+    "enabled": true,
+    "size": [1.2, 2.4, 0.4],
+    "offset": [0, 1.2, 0]
+  },
+  "parts": [
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.55, 1.2, 0],
+      "size": [0.08, 2.4, 0.4]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.55, 1.2, 0],
+      "size": [0.08, 2.4, 0.4]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.04, 0],
+      "size": [1.18, 0.08, 0.4]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.8, 0],
+      "size": [1.1, 0.06, 0.36]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 1.5, 0],
+      "size": [1.1, 0.06, 0.36]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 2.2, 0],
+      "size": [1.1, 0.06, 0.36]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 2.36, 0],
+      "size": [1.18, 0.08, 0.4]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 1.2, -0.16],
+      "size": [1.1, 2.3, 0.06]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { moveCylinderSlide } from '../collision/moveCylinder.js';
+import { applyVertical, moveCylinderSlide } from '../collision/moveCylinder.js';
 import { hasLineOfSight } from '../combat/raycast.js';
 
 const STATES = {
@@ -216,6 +216,7 @@ export class EnemyBrain {
       if (this.state !== STATES.IDLE && this.state !== STATES.HIT && this.state !== STATES.DEATH) {
         this.enter(STATES.IDLE);
       }
+      this.applyGrounding(dt, context);
       return;
     }
 
@@ -266,6 +267,17 @@ export class EnemyBrain {
       default:
         break;
     }
+
+    this.applyGrounding(dt, context);
+  }
+
+  applyGrounding(dt, context) {
+    applyVertical(
+      this.character.root.position,
+      this.def.hitRadius ?? 0.4,
+      context.colliders ?? [],
+      dt,
+    );
   }
 
   updateIdle(dist, context, sees) {

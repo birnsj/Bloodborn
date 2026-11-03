@@ -1,0 +1,48 @@
+{
+  "id": "chair_wood",
+  "type": "furniture",
+  "description": "Simple wooden chair with backrest",
+  "collision": {
+    "enabled": true,
+    "size": [0.5, 0.95, 0.55],
+    "offset": [0, 0.475, 0]
+  },
+  "parts": [
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.45, 0],
+      "size": [0.46, 0.06, 0.46]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.18, 0.22, -0.18],
+      "size": [0.06, 0.44, 0.06]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.18, 0.22, -0.18],
+      "size": [0.06, 0.44, 0.06]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.18, 0.22, 0.18],
+      "size": [0.06, 0.44, 0.06]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.18, 0.22, 0.18],
+      "size": [0.06, 0.44, 0.06]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.72, -0.2],
+      "size": [0.46, 0.5, 0.06]
+    }
+  ]
+}

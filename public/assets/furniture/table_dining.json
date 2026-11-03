@@ -1,0 +1,42 @@
+{
+  "id": "table_dining",
+  "type": "furniture",
+  "description": "Rectangular dining table with four legs",
+  "collision": {
+    "enabled": true,
+    "size": [2.2, 0.78, 1.1],
+    "offset": [0, 0.39, 0]
+  },
+  "parts": [
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0, 0.74, 0],
+      "size": [2.2, 0.08, 1.1]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.95, 0.35, -0.45],
+      "size": [0.1, 0.7, 0.1]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.95, 0.35, -0.45],
+      "size": [0.1, 0.7, 0.1]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [-0.95, 0.35, 0.45],
+      "size": [0.1, 0.7, 0.1]
+    },
+    {
+      "primitive": "box",
+      "material": "wood",
+      "position": [0.95, 0.35, 0.45],
+      "size": [0.1, 0.7, 0.1]
+    }
+  ]
+}

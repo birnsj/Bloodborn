@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import { moveCylinderSlide } from './collision/moveCylinder.js';
+import { applyVertical, moveCylinderSlide } from './collision/moveCylinder.js';
 
 /**
  * First-person controller: pointer lock, WASD, mouse look, AABB collision.
- * Frame-rate independent. No jumping.
+ * Frame-rate independent. Step-up / gravity for stairs; no jump.
  */
 export class PlayerController {
   constructor(camera, playerConfig, colliders, domElement) {
@@ -37,9 +37,11 @@ export class PlayerController {
     };
 
     this.isLocked = false;
+    this.noDamage = false;
     this.restartCallback = null;
     this.damageCallback = null;
     this.deathCallback = null;
+    this.statusCallback = null;
 
     this._onKeyDown = this.onKeyDown.bind(this);
     this._onKeyUp = this.onKeyUp.bind(this);
@@ -71,6 +73,18 @@ export class PlayerController {
 
   setDeathCallback(cb) {
     this.deathCallback = cb;
+  }
+
+  setStatusCallback(cb) {
+    this.statusCallback = cb;
+  }
+
+  setNoDamage(enabled) {
+    this.noDamage = !!enabled;
+    this.statusCallback?.({
+      type: 'preview',
+      message: this.noDamage ? 'no damage ON (N)' : 'no damage OFF (N)',
+    });
   }
 
   attach() {
@@ -137,6 +151,11 @@ export class PlayerController {
 
     if (this.dead) return;
 
+    if (event.code === 'KeyN') {
+      this.setNoDamage(!this.noDamage);
+      return;
+    }
+
     switch (event.code) {
       case 'KeyW':
       case 'ArrowUp':
@@ -194,6 +213,9 @@ export class PlayerController {
     if (this.dead || amount <= 0) {
       return { health: this.health, dead: this.dead };
     }
+    if (this.noDamage) {
+      return { health: this.health, dead: false, blocked: true };
+    }
     this.health = Math.max(0, this.health - amount);
     this.damageCallback?.({ damage: amount, health: this.health });
     if (this.health <= 0) {
@@ -218,6 +240,8 @@ export class PlayerController {
 
   resetToSpawn() {
     this.position.copy(this.spawnPosition);
+    this.position._walkVy = 0;
+    this.position._walkGrounded = true;
     this.yaw = this.spawnYaw;
     this.pitch = 0;
     this.health = this.maxHealth;
@@ -248,6 +272,10 @@ export class PlayerController {
           this.eyeHeight,
         );
       }
+    }
+
+    if (!this.dead) {
+      applyVertical(this.position, this.radius, this.colliders, deltaSeconds);
     }
 
     this.syncCamera();
